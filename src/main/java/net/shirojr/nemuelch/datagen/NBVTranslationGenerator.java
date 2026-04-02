@@ -4,10 +4,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.shirojr.nemuelch.NBVMain;
 import net.shirojr.nemuelch.block.util.VariationHolder;
 import net.shirojr.nemuelch.init.NBVBlocks;
 import org.jetbrains.annotations.Nullable;
 
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -25,6 +27,13 @@ public class NBVTranslationGenerator extends FabricLanguageProvider {
         for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
             Identifier identifier = Registries.BLOCK.getId(variationHolder.getBlock());
             builder.add(variationHolder.getBlock(), cleanString(identifier, false));
+        }
+
+        try {
+            Path existingFilePath = dataOutput.getModContainer().findPath("assets/%s/lang/en_us.existing.json".formatted(NBVMain.MOD_ID)).orElseThrow();
+            builder.add(existingFilePath);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to add existing language file!", e);
         }
     }
 

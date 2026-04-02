@@ -111,6 +111,7 @@ public interface NBVBlocks {
                     List.of(NBVItems.VARIATION_BLOCK_ITEMS)
             );
             result.add(registeredBlock);
+            VARIATION_HOLDERS.add(registeredBlock);
             ALL_BLOCKS.add(registeredBlock);
         }
         return result;
