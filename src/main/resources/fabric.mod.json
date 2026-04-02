@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "nemuelch",
+  "version": "${version}",
+  "name": "NeMuelch Block Variations",
+  "description": "An extension of the NeMuelch Mod which features a loooot of blocks",
+  "authors": [
+    "DEV - ShiroJR1811"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "GPL-3.0 license",
+  "icon": "assets/nemuelch/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.shirojr.nemuelch.NBVMain"
+    ],
+    "client": [
+      "net.shirojr.nemuelch.NBVClient"
+    ],
+    "fabric-datagen": [
+      "net.shirojr.nemuelch.NBVDataGenerator"
+    ]
+  },
+  "mixins": [
+    "nemuelch.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
