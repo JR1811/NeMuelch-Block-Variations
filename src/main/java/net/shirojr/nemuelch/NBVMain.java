@@ -5,6 +5,7 @@ import net.minecraft.util.Identifier;
 import net.shirojr.nemuelch.init.NBVBlocks;
 import net.shirojr.nemuelch.init.NBVItemGroups;
 import net.shirojr.nemuelch.init.NBVItems;
+import net.shirojr.nemuelch.init.NBVTags;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,7 @@ public class NBVMain implements ModInitializer {
 		NBVItems.initialize();
 		NBVBlocks.initialize();
 		NBVItemGroups.initialize();
+		NBVTags.initialize();
 
 		LOGGER.info("Successfully Loaded NeMuelch Mod addition: \"NeMuelch Block Variations (NBV)\"");
 	}

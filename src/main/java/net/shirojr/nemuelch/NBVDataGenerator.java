@@ -2,9 +2,7 @@ package net.shirojr.nemuelch;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.shirojr.nemuelch.datagen.NBVModelGenerator;
-import net.shirojr.nemuelch.datagen.NBVRecipeGenerator;
-import net.shirojr.nemuelch.datagen.NBVTranslationGenerator;
+import net.shirojr.nemuelch.datagen.*;
 
 public class NBVDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,5 +12,7 @@ public class NBVDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(NBVTranslationGenerator::new);
 		pack.addProvider(NBVModelGenerator::new);
 		pack.addProvider(NBVRecipeGenerator::new);
+		NBVLootTableGenerators.registerAll(pack);
+		NBVTagGenerators.registerAll(pack);
 	}
 }
