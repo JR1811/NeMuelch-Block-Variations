@@ -5,7 +5,7 @@ A small add-on mod that provides a large set of texture-based block variations.
 
 ## Overview
 
-This mod adds multiple visual variations for a set of custom blocks.
+This mod adds multiple variations for a set of custom blocks.
 
 - 8+ base block types
 - 90+ block variations
