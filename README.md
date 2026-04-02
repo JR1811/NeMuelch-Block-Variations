@@ -5,11 +5,10 @@ A small add-on mod that provides a large set of texture-based block variations.
 
 ## Overview
 
-This mod adds multiple visual variations for a set of custom block types.
-All variations share the same properties and behavior — only the textures differ.
+This mod adds multiple visual variations for a set of custom blocks.
 
-- 90+ block variations
 - 8+ base block types
+- 90+ block variations
 - Textures transferred by vanilla materials (stone, logs, glass, wool, etc.)
 - Textures are automatically mapped by Resourcepacks
 
