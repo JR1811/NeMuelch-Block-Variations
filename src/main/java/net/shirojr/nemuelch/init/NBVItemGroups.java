@@ -15,7 +15,7 @@ public class NBVItemGroups {
     public static final RegistryKey<ItemGroup> NEMUELCH_VARIATION_BLOCKS = register("nemuelch_variations",
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(NBVBlocks.ALL_BLOCKS.get(0)))
-                    .displayName(Text.translatable("itemGroup.nbv.block_variations"))
+                    .displayName(Text.translatable("itemGroup.%s.block_variations".formatted(NBVMain.MOD_ID)))
                     .build()
     );
 

@@ -1799,5 +1799,5 @@
   "block.nemuelch.yellow_wool_plate": "Yellow Wool Plate",
   "block.nemuelch.yellow_wool_small_fence": "Yellow Wool Small Fence",
   "block.nemuelch.yellow_wool_vertical_half_slab": "Yellow Wool Vertical Half Slab",
-  "itemGroup.nbv.block_variations": "NeMuelch Block Variations (NBV)"
+  "itemGroup.nemuelch-block-variations.block_variations": "NeMuelch Block Variations (NBV)"
 }

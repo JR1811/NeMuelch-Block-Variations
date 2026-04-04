@@ -32,7 +32,7 @@ public class NBVTags {
         public static final TagKey<Block> VERTICAL_HALF_SLABS = createTag("vertical_half_slabs");
 
         private static TagKey<Block> createTag(String name) {
-            TagKey<Block> tagKey = TagKey.of(RegistryKeys.BLOCK, new Identifier(NBVMain.MOD_ID, name));
+            TagKey<Block> tagKey = TagKey.of(RegistryKeys.BLOCK, new Identifier(NBVMain.MOD_ID_NEMUELCH, name));
             ALL_BLOCK_TAGS.add(tagKey);
             ALL_TAGS.add(tagKey);
             return tagKey;
@@ -63,7 +63,7 @@ public class NBVTags {
         public static final TagKey<Item> VERTICAL_HALF_SLABS = createTag("vertical_half_slabs");
 
         private static TagKey<Item> createTag(String name) {
-            TagKey<Item> tagKey = TagKey.of(RegistryKeys.ITEM, new Identifier(NBVMain.MOD_ID, name));
+            TagKey<Item> tagKey = TagKey.of(RegistryKeys.ITEM, new Identifier(NBVMain.MOD_ID_NEMUELCH, name));
             ALL_ITEM_TAGS.add(tagKey);
             ALL_TAGS.add(tagKey);
             return tagKey;

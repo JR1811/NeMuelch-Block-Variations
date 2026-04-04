@@ -49,7 +49,7 @@ public class SmallFenceBlock extends HorizontalConnectingBlock implements Variat
 
     @Override
     public Identifier getBaseModel() {
-        return NBVMain.getId("block/base_small_fence");
+        return NBVMain.getNeMuelchId("block/base_small_fence");
     }
 
     @Override

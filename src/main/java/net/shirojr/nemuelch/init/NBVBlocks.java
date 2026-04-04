@@ -10,6 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
 import net.shirojr.nemuelch.NBVMain;
 import net.shirojr.nemuelch.block.custom.*;
 import net.shirojr.nemuelch.block.util.Variation;
@@ -75,10 +76,10 @@ public interface NBVBlocks {
     );
 
     @SuppressWarnings("SameParameterValue")
-    static <T extends Block> T register(String name, T entry, boolean registerDefaultItem, List<List<Item>> itemLists) {
-        T registeredEntry = Registry.register(Registries.BLOCK, NBVMain.getId(name), entry);
+    static <T extends Block> T register(Identifier identifier, T entry, boolean registerDefaultItem, List<List<Item>> itemLists) {
+        T registeredEntry = Registry.register(Registries.BLOCK, identifier, entry);
         if (registerDefaultItem) {
-            BlockItem registeredItemEntry = Registry.register(Registries.ITEM, NBVMain.getId(name), new BlockItem(registeredEntry, new Item.Settings()));
+            BlockItem registeredItemEntry = Registry.register(Registries.ITEM, identifier, new BlockItem(registeredEntry, new Item.Settings()));
             for (List<Item> list : itemLists) {
                 list.add(registeredItemEntry);
             }
@@ -105,7 +106,7 @@ public interface NBVBlocks {
             }
 
             T registeredBlock = register(
-                    variant.name().toLowerCase(Locale.ROOT) + "_" + nameSuffix,
+                    NBVMain.getNeMuelchId(variant.name().toLowerCase(Locale.ROOT) + "_" + nameSuffix),
                     blockFactory.apply(blockSettings, variant),
                     true,
                     List.of(NBVItems.VARIATION_BLOCK_ITEMS)

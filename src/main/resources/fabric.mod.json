@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "nemuelch",
+  "id": "nemuelch-block-variations",
   "version": "${version}",
   "name": "NeMuelch Block Variations",
   "description": "An extension of the NeMuelch Mod which features a loooot of blocks",

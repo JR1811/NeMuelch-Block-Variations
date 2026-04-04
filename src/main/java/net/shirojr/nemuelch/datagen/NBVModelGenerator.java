@@ -33,7 +33,6 @@ public class NBVModelGenerator extends FabricModelProvider {
 
             Identifier modelId = generateModel(variationHolder, block, generator);
 
-
             BlockStateVariantMap blockStateVariantMap;
             if (block instanceof ChimneyBlock || block instanceof CenteredVerticalHalfSlabBlock || block instanceof DoublePlatesBlock) {
                 blockStateVariantMap = BlockStateModelGenerator.createAxisRotatedVariantMap();
@@ -56,6 +55,7 @@ public class NBVModelGenerator extends FabricModelProvider {
                     }
                 }));
             }
+            generator.registerParentedItemModel(block, modelId);
             generator.blockStateCollector.accept(blockStateSupplier);
         }
     }
@@ -99,7 +99,6 @@ public class NBVModelGenerator extends FabricModelProvider {
             );
             topBlockStateModel.upload(block, "_top", textureMap, generator.modelCollector);
         }
-
         return model.upload(block, textureMap, generator.modelCollector);
     }
 

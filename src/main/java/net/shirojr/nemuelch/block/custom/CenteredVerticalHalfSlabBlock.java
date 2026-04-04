@@ -26,7 +26,7 @@ public class CenteredVerticalHalfSlabBlock extends AbstractVariationBlock {
 
     @Override
     public Identifier getBaseModel() {
-        return NBVMain.getId("block/base_centered_vertical_half_slab");
+        return NBVMain.getNeMuelchId("block/base_centered_vertical_half_slab");
     }
 
     @Override

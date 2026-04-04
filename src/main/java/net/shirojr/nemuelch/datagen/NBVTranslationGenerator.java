@@ -22,7 +22,7 @@ public class NBVTranslationGenerator extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder builder) {
-        builder.add("itemGroup.nbv.block_variations", "NeMuelch Block Variations (NBV)");
+        builder.add("itemGroup.%s.block_variations".formatted(NBVMain.MOD_ID), "NeMuelch Block Variations (NBV)");
 
         for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
             Identifier identifier = Registries.BLOCK.getId(variationHolder.getBlock());
@@ -30,7 +30,7 @@ public class NBVTranslationGenerator extends FabricLanguageProvider {
         }
 
         try {
-            Path existingFilePath = dataOutput.getModContainer().findPath("assets/%s/lang/en_us.existing.json".formatted(NBVMain.MOD_ID)).orElseThrow();
+            Path existingFilePath = dataOutput.getModContainer().findPath("assets/%s/lang/en_us.existing.json".formatted(NBVMain.MOD_ID_NEMUELCH)).orElseThrow();
             builder.add(existingFilePath);
         } catch (Exception e) {
             throw new RuntimeException("Failed to add existing language file!", e);

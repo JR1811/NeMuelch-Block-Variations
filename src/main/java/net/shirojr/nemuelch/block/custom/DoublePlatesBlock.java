@@ -28,7 +28,7 @@ public class DoublePlatesBlock extends AbstractVariationBlock {
 
     @Override
     public Identifier getBaseModel() {
-        return NBVMain.getId("block/base_double_plates");
+        return NBVMain.getNeMuelchId("block/base_double_plates");
     }
 
     @Override

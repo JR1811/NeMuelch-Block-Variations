@@ -45,7 +45,7 @@ public class PlateBlock extends AbstractVariationBlock {
 
     @Override
     public Identifier getBaseModel() {
-        return NBVMain.getId("block/base_plate");
+        return NBVMain.getNeMuelchId("block/base_plate");
     }
 
     @Override
