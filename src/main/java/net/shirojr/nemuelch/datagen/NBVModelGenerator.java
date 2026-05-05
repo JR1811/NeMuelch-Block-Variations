@@ -30,6 +30,10 @@ public class NBVModelGenerator extends FabricModelProvider {
                 generateSmallFence(variationHolder, block, generator);
                 continue;
             }
+            if (block instanceof VerticalStairBlock) {
+                generateVerticalStair(variationHolder, block, generator);
+                continue;
+            }
 
             Identifier modelId = generateModel(variationHolder, block, generator);
 
@@ -165,5 +169,53 @@ public class NBVModelGenerator extends FabricModelProvider {
         );
 
         generator.registerParentedItemModel(block, modelInventoryId);
+    }
+
+    private void generateVerticalStair(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
+        TextureKey outerTextureKey = TextureKey.of("1");
+        TextureKey innerTextureKey = TextureKey.of("2");
+        TextureKey rimTextureKey = TextureKey.of("3");
+        TextureMap textureMap = new TextureMap();
+        if (variationHolder.getVariant().customParticleTexture() == null) {
+            textureMap.put(TextureKey.PARTICLE, TextureMap.getId(variationHolder.getVariant().parentBlock()));
+        } else {
+            textureMap.put(TextureKey.PARTICLE, variationHolder.getVariant().customParticleTexture());
+        }
+        textureMap.put(outerTextureKey, variationHolder.getVariant().outerTexture());
+        textureMap.put(innerTextureKey, variationHolder.getVariant().innerTexture());
+        textureMap.put(rimTextureKey, variationHolder.getVariant().rimTexture());
+
+
+        Model baseModel = new Model(
+                Optional.of(variationHolder.getBaseModel()),
+                Optional.empty(),
+                outerTextureKey, innerTextureKey, rimTextureKey, TextureKey.PARTICLE
+        );
+
+        Identifier baseModelId = baseModel.upload(block, textureMap, generator.modelCollector);
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(block)
+                        .coordinate(BlockStateVariantMap.create(VerticalStairBlock.CORNER)
+                                .register(corner -> switch (corner) {
+                                    case NORTH_WEST -> BlockStateVariant.create()
+                                            .put(VariantSettings.MODEL, baseModelId);
+                                    case NORTH_EAST ->
+                                            BlockStateVariant.create()
+                                                    .put(VariantSettings.Y, VariantSettings.Rotation.R90)
+                                                    .put(VariantSettings.MODEL, baseModelId);
+                                    case SOUTH_EAST ->
+                                            BlockStateVariant.create()
+                                                    .put(VariantSettings.Y, VariantSettings.Rotation.R180)
+                                                    .put(VariantSettings.MODEL, baseModelId);
+                                    case SOUTH_WEST ->
+                                            BlockStateVariant.create()
+                                                    .put(VariantSettings.Y, VariantSettings.Rotation.R270)
+                                                    .put(VariantSettings.MODEL, baseModelId);
+                                })
+                        )
+        );
+
+        generator.registerParentedItemModel(block, baseModelId);
     }
 }

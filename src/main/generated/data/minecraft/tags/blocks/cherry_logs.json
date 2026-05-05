@@ -32,6 +32,10 @@
     "nemuelch:cherry_log_small_fence",
     "nemuelch:stripped_cherry_log_small_fence",
     "nemuelch:cherry_wood_small_fence",
-    "nemuelch:stripped_cherry_wood_small_fence"
+    "nemuelch:stripped_cherry_wood_small_fence",
+    "nemuelch:cherry_log_vertical_stair",
+    "nemuelch:stripped_cherry_log_vertical_stair",
+    "nemuelch:cherry_wood_vertical_stair",
+    "nemuelch:stripped_cherry_wood_vertical_stair"
   ]
 }

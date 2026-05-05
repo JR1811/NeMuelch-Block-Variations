@@ -16,6 +16,8 @@
     "nemuelch:coal_ore_centered_half_slab",
     "nemuelch:deepslate_coal_ore_centered_half_slab",
     "nemuelch:coal_ore_small_fence",
-    "nemuelch:deepslate_coal_ore_small_fence"
+    "nemuelch:deepslate_coal_ore_small_fence",
+    "nemuelch:coal_ore_vertical_stair",
+    "nemuelch:deepslate_coal_ore_vertical_stair"
   ]
 }

@@ -32,6 +32,10 @@
     "nemuelch:warped_stem_small_fence",
     "nemuelch:stripped_warped_stem_small_fence",
     "nemuelch:warped_hyphae_small_fence",
-    "nemuelch:stripped_warped_hyphae_small_fence"
+    "nemuelch:stripped_warped_hyphae_small_fence",
+    "nemuelch:warped_stem_vertical_stair",
+    "nemuelch:stripped_warped_stem_vertical_stair",
+    "nemuelch:warped_hyphae_vertical_stair",
+    "nemuelch:stripped_warped_hyphae_vertical_stair"
   ]
 }

@@ -16,6 +16,8 @@
     "nemuelch:copper_ore_centered_half_slab",
     "nemuelch:deepslate_copper_ore_centered_half_slab",
     "nemuelch:copper_ore_small_fence",
-    "nemuelch:deepslate_copper_ore_small_fence"
+    "nemuelch:deepslate_copper_ore_small_fence",
+    "nemuelch:copper_ore_vertical_stair",
+    "nemuelch:deepslate_copper_ore_vertical_stair"
   ]
 }

@@ -40,6 +40,11 @@
     "nemuelch:dirt_path_small_fence",
     "nemuelch:mud_small_fence",
     "nemuelch:gravel_small_fence",
-    "nemuelch:sand_small_fence"
+    "nemuelch:sand_small_fence",
+    "nemuelch:dirt_vertical_stair",
+    "nemuelch:dirt_path_vertical_stair",
+    "nemuelch:mud_vertical_stair",
+    "nemuelch:gravel_vertical_stair",
+    "nemuelch:sand_vertical_stair"
   ]
 }

@@ -96,6 +96,18 @@
     "nemuelch:bamboo_trapdoor_small_fence",
     "nemuelch:iron_trapdoor_small_fence",
     "nemuelch:crimson_trapdoor_small_fence",
-    "nemuelch:warped_trapdoor_small_fence"
+    "nemuelch:warped_trapdoor_small_fence",
+    "nemuelch:oak_trapdoor_vertical_stair",
+    "nemuelch:spruce_trapdoor_vertical_stair",
+    "nemuelch:birch_trapdoor_vertical_stair",
+    "nemuelch:jungle_trapdoor_vertical_stair",
+    "nemuelch:acacia_trapdoor_vertical_stair",
+    "nemuelch:cherry_trapdoor_vertical_stair",
+    "nemuelch:dark_oak_trapdoor_vertical_stair",
+    "nemuelch:mangrove_trapdoor_vertical_stair",
+    "nemuelch:bamboo_trapdoor_vertical_stair",
+    "nemuelch:iron_trapdoor_vertical_stair",
+    "nemuelch:crimson_trapdoor_vertical_stair",
+    "nemuelch:warped_trapdoor_vertical_stair"
   ]
 }

@@ -32,6 +32,10 @@
     "nemuelch:dark_oak_log_small_fence",
     "nemuelch:stripped_dark_oak_log_small_fence",
     "nemuelch:dark_oak_wood_small_fence",
-    "nemuelch:stripped_dark_oak_wood_small_fence"
+    "nemuelch:stripped_dark_oak_wood_small_fence",
+    "nemuelch:dark_oak_log_vertical_stair",
+    "nemuelch:stripped_dark_oak_log_vertical_stair",
+    "nemuelch:dark_oak_wood_vertical_stair",
+    "nemuelch:stripped_dark_oak_wood_vertical_stair"
   ]
 }

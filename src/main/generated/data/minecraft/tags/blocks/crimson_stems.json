@@ -32,6 +32,10 @@
     "nemuelch:crimson_stem_small_fence",
     "nemuelch:stripped_crimson_stem_small_fence",
     "nemuelch:crimson_hyphae_small_fence",
-    "nemuelch:stripped_crimson_hyphae_small_fence"
+    "nemuelch:stripped_crimson_hyphae_small_fence",
+    "nemuelch:crimson_stem_vertical_stair",
+    "nemuelch:stripped_crimson_stem_vertical_stair",
+    "nemuelch:crimson_hyphae_vertical_stair",
+    "nemuelch:stripped_crimson_hyphae_vertical_stair"
   ]
 }

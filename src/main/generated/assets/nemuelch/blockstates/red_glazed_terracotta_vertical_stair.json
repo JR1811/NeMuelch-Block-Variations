@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "corner=north_east": {
+      "model": "nemuelch:block/red_glazed_terracotta_vertical_stair",
+      "y": 90
+    },
+    "corner=north_west": {
+      "model": "nemuelch:block/red_glazed_terracotta_vertical_stair"
+    },
+    "corner=south_east": {
+      "model": "nemuelch:block/red_glazed_terracotta_vertical_stair",
+      "y": 180
+    },
+    "corner=south_west": {
+      "model": "nemuelch:block/red_glazed_terracotta_vertical_stair",
+      "y": 270
+    }
+  }
+}

@@ -48,6 +48,12 @@
     "nemuelch:copper_ore_small_fence",
     "nemuelch:deepslate_copper_ore_small_fence",
     "nemuelch:iron_ore_small_fence",
-    "nemuelch:deepslate_iron_ore_small_fence"
+    "nemuelch:deepslate_iron_ore_small_fence",
+    "nemuelch:iron_block_vertical_stair",
+    "nemuelch:deepslate_coal_ore_vertical_stair",
+    "nemuelch:copper_ore_vertical_stair",
+    "nemuelch:deepslate_copper_ore_vertical_stair",
+    "nemuelch:iron_ore_vertical_stair",
+    "nemuelch:deepslate_iron_ore_vertical_stair"
   ]
 }

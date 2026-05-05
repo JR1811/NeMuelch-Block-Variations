@@ -152,6 +152,25 @@
     "nemuelch:waxed_weathered_copper_small_fence",
     "nemuelch:waxed_weathered_cut_copper_small_fence",
     "nemuelch:waxed_oxidized_copper_small_fence",
-    "nemuelch:waxed_oxidized_cut_copper_small_fence"
+    "nemuelch:waxed_oxidized_cut_copper_small_fence",
+    "nemuelch:gold_block_vertical_stair",
+    "nemuelch:diamond_block_vertical_stair",
+    "nemuelch:emerald_block_vertical_stair",
+    "nemuelch:gold_ore_vertical_stair",
+    "nemuelch:deepslate_gold_ore_vertical_stair",
+    "nemuelch:diamond_ore_vertical_stair",
+    "nemuelch:deepslate_diamond_ore_vertical_stair",
+    "nemuelch:emerald_ore_vertical_stair",
+    "nemuelch:deepslate_emerald_ore_vertical_stair",
+    "nemuelch:redstone_ore_vertical_stair",
+    "nemuelch:deepslate_redstone_ore_vertical_stair",
+    "nemuelch:waxed_copper_block_vertical_stair",
+    "nemuelch:waxed_cut_copper_vertical_stair",
+    "nemuelch:waxed_exposed_copper_vertical_stair",
+    "nemuelch:waxed_exposed_cut_copper_vertical_stair",
+    "nemuelch:waxed_weathered_copper_vertical_stair",
+    "nemuelch:waxed_weathered_cut_copper_vertical_stair",
+    "nemuelch:waxed_oxidized_copper_vertical_stair",
+    "nemuelch:waxed_oxidized_cut_copper_vertical_stair"
   ]
 }

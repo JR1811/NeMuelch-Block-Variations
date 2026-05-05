@@ -32,6 +32,10 @@
     "nemuelch:acacia_log_small_fence",
     "nemuelch:stripped_acacia_log_small_fence",
     "nemuelch:acacia_wood_small_fence",
-    "nemuelch:stripped_acacia_wood_small_fence"
+    "nemuelch:stripped_acacia_wood_small_fence",
+    "nemuelch:acacia_log_vertical_stair",
+    "nemuelch:stripped_acacia_log_vertical_stair",
+    "nemuelch:acacia_wood_vertical_stair",
+    "nemuelch:stripped_acacia_wood_vertical_stair"
   ]
 }

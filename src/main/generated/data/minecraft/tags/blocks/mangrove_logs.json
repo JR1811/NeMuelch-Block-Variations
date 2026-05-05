@@ -32,6 +32,10 @@
     "nemuelch:mangrove_log_small_fence",
     "nemuelch:stripped_mangrove_log_small_fence",
     "nemuelch:mangrove_wood_small_fence",
-    "nemuelch:stripped_mangrove_wood_small_fence"
+    "nemuelch:stripped_mangrove_wood_small_fence",
+    "nemuelch:mangrove_log_vertical_stair",
+    "nemuelch:stripped_mangrove_log_vertical_stair",
+    "nemuelch:mangrove_wood_vertical_stair",
+    "nemuelch:stripped_mangrove_wood_vertical_stair"
   ]
 }

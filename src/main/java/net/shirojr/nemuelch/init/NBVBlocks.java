@@ -75,6 +75,12 @@ public interface NBVBlocks {
             SmallFenceBlock::new
     );
 
+    List<VerticalStairBlock> VERTICAL_STAIRS = registerVariationBlocks(
+            "vertical_stair",
+            variation -> FabricBlockSettings.copy(variation.parentBlock()),
+            VerticalStairBlock::new
+    );
+
     @SuppressWarnings("SameParameterValue")
     static <T extends Block> T register(Identifier identifier, T entry, boolean registerDefaultItem, List<List<Item>> itemLists) {
         T registeredEntry = Registry.register(Registries.BLOCK, identifier, entry);

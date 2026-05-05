@@ -36,6 +36,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Item>.FabricTagBuilder platesTag = getOrCreateTagBuilder(NBVTags.Items.PLATES);
             FabricTagProvider<Item>.FabricTagBuilder smallFencesTag = getOrCreateTagBuilder(NBVTags.Items.SMALL_FENCES);
             FabricTagProvider<Item>.FabricTagBuilder verticalHalfSlabsTag = getOrCreateTagBuilder(NBVTags.Items.VERTICAL_HALF_SLABS);
+            FabricTagProvider<Item>.FabricTagBuilder verticalStairsTag = getOrCreateTagBuilder(NBVTags.Items.VERTICAL_STAIRS);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS) {
                 centeredHalfSlabsTag.add(entry.asItem());
@@ -61,6 +62,9 @@ public class NBVTagGenerators {
             for (VerticalHalfSlabBlock entry : NBVBlocks.VERTICAL_HALF_SLABS) {
                 verticalHalfSlabsTag.add(entry.asItem());
             }
+            for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS) {
+                verticalStairsTag.add(entry.asItem());
+            }
         }
     }
 
@@ -81,6 +85,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder platesTag = getOrCreateTagBuilder(NBVTags.Blocks.PLATES);
             FabricTagProvider<Block>.FabricTagBuilder smallFencesTag = getOrCreateTagBuilder(NBVTags.Blocks.SMALL_FENCES);
             FabricTagProvider<Block>.FabricTagBuilder verticalHalfSlabsTag = getOrCreateTagBuilder(NBVTags.Blocks.VERTICAL_HALF_SLABS);
+            FabricTagProvider<Block>.FabricTagBuilder verticalStairsTag = getOrCreateTagBuilder(NBVTags.Blocks.VERTICAL_STAIRS);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS) {
                 centeredHalfSlabsTag.add(entry);
@@ -107,6 +112,9 @@ public class NBVTagGenerators {
             }
             for (VerticalHalfSlabBlock entry : NBVBlocks.VERTICAL_HALF_SLABS) {
                 verticalHalfSlabsTag.add(entry);
+            }
+            for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS) {
+                verticalStairsTag.add(entry);
             }
             for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
                 for (TagKey<Block> blockTag : variationHolder.getVariant().blockTags()) {

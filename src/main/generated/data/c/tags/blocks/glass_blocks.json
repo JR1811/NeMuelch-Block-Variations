@@ -128,6 +128,22 @@
     "nemuelch:brown_stained_glass_small_fence",
     "nemuelch:green_stained_glass_small_fence",
     "nemuelch:red_stained_glass_small_fence",
-    "nemuelch:black_stained_glass_small_fence"
+    "nemuelch:black_stained_glass_small_fence",
+    "nemuelch:white_stained_glass_vertical_stair",
+    "nemuelch:orange_stained_glass_vertical_stair",
+    "nemuelch:magenta_stained_glass_vertical_stair",
+    "nemuelch:light_blue_stained_glass_vertical_stair",
+    "nemuelch:yellow_stained_glass_vertical_stair",
+    "nemuelch:lime_stained_glass_vertical_stair",
+    "nemuelch:pink_stained_glass_vertical_stair",
+    "nemuelch:gray_stained_glass_vertical_stair",
+    "nemuelch:light_gray_stained_glass_vertical_stair",
+    "nemuelch:cyan_stained_glass_vertical_stair",
+    "nemuelch:purple_stained_glass_vertical_stair",
+    "nemuelch:blue_stained_glass_vertical_stair",
+    "nemuelch:brown_stained_glass_vertical_stair",
+    "nemuelch:green_stained_glass_vertical_stair",
+    "nemuelch:red_stained_glass_vertical_stair",
+    "nemuelch:black_stained_glass_vertical_stair"
   ]
 }

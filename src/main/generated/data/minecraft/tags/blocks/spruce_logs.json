@@ -32,6 +32,10 @@
     "nemuelch:spruce_log_small_fence",
     "nemuelch:stripped_spruce_log_small_fence",
     "nemuelch:spruce_wood_small_fence",
-    "nemuelch:stripped_spruce_wood_small_fence"
+    "nemuelch:stripped_spruce_wood_small_fence",
+    "nemuelch:spruce_log_vertical_stair",
+    "nemuelch:stripped_spruce_log_vertical_stair",
+    "nemuelch:spruce_wood_vertical_stair",
+    "nemuelch:stripped_spruce_wood_vertical_stair"
   ]
 }

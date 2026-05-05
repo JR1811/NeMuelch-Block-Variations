@@ -32,6 +32,10 @@
     "nemuelch:dirt_small_fence",
     "nemuelch:dirt_path_small_fence",
     "nemuelch:mud_small_fence",
-    "nemuelch:moss_block_small_fence"
+    "nemuelch:moss_block_small_fence",
+    "nemuelch:dirt_vertical_stair",
+    "nemuelch:dirt_path_vertical_stair",
+    "nemuelch:mud_vertical_stair",
+    "nemuelch:moss_block_vertical_stair"
   ]
 }

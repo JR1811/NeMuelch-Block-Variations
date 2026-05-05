@@ -128,6 +128,22 @@
     "nemuelch:brown_wool_small_fence",
     "nemuelch:green_wool_small_fence",
     "nemuelch:red_wool_small_fence",
-    "nemuelch:black_wool_small_fence"
+    "nemuelch:black_wool_small_fence",
+    "nemuelch:white_wool_vertical_stair",
+    "nemuelch:orange_wool_vertical_stair",
+    "nemuelch:magenta_wool_vertical_stair",
+    "nemuelch:light_blue_wool_vertical_stair",
+    "nemuelch:yellow_wool_vertical_stair",
+    "nemuelch:lime_wool_vertical_stair",
+    "nemuelch:pink_wool_vertical_stair",
+    "nemuelch:gray_wool_vertical_stair",
+    "nemuelch:light_gray_wool_vertical_stair",
+    "nemuelch:cyan_wool_vertical_stair",
+    "nemuelch:purple_wool_vertical_stair",
+    "nemuelch:blue_wool_vertical_stair",
+    "nemuelch:brown_wool_vertical_stair",
+    "nemuelch:green_wool_vertical_stair",
+    "nemuelch:red_wool_vertical_stair",
+    "nemuelch:black_wool_vertical_stair"
   ]
 }

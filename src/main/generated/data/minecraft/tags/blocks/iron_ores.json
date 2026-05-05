@@ -16,6 +16,8 @@
     "nemuelch:iron_ore_centered_half_slab",
     "nemuelch:deepslate_iron_ore_centered_half_slab",
     "nemuelch:iron_ore_small_fence",
-    "nemuelch:deepslate_iron_ore_small_fence"
+    "nemuelch:deepslate_iron_ore_small_fence",
+    "nemuelch:iron_ore_vertical_stair",
+    "nemuelch:deepslate_iron_ore_vertical_stair"
   ]
 }
