@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "nemuelch:grass_plate"
+  },
+  "show_notification": true
+}

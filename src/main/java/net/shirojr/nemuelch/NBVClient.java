@@ -2,6 +2,7 @@ package net.shirojr.nemuelch;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBlockTags;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
@@ -9,6 +10,7 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.shirojr.nemuelch.block.util.Variation;
 import net.shirojr.nemuelch.block.util.VariationHolder;
+import net.shirojr.nemuelch.init.NBVBlockBiomeTinter;
 import net.shirojr.nemuelch.init.NBVBlockVariations;
 import net.shirojr.nemuelch.init.NBVBlocks;
 
@@ -32,6 +34,15 @@ public class NBVClient implements ClientModInitializer {
             }
             if (variant.equals(NBVBlockVariations.IRON_BARS)) {
                 BlockRenderLayerMap.INSTANCE.putBlock(variationHolder.getBlock(), RenderLayer.getCutout());
+            }
+            if (tags.contains(BlockTags.LEAVES)) {
+                BlockRenderLayerMap.INSTANCE.putBlock(variationHolder.getBlock(), RenderLayer.getCutout());
+            }
+
+            if (variant.tint() != null) {
+                NBVBlockBiomeTinter colorProvider = new NBVBlockBiomeTinter(variant);
+                ColorProviderRegistry.BLOCK.register(colorProvider, variationHolder.getBlock());
+                ColorProviderRegistry.ITEM.register(colorProvider, variationHolder.getBlock());
             }
         }
     }

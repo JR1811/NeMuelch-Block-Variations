@@ -28,6 +28,10 @@ public class NBVMain implements ModInitializer {
         return Identifier.of(MOD_ID, path);
     }
 
+    public static Identifier getVanillaId(String path) {
+        return Identifier.of("minecraft", path);
+    }
+
     public static Identifier getNeMuelchId(String path) {
         return Identifier.of(MOD_ID_NEMUELCH, path);
     }

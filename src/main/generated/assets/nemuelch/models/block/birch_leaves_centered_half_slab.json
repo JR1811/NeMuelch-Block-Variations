@@ -1,0 +1,9 @@
+{
+  "parent": "nemuelch:block/base_centered_half_slab",
+  "textures": {
+    "1": "minecraft:block/birch_leaves",
+    "2": "minecraft:block/birch_leaves",
+    "3": "minecraft:block/birch_leaves",
+    "particle": "minecraft:block/birch_leaves"
+  }
+}

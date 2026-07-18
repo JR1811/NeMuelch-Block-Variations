@@ -15,12 +15,12 @@
 			"to": [16, 16, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"north": {"uv": [16, 2, 0, 0], "rotation": 180, "texture": "#3"},
-				"east": {"uv": [0, 0, 2, 16], "rotation": 90, "texture": "#3"},
-				"south": {"uv": [16, 0, 0, 2], "texture": "#3"},
-				"west": {"uv": [14, 0, 16, 16], "rotation": 270, "texture": "#3"},
-				"up": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#1"},
-				"down": {"uv": [0, 16, 16, 0], "rotation": 180, "texture": "#2"}
+				"north": {"uv": [16, 2, 0, 0], "rotation": 180, "texture": "#3", "tintindex": 0},
+				"east": {"uv": [0, 0, 2, 16], "rotation": 90, "texture": "#3", "tintindex": 0},
+				"south": {"uv": [16, 0, 0, 2], "texture": "#3", "tintindex": 0},
+				"west": {"uv": [14, 0, 16, 16], "rotation": 270, "texture": "#3", "tintindex": 0},
+				"up": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#1", "tintindex": 0},
+				"down": {"uv": [0, 16, 16, 0], "rotation": 180, "texture": "#2", "tintindex": 0}
 			}
 		},
 		{
@@ -28,12 +28,12 @@
 			"to": [16, 2, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"north": {"uv": [16, 0, 0, 2], "rotation": 180, "texture": "#3"},
-				"east": {"uv": [2, 0, 0, 16], "rotation": 90, "texture": "#3"},
-				"south": {"uv": [16, 2, 0, 0], "texture": "#3"},
-				"west": {"uv": [16, 0, 14, 16], "rotation": 270, "texture": "#3"},
-				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"},
-				"down": {"uv": [16, 16, 0, 0], "rotation": 180, "texture": "#1"}
+				"north": {"uv": [16, 0, 0, 2], "rotation": 180, "texture": "#3", "tintindex": 0},
+				"east": {"uv": [2, 0, 0, 16], "rotation": 90, "texture": "#3", "tintindex": 0},
+				"south": {"uv": [16, 2, 0, 0], "texture": "#3", "tintindex": 0},
+				"west": {"uv": [16, 0, 14, 16], "rotation": 270, "texture": "#3", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2", "tintindex": 0},
+				"down": {"uv": [16, 16, 0, 0], "rotation": 180, "texture": "#1", "tintindex": 0}
 			}
 		}
 	],
