@@ -16,13 +16,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.shirojr.nemuelch.NBVMain"
+      "net.shirojr.nbv.NBVMain"
     ],
     "client": [
-      "net.shirojr.nemuelch.NBVClient"
+      "net.shirojr.nbv.NBVClient"
     ],
     "fabric-datagen": [
-      "net.shirojr.nemuelch.NBVDataGenerator"
+      "net.shirojr.nbv.NBVDataGenerator"
     ]
   },
   "mixins": [
