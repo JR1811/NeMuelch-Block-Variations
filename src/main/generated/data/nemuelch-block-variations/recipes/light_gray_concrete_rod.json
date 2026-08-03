@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:light_gray_concrete"
+    },
+    "s": {
+      "item": "nemuelch:light_gray_concrete_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:light_gray_concrete_rod"
+  },
+  "show_notification": true
+}

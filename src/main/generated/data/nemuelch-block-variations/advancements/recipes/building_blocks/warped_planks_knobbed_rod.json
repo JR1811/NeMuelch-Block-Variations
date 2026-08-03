@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:warped_planks_knobbed_rod"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warped_planks_small_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:warped_planks_small_fence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_warped_planks_small_fence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:warped_planks_knobbed_rod"
+    ]
+  },
+  "sends_telemetry_event": false
+}

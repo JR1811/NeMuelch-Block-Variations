@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:waxed_weathered_copper"
+    },
+    "s": {
+      "item": "nemuelch:waxed_weathered_copper_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:waxed_weathered_copper_rod"
+  },
+  "show_notification": true
+}

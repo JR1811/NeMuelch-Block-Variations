@@ -36,6 +36,14 @@
     "nemuelch:mangrove_log_vertical_stair",
     "nemuelch:stripped_mangrove_log_vertical_stair",
     "nemuelch:mangrove_wood_vertical_stair",
-    "nemuelch:stripped_mangrove_wood_vertical_stair"
+    "nemuelch:stripped_mangrove_wood_vertical_stair",
+    "nemuelch:mangrove_log_rod",
+    "nemuelch:stripped_mangrove_log_rod",
+    "nemuelch:mangrove_wood_rod",
+    "nemuelch:stripped_mangrove_wood_rod",
+    "nemuelch:mangrove_log_knobbed_rod",
+    "nemuelch:stripped_mangrove_log_knobbed_rod",
+    "nemuelch:mangrove_wood_knobbed_rod",
+    "nemuelch:stripped_mangrove_wood_knobbed_rod"
   ]
 }

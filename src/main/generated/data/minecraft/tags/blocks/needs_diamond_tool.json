@@ -9,6 +9,8 @@
     "nemuelch:netherite_block_centered_vertical_half_slab",
     "nemuelch:netherite_block_centered_half_slab",
     "nemuelch:netherite_block_small_fence",
-    "nemuelch:netherite_block_vertical_stair"
+    "nemuelch:netherite_block_vertical_stair",
+    "nemuelch:netherite_block_rod",
+    "nemuelch:netherite_block_knobbed_rod"
   ]
 }

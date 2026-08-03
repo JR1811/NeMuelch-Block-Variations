@@ -18,6 +18,10 @@
     "nemuelch:bamboo_block_small_fence",
     "nemuelch:stripped_bamboo_block_small_fence",
     "nemuelch:bamboo_block_vertical_stair",
-    "nemuelch:stripped_bamboo_block_vertical_stair"
+    "nemuelch:stripped_bamboo_block_vertical_stair",
+    "nemuelch:bamboo_block_rod",
+    "nemuelch:stripped_bamboo_block_rod",
+    "nemuelch:bamboo_block_knobbed_rod",
+    "nemuelch:stripped_bamboo_block_knobbed_rod"
   ]
 }

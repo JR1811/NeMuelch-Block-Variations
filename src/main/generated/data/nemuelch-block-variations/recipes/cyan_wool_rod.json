@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:cyan_wool"
+    },
+    "s": {
+      "item": "nemuelch:cyan_wool_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:cyan_wool_rod"
+  },
+  "show_notification": true
+}

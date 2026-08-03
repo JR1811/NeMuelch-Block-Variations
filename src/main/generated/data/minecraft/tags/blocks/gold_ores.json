@@ -18,6 +18,10 @@
     "nemuelch:gold_ore_small_fence",
     "nemuelch:deepslate_gold_ore_small_fence",
     "nemuelch:gold_ore_vertical_stair",
-    "nemuelch:deepslate_gold_ore_vertical_stair"
+    "nemuelch:deepslate_gold_ore_vertical_stair",
+    "nemuelch:gold_ore_rod",
+    "nemuelch:deepslate_gold_ore_rod",
+    "nemuelch:gold_ore_knobbed_rod",
+    "nemuelch:deepslate_gold_ore_knobbed_rod"
   ]
 }

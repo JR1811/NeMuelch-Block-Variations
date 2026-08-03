@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:dripstone_block"
+    },
+    "s": {
+      "item": "nemuelch:dripstone_block_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:dripstone_block_rod"
+  },
+  "show_notification": true
+}

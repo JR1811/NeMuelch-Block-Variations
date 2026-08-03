@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_birch_wood"
+    },
+    "s": {
+      "item": "nemuelch:stripped_birch_wood_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:stripped_birch_wood_rod"
+  },
+  "show_notification": true
+}

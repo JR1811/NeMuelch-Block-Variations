@@ -18,6 +18,10 @@
     "nemuelch:emerald_ore_small_fence",
     "nemuelch:deepslate_emerald_ore_small_fence",
     "nemuelch:emerald_ore_vertical_stair",
-    "nemuelch:deepslate_emerald_ore_vertical_stair"
+    "nemuelch:deepslate_emerald_ore_vertical_stair",
+    "nemuelch:emerald_ore_rod",
+    "nemuelch:deepslate_emerald_ore_rod",
+    "nemuelch:emerald_ore_knobbed_rod",
+    "nemuelch:deepslate_emerald_ore_knobbed_rod"
   ]
 }

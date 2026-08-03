@@ -36,6 +36,14 @@
     "nemuelch:warped_stem_vertical_stair",
     "nemuelch:stripped_warped_stem_vertical_stair",
     "nemuelch:warped_hyphae_vertical_stair",
-    "nemuelch:stripped_warped_hyphae_vertical_stair"
+    "nemuelch:stripped_warped_hyphae_vertical_stair",
+    "nemuelch:warped_stem_rod",
+    "nemuelch:stripped_warped_stem_rod",
+    "nemuelch:warped_hyphae_rod",
+    "nemuelch:stripped_warped_hyphae_rod",
+    "nemuelch:warped_stem_knobbed_rod",
+    "nemuelch:stripped_warped_stem_knobbed_rod",
+    "nemuelch:warped_hyphae_knobbed_rod",
+    "nemuelch:stripped_warped_hyphae_knobbed_rod"
   ]
 }

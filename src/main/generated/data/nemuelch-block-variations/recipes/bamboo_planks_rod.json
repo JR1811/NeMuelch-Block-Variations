@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "s": {
+      "item": "nemuelch:bamboo_planks_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:bamboo_planks_rod"
+  },
+  "show_notification": true
+}

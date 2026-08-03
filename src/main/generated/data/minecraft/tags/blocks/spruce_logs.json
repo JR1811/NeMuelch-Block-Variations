@@ -36,6 +36,14 @@
     "nemuelch:spruce_log_vertical_stair",
     "nemuelch:stripped_spruce_log_vertical_stair",
     "nemuelch:spruce_wood_vertical_stair",
-    "nemuelch:stripped_spruce_wood_vertical_stair"
+    "nemuelch:stripped_spruce_wood_vertical_stair",
+    "nemuelch:spruce_log_rod",
+    "nemuelch:stripped_spruce_log_rod",
+    "nemuelch:spruce_wood_rod",
+    "nemuelch:stripped_spruce_wood_rod",
+    "nemuelch:spruce_log_knobbed_rod",
+    "nemuelch:stripped_spruce_log_knobbed_rod",
+    "nemuelch:spruce_wood_knobbed_rod",
+    "nemuelch:stripped_spruce_wood_knobbed_rod"
   ]
 }

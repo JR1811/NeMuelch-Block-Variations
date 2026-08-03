@@ -36,6 +36,14 @@
     "nemuelch:acacia_log_vertical_stair",
     "nemuelch:stripped_acacia_log_vertical_stair",
     "nemuelch:acacia_wood_vertical_stair",
-    "nemuelch:stripped_acacia_wood_vertical_stair"
+    "nemuelch:stripped_acacia_wood_vertical_stair",
+    "nemuelch:acacia_log_rod",
+    "nemuelch:stripped_acacia_log_rod",
+    "nemuelch:acacia_wood_rod",
+    "nemuelch:stripped_acacia_wood_rod",
+    "nemuelch:acacia_log_knobbed_rod",
+    "nemuelch:stripped_acacia_log_knobbed_rod",
+    "nemuelch:acacia_wood_knobbed_rod",
+    "nemuelch:stripped_acacia_wood_knobbed_rod"
   ]
 }

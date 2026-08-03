@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:green_glazed_terracotta"
+    },
+    "s": {
+      "item": "nemuelch:green_glazed_terracotta_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:green_glazed_terracotta_rod"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:purple_stained_glass"
+    },
+    "s": {
+      "item": "nemuelch:purple_stained_glass_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:purple_stained_glass_rod"
+  },
+  "show_notification": true
+}

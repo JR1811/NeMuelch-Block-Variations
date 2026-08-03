@@ -36,6 +36,14 @@
     "nemuelch:jungle_log_vertical_stair",
     "nemuelch:stripped_jungle_log_vertical_stair",
     "nemuelch:jungle_wood_vertical_stair",
-    "nemuelch:stripped_jungle_wood_vertical_stair"
+    "nemuelch:stripped_jungle_wood_vertical_stair",
+    "nemuelch:jungle_log_rod",
+    "nemuelch:stripped_jungle_log_rod",
+    "nemuelch:jungle_wood_rod",
+    "nemuelch:stripped_jungle_wood_rod",
+    "nemuelch:jungle_log_knobbed_rod",
+    "nemuelch:stripped_jungle_log_knobbed_rod",
+    "nemuelch:jungle_wood_knobbed_rod",
+    "nemuelch:stripped_jungle_wood_knobbed_rod"
   ]
 }

@@ -37,33 +37,41 @@ public class NBVTagGenerators {
             FabricTagProvider<Item>.FabricTagBuilder smallFencesTag = getOrCreateTagBuilder(NBVTags.Items.SMALL_FENCES);
             FabricTagProvider<Item>.FabricTagBuilder verticalHalfSlabsTag = getOrCreateTagBuilder(NBVTags.Items.VERTICAL_HALF_SLABS);
             FabricTagProvider<Item>.FabricTagBuilder verticalStairsTag = getOrCreateTagBuilder(NBVTags.Items.VERTICAL_STAIRS);
+            FabricTagProvider<Item>.FabricTagBuilder rodsTag = getOrCreateTagBuilder(NBVTags.Items.RODS);
+            FabricTagProvider<Item>.FabricTagBuilder knobbedRodsTag = getOrCreateTagBuilder(NBVTags.Items.KNOBBED_RODS);
 
-            for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS) {
+            for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry.asItem());
             }
-            for (CenteredVerticalHalfSlabBlock entry : NBVBlocks.CENTERED_VERTICAL_HALF_SLABS) {
+            for (CenteredVerticalHalfSlabBlock entry : NBVBlocks.CENTERED_VERTICAL_HALF_SLABS.values()) {
                 centeredVerticalHalfSlabsTag.add(entry.asItem());
             }
-            for (ChimneyBlock entry : NBVBlocks.CHIMNEYS) {
+            for (ChimneyBlock entry : NBVBlocks.CHIMNEYS.values()) {
                 chimneysTag.add(entry.asItem());
             }
-            for (DoublePlatesBlock entry : NBVBlocks.DOUBLE_PLATES) {
+            for (DoublePlatesBlock entry : NBVBlocks.DOUBLE_PLATES.values()) {
                 doublePlatesTag.add(entry.asItem());
             }
-            for (HalfSlabBlock entry : NBVBlocks.HALF_SLABS) {
+            for (HalfSlabBlock entry : NBVBlocks.HALF_SLABS.values()) {
                 halfSlabsTag.add(entry.asItem());
             }
-            for (PlateBlock entry : NBVBlocks.PLATES) {
+            for (PlateBlock entry : NBVBlocks.PLATES.values()) {
                 platesTag.add(entry.asItem());
             }
-            for (SmallFenceBlock entry : NBVBlocks.SMALL_FENCES) {
+            for (SmallFenceBlock entry : NBVBlocks.SMALL_FENCES.values()) {
                 smallFencesTag.add(entry.asItem());
             }
-            for (VerticalHalfSlabBlock entry : NBVBlocks.VERTICAL_HALF_SLABS) {
+            for (VerticalHalfSlabBlock entry : NBVBlocks.VERTICAL_HALF_SLABS.values()) {
                 verticalHalfSlabsTag.add(entry.asItem());
             }
-            for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS) {
+            for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS.values()) {
                 verticalStairsTag.add(entry.asItem());
+            }
+            for (RodVariationBlock entry : NBVBlocks.ROD.values()) {
+                rodsTag.add(entry.asItem());
+            }
+            for (RodVariationBlock entry : NBVBlocks.KNOBBED_ROD.values()) {
+                knobbedRodsTag.add(entry.asItem());
             }
         }
     }
@@ -86,35 +94,43 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder smallFencesTag = getOrCreateTagBuilder(NBVTags.Blocks.SMALL_FENCES);
             FabricTagProvider<Block>.FabricTagBuilder verticalHalfSlabsTag = getOrCreateTagBuilder(NBVTags.Blocks.VERTICAL_HALF_SLABS);
             FabricTagProvider<Block>.FabricTagBuilder verticalStairsTag = getOrCreateTagBuilder(NBVTags.Blocks.VERTICAL_STAIRS);
+            FabricTagProvider<Block>.FabricTagBuilder rodTag = getOrCreateTagBuilder(NBVTags.Blocks.ROD);
+            FabricTagProvider<Block>.FabricTagBuilder knobbedRodTag = getOrCreateTagBuilder(NBVTags.Blocks.KNOBBED_ROD);
 
-            for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS) {
+            for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry);
             }
-            for (CenteredVerticalHalfSlabBlock entry : NBVBlocks.CENTERED_VERTICAL_HALF_SLABS) {
+            for (CenteredVerticalHalfSlabBlock entry : NBVBlocks.CENTERED_VERTICAL_HALF_SLABS.values()) {
                 centeredVerticalHalfSlabsTag.add(entry);
             }
-            for (ChimneyBlock entry : NBVBlocks.CHIMNEYS) {
+            for (ChimneyBlock entry : NBVBlocks.CHIMNEYS.values()) {
                 climbableTag.add(entry);
                 chimneysTag.add(entry);
             }
-            for (DoublePlatesBlock entry : NBVBlocks.DOUBLE_PLATES) {
+            for (DoublePlatesBlock entry : NBVBlocks.DOUBLE_PLATES.values()) {
                 climbableTag.add(entry.getBlock());
                 doublePlatesTag.add(entry.getBlock());
             }
-            for (HalfSlabBlock entry : NBVBlocks.HALF_SLABS) {
+            for (HalfSlabBlock entry : NBVBlocks.HALF_SLABS.values()) {
                 halfSlabsTag.add(entry);
             }
-            for (PlateBlock entry : NBVBlocks.PLATES) {
+            for (PlateBlock entry : NBVBlocks.PLATES.values()) {
                 platesTag.add(entry);
             }
-            for (SmallFenceBlock entry : NBVBlocks.SMALL_FENCES) {
+            for (SmallFenceBlock entry : NBVBlocks.SMALL_FENCES.values()) {
                 smallFencesTag.add(entry);
             }
-            for (VerticalHalfSlabBlock entry : NBVBlocks.VERTICAL_HALF_SLABS) {
+            for (VerticalHalfSlabBlock entry : NBVBlocks.VERTICAL_HALF_SLABS.values()) {
                 verticalHalfSlabsTag.add(entry);
             }
-            for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS) {
+            for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS.values()) {
                 verticalStairsTag.add(entry);
+            }
+            for (RodVariationBlock entry : NBVBlocks.ROD.values()) {
+                rodTag.add(entry);
+            }
+            for (RodVariationBlock entry : NBVBlocks.KNOBBED_ROD.values()) {
+                knobbedRodTag.add(entry);
             }
             for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
                 for (TagKey<Block> blockTag : variationHolder.getVariant().blockTags()) {

@@ -90,6 +90,26 @@
     "nemuelch:dark_oak_leaves_vertical_stair",
     "nemuelch:mangrove_leaves_vertical_stair",
     "nemuelch:azalea_leaves_vertical_stair",
-    "nemuelch:flowering_azalea_leaves_vertical_stair"
+    "nemuelch:flowering_azalea_leaves_vertical_stair",
+    "nemuelch:oak_leaves_rod",
+    "nemuelch:spruce_leaves_rod",
+    "nemuelch:birch_leaves_rod",
+    "nemuelch:jungle_leaves_rod",
+    "nemuelch:acacia_leaves_rod",
+    "nemuelch:cherry_leaves_rod",
+    "nemuelch:dark_oak_leaves_rod",
+    "nemuelch:mangrove_leaves_rod",
+    "nemuelch:azalea_leaves_rod",
+    "nemuelch:flowering_azalea_leaves_rod",
+    "nemuelch:oak_leaves_knobbed_rod",
+    "nemuelch:spruce_leaves_knobbed_rod",
+    "nemuelch:birch_leaves_knobbed_rod",
+    "nemuelch:jungle_leaves_knobbed_rod",
+    "nemuelch:acacia_leaves_knobbed_rod",
+    "nemuelch:cherry_leaves_knobbed_rod",
+    "nemuelch:dark_oak_leaves_knobbed_rod",
+    "nemuelch:mangrove_leaves_knobbed_rod",
+    "nemuelch:azalea_leaves_knobbed_rod",
+    "nemuelch:flowering_azalea_leaves_knobbed_rod"
   ]
 }

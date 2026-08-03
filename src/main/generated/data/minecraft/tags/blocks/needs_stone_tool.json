@@ -54,6 +54,18 @@
     "nemuelch:copper_ore_vertical_stair",
     "nemuelch:deepslate_copper_ore_vertical_stair",
     "nemuelch:iron_ore_vertical_stair",
-    "nemuelch:deepslate_iron_ore_vertical_stair"
+    "nemuelch:deepslate_iron_ore_vertical_stair",
+    "nemuelch:iron_block_rod",
+    "nemuelch:deepslate_coal_ore_rod",
+    "nemuelch:copper_ore_rod",
+    "nemuelch:deepslate_copper_ore_rod",
+    "nemuelch:iron_ore_rod",
+    "nemuelch:deepslate_iron_ore_rod",
+    "nemuelch:iron_block_knobbed_rod",
+    "nemuelch:deepslate_coal_ore_knobbed_rod",
+    "nemuelch:copper_ore_knobbed_rod",
+    "nemuelch:deepslate_copper_ore_knobbed_rod",
+    "nemuelch:iron_ore_knobbed_rod",
+    "nemuelch:deepslate_iron_ore_knobbed_rod"
   ]
 }

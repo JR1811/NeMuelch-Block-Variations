@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:pearlescent_froglight"
+    },
+    "s": {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:pearlescent_froglight_rod"
+  },
+  "show_notification": true
+}

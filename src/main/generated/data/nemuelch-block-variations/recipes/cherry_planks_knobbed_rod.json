@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "nemuelch:cherry_planks_small_fence"
+    }
+  },
+  "pattern": [
+    "s",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:cherry_planks_knobbed_rod"
+  },
+  "show_notification": true
+}

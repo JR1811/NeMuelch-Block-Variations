@@ -88,7 +88,7 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
         };
     }
 
-    protected VoxelShape createRotatedShape(int[] points, Direction direction) {
+    protected VoxelShape createRotatedAxisShape(int[] points, Direction direction) {
         return switch (direction) {
             case NORTH -> createCuboidShape(
                     points[0], points[1], points[2],
@@ -116,6 +116,35 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
         };
     }
 
+    protected VoxelShape createRotatedShape(int[] points, Direction direction) {
+        return switch (direction) {
+            case DOWN -> createCuboidShape(
+                    points[0], 16 - points[4], points[2],
+                    points[3], 16 - points[1], points[5]
+            );
+            case UP -> createCuboidShape(
+                    points[0], points[1], points[2],
+                    points[3], points[4], points[5]
+            );
+            case SOUTH -> createCuboidShape(
+                    points[0], points[2], points[1],
+                    points[3], points[5], points[4]
+            );
+            case NORTH -> createCuboidShape(
+                    points[0], points[2], 16 - points[4],
+                    points[3], points[5], 16 - points[1]
+            );
+            case WEST -> createCuboidShape(
+                    16 - points[4], points[0], points[2],
+                    16 - points[1], points[3], points[5]
+            );
+            case EAST -> createCuboidShape(
+                    points[1], points[0], points[2],
+                    points[4], points[3], points[5]
+            );
+        };
+    }
+
     protected VoxelShape createRotatedAxisShape(int[] points, Direction.Axis axis) {
         return switch (axis) {
             case X -> createCuboidShape(points[1], points[0], points[2], points[4], points[3], points[5]); // swap X<->Y
@@ -124,5 +153,7 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
                     createCuboidShape(points[0], points[1], points[2], points[3], points[4], points[5]); // Y-axis (no swap)
         };
     }
+
+
 }
 

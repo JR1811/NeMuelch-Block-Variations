@@ -1,0 +1,9 @@
+{
+  "parent": "nemuelch:block/base_rod",
+  "textures": {
+    "1": "minecraft:block/grass_block_top",
+    "2": "minecraft:block/grass_block_top",
+    "3": "minecraft:block/grass_block_top",
+    "particle": "minecraft:block/grass_block_top"
+  }
+}

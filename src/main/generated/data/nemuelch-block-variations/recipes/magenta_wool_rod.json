@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:magenta_wool"
+    },
+    "s": {
+      "item": "nemuelch:magenta_wool_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:magenta_wool_rod"
+  },
+  "show_notification": true
+}

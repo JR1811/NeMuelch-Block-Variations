@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:blue_terracotta"
+    },
+    "s": {
+      "item": "nemuelch:blue_terracotta_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:blue_terracotta_rod"
+  },
+  "show_notification": true
+}

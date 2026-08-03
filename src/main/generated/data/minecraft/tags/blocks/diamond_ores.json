@@ -18,6 +18,10 @@
     "nemuelch:diamond_ore_small_fence",
     "nemuelch:deepslate_diamond_ore_small_fence",
     "nemuelch:diamond_ore_vertical_stair",
-    "nemuelch:deepslate_diamond_ore_vertical_stair"
+    "nemuelch:deepslate_diamond_ore_vertical_stair",
+    "nemuelch:diamond_ore_rod",
+    "nemuelch:deepslate_diamond_ore_rod",
+    "nemuelch:diamond_ore_knobbed_rod",
+    "nemuelch:deepslate_diamond_ore_knobbed_rod"
   ]
 }

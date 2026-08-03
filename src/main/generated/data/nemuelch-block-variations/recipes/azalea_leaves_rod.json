@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:azalea_leaves"
+    },
+    "s": {
+      "item": "nemuelch:azalea_leaves_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:azalea_leaves_rod"
+  },
+  "show_notification": true
+}

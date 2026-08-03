@@ -17,6 +17,7 @@ import net.shirojr.nbv.block.util.Variation;
 import net.shirojr.nbv.block.util.VariationHolder;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.function.BiFunction;
@@ -27,58 +28,70 @@ public interface NBVBlocks {
     List<Block> ALL_BLOCKS = new ArrayList<>();
     List<VariationHolder> VARIATION_HOLDERS = new ArrayList<>();
 
-    List<ChimneyBlock> CHIMNEYS = registerVariationBlocks(
+    HashMap<Variation, ChimneyBlock> CHIMNEYS = registerVariationBlocks(
             "chimney",
             (variant) -> FabricBlockSettings.copy(variant.parentBlock()),
             ChimneyBlock::new
     );
 
-    List<PlateBlock> PLATES = registerVariationBlocks(
+    HashMap<Variation, PlateBlock> PLATES = registerVariationBlocks(
             "plate",
             (variant) -> FabricBlockSettings.copy(variant.parentBlock()),
             PlateBlock::new
     );
 
-    List<DoublePlatesBlock> DOUBLE_PLATES = registerVariationBlocks(
+    HashMap<Variation, DoublePlatesBlock> DOUBLE_PLATES = registerVariationBlocks(
             "double_plates",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             DoublePlatesBlock::new
     );
 
-    List<HalfSlabBlock> HALF_SLABS = registerVariationBlocks(
+    HashMap<Variation, HalfSlabBlock> HALF_SLABS = registerVariationBlocks(
             "half_slab",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             HalfSlabBlock::new
     );
 
-    List<VerticalHalfSlabBlock> VERTICAL_HALF_SLABS = registerVariationBlocks(
+    HashMap<Variation, VerticalHalfSlabBlock> VERTICAL_HALF_SLABS = registerVariationBlocks(
             "vertical_half_slab",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             VerticalHalfSlabBlock::new
     );
 
-    List<CenteredVerticalHalfSlabBlock> CENTERED_VERTICAL_HALF_SLABS = registerVariationBlocks(
+    HashMap<Variation, CenteredVerticalHalfSlabBlock> CENTERED_VERTICAL_HALF_SLABS = registerVariationBlocks(
             "centered_vertical_half_slab",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             CenteredVerticalHalfSlabBlock::new
     );
 
-    List<CenteredHalfSlabBlock> CENTERED_HALF_SLABS = registerVariationBlocks(
+    HashMap<Variation, CenteredHalfSlabBlock> CENTERED_HALF_SLABS = registerVariationBlocks(
             "centered_half_slab",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             CenteredHalfSlabBlock::new
     );
 
-    List<SmallFenceBlock> SMALL_FENCES = registerVariationBlocks(
+    HashMap<Variation, SmallFenceBlock> SMALL_FENCES = registerVariationBlocks(
             "small_fence",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             SmallFenceBlock::new
     );
 
-    List<VerticalStairBlock> VERTICAL_STAIRS = registerVariationBlocks(
+    HashMap<Variation, VerticalStairBlock> VERTICAL_STAIRS = registerVariationBlocks(
             "vertical_stair",
             variation -> FabricBlockSettings.copy(variation.parentBlock()),
             VerticalStairBlock::new
+    );
+
+    HashMap<Variation, RodVariationBlock> ROD = registerVariationBlocks(
+            "rod",
+            variation -> FabricBlockSettings.copy(variation.parentBlock()),
+            (settings, variation) -> new RodVariationBlock(settings, variation, false)
+    );
+
+    HashMap<Variation, RodVariationBlock> KNOBBED_ROD = registerVariationBlocks(
+            "knobbed_rod",
+            variation -> FabricBlockSettings.copy(variation.parentBlock()),
+            (settings, variation) -> new RodVariationBlock(settings, variation, true)
     );
 
     @SuppressWarnings("SameParameterValue")
@@ -95,9 +108,9 @@ public interface NBVBlocks {
     }
 
     @SuppressWarnings("SameParameterValue")
-    private static <T extends Block & VariationHolder> List<T> registerVariationBlocks(
+    private static <T extends Block & VariationHolder> HashMap<Variation, T> registerVariationBlocks(
             String nameSuffix, Function<Variation, AbstractBlock.Settings> settings, BiFunction<AbstractBlock.Settings, Variation, T> blockFactory) {
-        List<T> result = new ArrayList<>();
+        HashMap<Variation, T> result = new HashMap<>();
         for (Variation variant : NBVBlockVariations.ALL_VARIATIONS) {
             AbstractBlock.Settings blockSettings = settings.apply(variant);
 
@@ -117,7 +130,7 @@ public interface NBVBlocks {
                     true,
                     List.of(NBVItems.VARIATION_BLOCK_ITEMS)
             );
-            result.add(registeredBlock);
+            result.put(variant, registeredBlock);
             VARIATION_HOLDERS.add(registeredBlock);
             ALL_BLOCKS.add(registeredBlock);
         }

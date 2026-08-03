@@ -36,6 +36,14 @@
     "nemuelch:oak_log_vertical_stair",
     "nemuelch:stripped_oak_log_vertical_stair",
     "nemuelch:oak_wood_vertical_stair",
-    "nemuelch:stripped_oak_wood_vertical_stair"
+    "nemuelch:stripped_oak_wood_vertical_stair",
+    "nemuelch:oak_log_rod",
+    "nemuelch:stripped_oak_log_rod",
+    "nemuelch:oak_wood_rod",
+    "nemuelch:stripped_oak_wood_rod",
+    "nemuelch:oak_log_knobbed_rod",
+    "nemuelch:stripped_oak_log_knobbed_rod",
+    "nemuelch:oak_wood_knobbed_rod",
+    "nemuelch:stripped_oak_wood_knobbed_rod"
   ]
 }

@@ -36,6 +36,14 @@
     "nemuelch:birch_log_vertical_stair",
     "nemuelch:stripped_birch_log_vertical_stair",
     "nemuelch:birch_wood_vertical_stair",
-    "nemuelch:stripped_birch_wood_vertical_stair"
+    "nemuelch:stripped_birch_wood_vertical_stair",
+    "nemuelch:birch_log_rod",
+    "nemuelch:stripped_birch_log_rod",
+    "nemuelch:birch_wood_rod",
+    "nemuelch:stripped_birch_wood_rod",
+    "nemuelch:birch_log_knobbed_rod",
+    "nemuelch:stripped_birch_log_knobbed_rod",
+    "nemuelch:birch_wood_knobbed_rod",
+    "nemuelch:stripped_birch_wood_knobbed_rod"
   ]
 }

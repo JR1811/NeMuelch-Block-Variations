@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "nemuelch:waxed_oxidized_cut_copper_small_fence"
+    }
+  },
+  "pattern": [
+    "s",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:waxed_oxidized_cut_copper_knobbed_rod"
+  },
+  "show_notification": true
+}

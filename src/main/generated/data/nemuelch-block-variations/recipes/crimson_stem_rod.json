@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_stem"
+    },
+    "s": {
+      "item": "nemuelch:crimson_stem_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:crimson_stem_rod"
+  },
+  "show_notification": true
+}

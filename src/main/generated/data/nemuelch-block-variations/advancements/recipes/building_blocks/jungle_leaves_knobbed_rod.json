@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jungle_leaves_small_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:jungle_leaves_small_fence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:jungle_leaves_knobbed_rod"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_jungle_leaves_small_fence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:jungle_leaves_knobbed_rod"
+    ]
+  },
+  "sends_telemetry_event": false
+}

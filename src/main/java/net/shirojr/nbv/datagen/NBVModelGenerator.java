@@ -8,6 +8,7 @@ import net.minecraft.data.client.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import net.shirojr.nbv.block.custom.*;
 import net.shirojr.nbv.block.util.VariationHolder;
 import net.shirojr.nbv.init.NBVBlocks;
@@ -42,6 +43,8 @@ public class NBVModelGenerator extends FabricModelProvider {
                 blockStateVariantMap = BlockStateModelGenerator.createAxisRotatedVariantMap();
             } else if (block instanceof HalfSlabBlock || block instanceof CenteredHalfSlabBlock || block instanceof VerticalHalfSlabBlock) {
                 blockStateVariantMap = BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates();
+            } else if (block instanceof RodVariationBlock) {
+                blockStateVariantMap = createUpDefaultRotationStates();
             } else {
                 blockStateVariantMap = BlockStateModelGenerator.createNorthDefaultRotationStates();
             }
@@ -217,5 +220,23 @@ public class NBVModelGenerator extends FabricModelProvider {
         );
 
         generator.registerParentedItemModel(block, baseModelId);
+    }
+
+    private static BlockStateVariantMap createUpDefaultRotationStates() {
+        return BlockStateVariantMap.create(RodVariationBlock.FACING)
+                .register(Direction.UP, BlockStateVariant.create())
+                .register(Direction.DOWN, BlockStateVariant.create()
+                        .put(VariantSettings.X, VariantSettings.Rotation.R180))
+                .register(Direction.NORTH, BlockStateVariant.create()
+                        .put(VariantSettings.X, VariantSettings.Rotation.R90))
+                .register(Direction.SOUTH, BlockStateVariant.create()
+                        .put(VariantSettings.X, VariantSettings.Rotation.R90)
+                        .put(VariantSettings.Y, VariantSettings.Rotation.R180))
+                .register(Direction.EAST, BlockStateVariant.create()
+                        .put(VariantSettings.X, VariantSettings.Rotation.R90)
+                        .put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .register(Direction.WEST, BlockStateVariant.create()
+                        .put(VariantSettings.X, VariantSettings.Rotation.R90)
+                        .put(VariantSettings.Y, VariantSettings.Rotation.R270));
     }
 }

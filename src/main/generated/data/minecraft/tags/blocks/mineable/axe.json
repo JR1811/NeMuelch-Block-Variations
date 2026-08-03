@@ -27,6 +27,12 @@
     "nemuelch:barrel_side_small_fence",
     "nemuelch:barrel_bottom_vertical_stair",
     "nemuelch:barrel_lid_vertical_stair",
-    "nemuelch:barrel_side_vertical_stair"
+    "nemuelch:barrel_side_vertical_stair",
+    "nemuelch:barrel_bottom_rod",
+    "nemuelch:barrel_lid_rod",
+    "nemuelch:barrel_side_rod",
+    "nemuelch:barrel_bottom_knobbed_rod",
+    "nemuelch:barrel_lid_knobbed_rod",
+    "nemuelch:barrel_side_knobbed_rod"
   ]
 }

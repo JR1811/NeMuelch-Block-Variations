@@ -9,6 +9,8 @@
     "nemuelch:moss_block_centered_vertical_half_slab",
     "nemuelch:moss_block_centered_half_slab",
     "nemuelch:moss_block_small_fence",
-    "nemuelch:moss_block_vertical_stair"
+    "nemuelch:moss_block_vertical_stair",
+    "nemuelch:moss_block_rod",
+    "nemuelch:moss_block_knobbed_rod"
   ]
 }

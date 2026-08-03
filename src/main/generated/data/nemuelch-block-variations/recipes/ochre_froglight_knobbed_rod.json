@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "nemuelch:ochre_froglight_small_fence"
+    }
+  },
+  "pattern": [
+    "s",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:ochre_froglight_knobbed_rod"
+  },
+  "show_notification": true
+}

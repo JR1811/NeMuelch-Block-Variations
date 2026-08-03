@@ -18,6 +18,10 @@
     "nemuelch:coal_ore_small_fence",
     "nemuelch:deepslate_coal_ore_small_fence",
     "nemuelch:coal_ore_vertical_stair",
-    "nemuelch:deepslate_coal_ore_vertical_stair"
+    "nemuelch:deepslate_coal_ore_vertical_stair",
+    "nemuelch:coal_ore_rod",
+    "nemuelch:deepslate_coal_ore_rod",
+    "nemuelch:coal_ore_knobbed_rod",
+    "nemuelch:deepslate_coal_ore_knobbed_rod"
   ]
 }

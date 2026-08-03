@@ -39,7 +39,7 @@ public class VerticalHalfSlabBlock extends AbstractVariationBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return createRotatedShape(new int[]{0, 0, 0, 8, 16, 8}, state.get(FACING));
+        return createRotatedAxisShape(new int[]{0, 0, 0, 8, 16, 8}, state.get(FACING));
     }
 
     @Override

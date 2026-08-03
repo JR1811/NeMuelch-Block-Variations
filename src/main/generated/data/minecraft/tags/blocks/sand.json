@@ -9,6 +9,8 @@
     "nemuelch:sand_centered_vertical_half_slab",
     "nemuelch:sand_centered_half_slab",
     "nemuelch:sand_small_fence",
-    "nemuelch:sand_vertical_stair"
+    "nemuelch:sand_vertical_stair",
+    "nemuelch:sand_rod",
+    "nemuelch:sand_knobbed_rod"
   ]
 }

@@ -18,6 +18,10 @@
     "nemuelch:copper_ore_small_fence",
     "nemuelch:deepslate_copper_ore_small_fence",
     "nemuelch:copper_ore_vertical_stair",
-    "nemuelch:deepslate_copper_ore_vertical_stair"
+    "nemuelch:deepslate_copper_ore_vertical_stair",
+    "nemuelch:copper_ore_rod",
+    "nemuelch:deepslate_copper_ore_rod",
+    "nemuelch:copper_ore_knobbed_rod",
+    "nemuelch:deepslate_copper_ore_knobbed_rod"
   ]
 }

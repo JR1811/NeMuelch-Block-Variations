@@ -64,7 +64,7 @@ public class PlateBlock extends AbstractVariationBlock {
         Direction facing = state.get(FACING);
         VoxelShape result = VoxelShapes.empty();
         for (int[] element : elements) {
-            result = VoxelShapes.union(result, createRotatedShape(element, facing));
+            result = VoxelShapes.union(result, createRotatedAxisShape(element, facing));
         }
 
         return result;

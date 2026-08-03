@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:quartz_block"
+    },
+    "s": {
+      "item": "nemuelch:quartz_block_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:quartz_block_rod"
+  },
+  "show_notification": true
+}

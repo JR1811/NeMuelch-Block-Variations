@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "nemuelch:block/light_blue_wool_knobbed_rod",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "nemuelch:block/light_blue_wool_knobbed_rod",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nemuelch:block/light_blue_wool_knobbed_rod",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "nemuelch:block/light_blue_wool_knobbed_rod",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "nemuelch:block/light_blue_wool_knobbed_rod"
+    },
+    "facing=west": {
+      "model": "nemuelch:block/light_blue_wool_knobbed_rod",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

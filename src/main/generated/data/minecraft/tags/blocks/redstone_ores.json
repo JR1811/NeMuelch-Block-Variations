@@ -18,6 +18,10 @@
     "nemuelch:redstone_ore_small_fence",
     "nemuelch:deepslate_redstone_ore_small_fence",
     "nemuelch:redstone_ore_vertical_stair",
-    "nemuelch:deepslate_redstone_ore_vertical_stair"
+    "nemuelch:deepslate_redstone_ore_vertical_stair",
+    "nemuelch:redstone_ore_rod",
+    "nemuelch:deepslate_redstone_ore_rod",
+    "nemuelch:redstone_ore_knobbed_rod",
+    "nemuelch:deepslate_redstone_ore_knobbed_rod"
   ]
 }

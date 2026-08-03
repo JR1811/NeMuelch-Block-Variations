@@ -36,6 +36,14 @@
     "nemuelch:cherry_log_vertical_stair",
     "nemuelch:stripped_cherry_log_vertical_stair",
     "nemuelch:cherry_wood_vertical_stair",
-    "nemuelch:stripped_cherry_wood_vertical_stair"
+    "nemuelch:stripped_cherry_wood_vertical_stair",
+    "nemuelch:cherry_log_rod",
+    "nemuelch:stripped_cherry_log_rod",
+    "nemuelch:cherry_wood_rod",
+    "nemuelch:stripped_cherry_wood_rod",
+    "nemuelch:cherry_log_knobbed_rod",
+    "nemuelch:stripped_cherry_log_knobbed_rod",
+    "nemuelch:cherry_wood_knobbed_rod",
+    "nemuelch:stripped_cherry_wood_knobbed_rod"
   ]
 }

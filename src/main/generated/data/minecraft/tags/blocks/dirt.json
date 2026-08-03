@@ -45,6 +45,16 @@
     "nemuelch:dirt_vertical_stair",
     "nemuelch:dirt_path_vertical_stair",
     "nemuelch:mud_vertical_stair",
-    "nemuelch:moss_block_vertical_stair"
+    "nemuelch:moss_block_vertical_stair",
+    "nemuelch:grass_rod",
+    "nemuelch:dirt_rod",
+    "nemuelch:dirt_path_rod",
+    "nemuelch:mud_rod",
+    "nemuelch:moss_block_rod",
+    "nemuelch:grass_knobbed_rod",
+    "nemuelch:dirt_knobbed_rod",
+    "nemuelch:dirt_path_knobbed_rod",
+    "nemuelch:mud_knobbed_rod",
+    "nemuelch:moss_block_knobbed_rod"
   ]
 }

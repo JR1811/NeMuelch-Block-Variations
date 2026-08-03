@@ -11,8 +11,10 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.shirojr.nbv.block.custom.*;
+import net.shirojr.nbv.block.util.Variation;
 import net.shirojr.nbv.init.NBVBlocks;
 
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class NBVRecipeGenerator extends FabricRecipeProvider {
@@ -27,10 +29,12 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
         generateHalfSlabs(consumer);
         generateCenteredHalfSlabs(consumer);
         generateSmallFences(consumer);
+        generateVerticalStairs(consumer);
+        generateRods(consumer);
     }
 
     private static void generateChimneys(Consumer<RecipeJsonProvider> consumer) {
-        for (ChimneyBlock chimneyBlock : NBVBlocks.CHIMNEYS) {
+        for (ChimneyBlock chimneyBlock : NBVBlocks.CHIMNEYS.values()) {
             Block parentBlock = chimneyBlock.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, chimneyBlock, 6)
                     .pattern("# #")
@@ -43,7 +47,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
     }
 
     private static void generatePlates(Consumer<RecipeJsonProvider> consumer) {
-        for (PlateBlock plateBlock : NBVBlocks.PLATES) {
+        for (PlateBlock plateBlock : NBVBlocks.PLATES.values()) {
             Block parentBlock = plateBlock.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, plateBlock, 3)
                     .pattern("#")
@@ -60,7 +64,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .criterion(hasItem(plateBlock), conditionsFromItem(plateBlock))
                     .offerTo(consumer, getItemId(parentBlock) + "_from_" + getItemId(plateBlock).getPath());
         }
-        for (DoublePlatesBlock doublePlatesBlock : NBVBlocks.DOUBLE_PLATES) {
+        for (DoublePlatesBlock doublePlatesBlock : NBVBlocks.DOUBLE_PLATES.values()) {
             Block parentBlock = doublePlatesBlock.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, doublePlatesBlock, 4)
                     .pattern("# #")
@@ -72,7 +76,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
     }
 
     private static void generateHalfSlabs(Consumer<RecipeJsonProvider> consumer) {
-        for (HalfSlabBlock halfSlabBlock : NBVBlocks.HALF_SLABS) {
+        for (HalfSlabBlock halfSlabBlock : NBVBlocks.HALF_SLABS.values()) {
             Block parentBlock = halfSlabBlock.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, halfSlabBlock, 3)
                     .pattern("# ")
@@ -82,7 +86,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .offerTo(consumer);
         }
 
-        for (VerticalHalfSlabBlock verticalHalfSlab : NBVBlocks.VERTICAL_HALF_SLABS) {
+        for (VerticalHalfSlabBlock verticalHalfSlab : NBVBlocks.VERTICAL_HALF_SLABS.values()) {
             Block parentBlock = verticalHalfSlab.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, verticalHalfSlab, 3)
                     .pattern("##")
@@ -94,7 +98,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
     }
 
     private static void generateCenteredHalfSlabs(Consumer<RecipeJsonProvider> consumer) {
-        for (CenteredVerticalHalfSlabBlock centeredVerticalHalfSlabBlock : NBVBlocks.CENTERED_VERTICAL_HALF_SLABS) {
+        for (CenteredVerticalHalfSlabBlock centeredVerticalHalfSlabBlock : NBVBlocks.CENTERED_VERTICAL_HALF_SLABS.values()) {
             Block parentBlock = centeredVerticalHalfSlabBlock.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, centeredVerticalHalfSlabBlock, 4)
                     .pattern("###")
@@ -103,7 +107,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
         }
-        for (CenteredHalfSlabBlock centeredHalfSlab : NBVBlocks.CENTERED_HALF_SLABS) {
+        for (CenteredHalfSlabBlock centeredHalfSlab : NBVBlocks.CENTERED_HALF_SLABS.values()) {
             Block parentBlock = centeredHalfSlab.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, centeredHalfSlab, 4)
                     .pattern(" # ")
@@ -115,13 +119,52 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
     }
 
     private static void generateSmallFences(Consumer<RecipeJsonProvider> consumer) {
-        for (SmallFenceBlock smallFenceBlock : NBVBlocks.SMALL_FENCES) {
+        for (SmallFenceBlock smallFenceBlock : NBVBlocks.SMALL_FENCES.values()) {
             Block parentBlock = smallFenceBlock.getVariant().parentBlock();
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, smallFenceBlock, 4)
                     .pattern("#s#")
                     .input('#', parentBlock)
                     .input('s', Items.STICK)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
+                    .offerTo(consumer);
+        }
+    }
+
+    private static void generateVerticalStairs(Consumer<RecipeJsonProvider> consumer) {
+        for (VerticalStairBlock verticalStairBlock : NBVBlocks.VERTICAL_STAIRS.values()) {
+            Block parentBlock = verticalStairBlock.getVariant().parentBlock();
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, verticalStairBlock, 4)
+                    .pattern("###")
+                    .pattern("## ")
+                    .pattern("#  ")
+                    .input('#', parentBlock)
+                    .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
+                    .offerTo(consumer);
+        }
+    }
+
+    private static void generateRods(Consumer<RecipeJsonProvider> consumer) {
+        for (var entry : NBVBlocks.ROD.entrySet()) {
+            RodVariationBlock rodBlock = entry.getValue();
+            Block parentBlock = rodBlock.getVariant().parentBlock();
+            SmallFenceBlock smallFenceBlock = NBVBlocks.SMALL_FENCES.get(entry.getKey());
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, rodBlock, 2)
+                    .pattern("#")
+                    .pattern("s")
+                    .input('#', parentBlock)
+                    .input('s', smallFenceBlock)
+                    .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
+                    .offerTo(consumer);
+        }
+
+        for (var entry : NBVBlocks.KNOBBED_ROD.entrySet()) {
+            RodVariationBlock rodBlock = entry.getValue();
+            SmallFenceBlock smallFenceBlock = NBVBlocks.SMALL_FENCES.get(entry.getKey());
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, rodBlock, 2)
+                    .pattern("s")
+                    .pattern("s")
+                    .input('s', smallFenceBlock)
+                    .criterion(hasItem(smallFenceBlock), conditionsFromItem(smallFenceBlock))
                     .offerTo(consumer);
         }
     }

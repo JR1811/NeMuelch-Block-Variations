@@ -36,6 +36,14 @@
     "nemuelch:crimson_stem_vertical_stair",
     "nemuelch:stripped_crimson_stem_vertical_stair",
     "nemuelch:crimson_hyphae_vertical_stair",
-    "nemuelch:stripped_crimson_hyphae_vertical_stair"
+    "nemuelch:stripped_crimson_hyphae_vertical_stair",
+    "nemuelch:crimson_stem_rod",
+    "nemuelch:stripped_crimson_stem_rod",
+    "nemuelch:crimson_hyphae_rod",
+    "nemuelch:stripped_crimson_hyphae_rod",
+    "nemuelch:crimson_stem_knobbed_rod",
+    "nemuelch:stripped_crimson_stem_knobbed_rod",
+    "nemuelch:crimson_hyphae_knobbed_rod",
+    "nemuelch:stripped_crimson_hyphae_knobbed_rod"
   ]
 }
