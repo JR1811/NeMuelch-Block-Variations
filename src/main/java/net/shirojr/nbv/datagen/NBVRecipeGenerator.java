@@ -5,8 +5,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 import net.shirojr.nbv.block.custom.*;
 import net.shirojr.nbv.init.NBVBlocks;
 
@@ -49,6 +52,13 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 3)
+                    .pattern("#")
+                    .pattern("#")
+                    .pattern("#")
+                    .input('#', plateBlock)
+                    .criterion(hasItem(plateBlock), conditionsFromItem(plateBlock))
+                    .offerTo(consumer, getItemId(parentBlock) + "_from_" + getItemId(plateBlock).getPath());
         }
         for (DoublePlatesBlock doublePlatesBlock : NBVBlocks.DOUBLE_PLATES) {
             Block parentBlock = doublePlatesBlock.getVariant().parentBlock();
@@ -114,5 +124,9 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
         }
+    }
+
+    private static Identifier getItemId(ItemConvertible item) {
+        return Registries.ITEM.getId(item.asItem());
     }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_warped_stem": {
+    "has_stripped_warped_hyphae": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_warped_stem"
+              "minecraft:stripped_warped_hyphae"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_warped_stem",
+      "has_stripped_warped_hyphae",
       "has_the_recipe"
     ]
   ],

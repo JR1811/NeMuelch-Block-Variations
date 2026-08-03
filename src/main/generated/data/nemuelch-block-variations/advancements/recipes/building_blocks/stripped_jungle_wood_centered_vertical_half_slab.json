@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_jungle_log": {
+    "has_stripped_jungle_wood": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_jungle_log"
+              "minecraft:stripped_jungle_wood"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_jungle_log",
+      "has_stripped_jungle_wood",
       "has_the_recipe"
     ]
   ],

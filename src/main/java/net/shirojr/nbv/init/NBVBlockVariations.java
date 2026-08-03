@@ -122,17 +122,17 @@ public class NBVBlockVariations {
     public static final Variation BARREL_LID = register(new Variation("barrel_lid", Blocks.BARREL, NBVMain.getVanillaId("barrel_top"), NBVMain.getVanillaId("spruce_planks"), List.of(BlockTags.AXE_MINEABLE)));
     public static final Variation BARREL_SIDE = register(new Variation("barrel_side", Blocks.BARREL, NBVMain.getVanillaId("barrel_side"), NBVMain.getVanillaId("spruce_planks"), List.of(BlockTags.AXE_MINEABLE)));
 
-    public static final List<Variation> OAK_LOG = registerLogsAndWood(Blocks.OAK_LOG, Blocks.STRIPPED_OAK_LOG, "oak", BlockTags.OAK_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> SPRUCE_LOG = registerLogsAndWood(Blocks.SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_LOG, "spruce", BlockTags.SPRUCE_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> BIRCH_LOG = registerLogsAndWood(Blocks.BIRCH_LOG, Blocks.STRIPPED_BIRCH_LOG, "birch", BlockTags.BIRCH_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> ACACIA_LOG = registerLogsAndWood(Blocks.ACACIA_LOG, Blocks.STRIPPED_ACACIA_LOG, "acacia", BlockTags.ACACIA_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> DARK_OAK_LOG = registerLogsAndWood(Blocks.DARK_OAK_LOG, Blocks.STRIPPED_DARK_OAK_LOG, "dark_oak", BlockTags.DARK_OAK_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> JUNGLE_LOG = registerLogsAndWood(Blocks.JUNGLE_LOG, Blocks.STRIPPED_JUNGLE_LOG, "jungle", BlockTags.JUNGLE_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> CHERRY_LOG = registerLogsAndWood(Blocks.CHERRY_LOG, Blocks.STRIPPED_CHERRY_LOG, "cherry", BlockTags.CHERRY_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> MANGROVE_LOG = registerLogsAndWood(Blocks.MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG, "mangrove", BlockTags.MANGROVE_LOGS, new Pair<>("log", "wood"));
-    public static final List<Variation> CRIMSON_STEM = registerLogsAndWood(Blocks.CRIMSON_STEM, Blocks.STRIPPED_CRIMSON_STEM, "crimson", BlockTags.CRIMSON_STEMS, new Pair<>("stem", "hyphae"));
-    public static final List<Variation> WARPED_STEM = registerLogsAndWood(Blocks.WARPED_STEM, Blocks.STRIPPED_WARPED_STEM, "warped", BlockTags.WARPED_STEMS, new Pair<>("stem", "hyphae"));
-    public static final List<Variation> BAMBOO_BLOCK = registerLogsAndWood(Blocks.BAMBOO_BLOCK, Blocks.STRIPPED_BAMBOO_BLOCK, "bamboo", BlockTags.BAMBOO_BLOCKS, new Pair<>("block", null));
+    public static final List<Variation> OAK_LOG = registerLogsAndWood(Blocks.OAK_LOG, Blocks.OAK_WOOD, Blocks.STRIPPED_OAK_LOG, Blocks.STRIPPED_OAK_WOOD, "oak", BlockTags.OAK_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> SPRUCE_LOG = registerLogsAndWood(Blocks.SPRUCE_LOG, Blocks.SPRUCE_WOOD, Blocks.STRIPPED_SPRUCE_LOG, Blocks.STRIPPED_SPRUCE_WOOD, "spruce", BlockTags.SPRUCE_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> BIRCH_LOG = registerLogsAndWood(Blocks.BIRCH_LOG, Blocks.BIRCH_WOOD, Blocks.STRIPPED_BIRCH_LOG, Blocks.STRIPPED_BIRCH_WOOD, "birch", BlockTags.BIRCH_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> ACACIA_LOG = registerLogsAndWood(Blocks.ACACIA_LOG, Blocks.ACACIA_WOOD, Blocks.STRIPPED_ACACIA_LOG, Blocks.STRIPPED_ACACIA_WOOD, "acacia", BlockTags.ACACIA_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> DARK_OAK_LOG = registerLogsAndWood(Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_WOOD, Blocks.STRIPPED_DARK_OAK_LOG, Blocks.STRIPPED_DARK_OAK_WOOD, "dark_oak", BlockTags.DARK_OAK_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> JUNGLE_LOG = registerLogsAndWood(Blocks.JUNGLE_LOG, Blocks.JUNGLE_WOOD, Blocks.STRIPPED_JUNGLE_LOG, Blocks.STRIPPED_JUNGLE_WOOD, "jungle", BlockTags.JUNGLE_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> CHERRY_LOG = registerLogsAndWood(Blocks.CHERRY_LOG, Blocks.CHERRY_WOOD, Blocks.STRIPPED_CHERRY_LOG, Blocks.STRIPPED_CHERRY_WOOD, "cherry", BlockTags.CHERRY_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> MANGROVE_LOG = registerLogsAndWood(Blocks.MANGROVE_LOG, Blocks.MANGROVE_WOOD, Blocks.STRIPPED_MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_WOOD, "mangrove", BlockTags.MANGROVE_LOGS, new Pair<>("log", "wood"));
+    public static final List<Variation> CRIMSON_STEM = registerLogsAndWood(Blocks.CRIMSON_STEM, Blocks.CRIMSON_HYPHAE, Blocks.STRIPPED_CRIMSON_STEM, Blocks.STRIPPED_CRIMSON_HYPHAE, "crimson", BlockTags.CRIMSON_STEMS, new Pair<>("stem", "hyphae"));
+    public static final List<Variation> WARPED_STEM = registerLogsAndWood(Blocks.WARPED_STEM, Blocks.WARPED_HYPHAE, Blocks.STRIPPED_WARPED_STEM, Blocks.STRIPPED_WARPED_HYPHAE, "warped", BlockTags.WARPED_STEMS, new Pair<>("stem", "hyphae"));
+    public static final List<Variation> BAMBOO_BLOCK = registerLogsAndWood(Blocks.BAMBOO_BLOCK, null, Blocks.STRIPPED_BAMBOO_BLOCK, null, "bamboo", BlockTags.BAMBOO_BLOCKS, new Pair<>("block", null));
 
     public static final Variation GLASS = register(new Variation("glass", Blocks.GLASS, new Identifier("glass"), List.of(ConventionalBlockTags.GLASS_BLOCKS)));
 
@@ -166,7 +166,7 @@ public class NBVBlockVariations {
         return variation;
     }
 
-    private static List<Variation> registerLogsAndWood(Block base, Block stripped, String name, TagKey<Block> logTag, Pair<String, String> suffixes) {
+    private static List<Variation> registerLogsAndWood(Block base, @Nullable Block woodVersion, Block stripped, @Nullable Block strippedWoodVersion, String name, TagKey<Block> logTag, Pair<String, String> suffixes) {
         List<Variation> result = new ArrayList<>();
         String baseSuffix = suffixes.getLeft();
         String allSideSuffix = suffixes.getRight();
@@ -195,12 +195,12 @@ public class NBVBlockVariations {
                         )
                 )
         );
-        if (allSideSuffix != null) {
+        if (allSideSuffix != null && woodVersion != null && strippedWoodVersion != null) {
             result.add(
                     register(
                             new Variation(
                                     name + "_" + allSideSuffix,
-                                    base,
+                                    woodVersion,
                                     new Identifier("%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("%s_%s".formatted(name, baseSuffix)),
@@ -212,7 +212,7 @@ public class NBVBlockVariations {
                     register(
                             new Variation(
                                     "stripped_" + name + "_" + allSideSuffix,
-                                    stripped,
+                                    strippedWoodVersion,
                                     new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),

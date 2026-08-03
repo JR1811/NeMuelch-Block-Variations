@@ -4,6 +4,6 @@
     "1": "minecraft:block/mangrove_log",
     "2": "minecraft:block/mangrove_log",
     "3": "minecraft:block/mangrove_log",
-    "particle": "minecraft:block/mangrove_log"
+    "particle": "minecraft:block/mangrove_wood"
   }
 }
