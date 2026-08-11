@@ -125,17 +125,7 @@ public class NBVModelGenerator extends FabricModelProvider {
     }
 
     private void generateBarrierVariation(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
-        /*TextureMap textureMap = new TextureMap();
-        textureMap.put(TextureKey.PARTICLE, TextureMap.getId(variationHolder.getVariant().parentBlock().asItem()));
-        Optional<Identifier> parentId = Optional.empty();
-        Optional<String> variant = Optional.empty();
-        Model model = new Model(parentId, variant, TextureKey.PARTICLE);
-        Identifier modelId = model.upload(block, textureMap, generator.modelCollector);
-        generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
-        */
         generator.registerBuiltinWithParticle(block, variationHolder.getVariant().parentBlock().asItem());
-        /*
-        generator.excludeFromSimpleItemModelGeneration(block);*/
     }
 
     private void generateQuarterSlab(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
