@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "nemuelch:barrier_chimney",
+    "nemuelch:barrier_plate",
+    "nemuelch:barrier_double_plates",
+    "nemuelch:barrier_half_slab",
+    "nemuelch:barrier_vertical_half_slab",
+    "nemuelch:barrier_centered_vertical_half_slab",
+    "nemuelch:barrier_centered_half_slab",
+    "nemuelch:barrier_small_fence",
+    "nemuelch:barrier_vertical_stair",
+    "nemuelch:barrier_rod",
+    "nemuelch:barrier_knobbed_rod",
+    "nemuelch:barrier_quarter_slab",
+    "minecraft:barrier"
+  ]
+}

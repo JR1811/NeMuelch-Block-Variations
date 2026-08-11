@@ -3,8 +3,11 @@ package net.shirojr.nbv.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.BarrierBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
@@ -39,6 +42,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Item>.FabricTagBuilder verticalStairsTag = getOrCreateTagBuilder(NBVTags.Items.VERTICAL_STAIRS);
             FabricTagProvider<Item>.FabricTagBuilder rodsTag = getOrCreateTagBuilder(NBVTags.Items.RODS);
             FabricTagProvider<Item>.FabricTagBuilder knobbedRodsTag = getOrCreateTagBuilder(NBVTags.Items.KNOBBED_RODS);
+            FabricTagProvider<Item>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Items.BARRIER_RENDERING);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry.asItem());
@@ -73,6 +77,12 @@ public class NBVTagGenerators {
             for (RodVariationBlock entry : NBVBlocks.KNOBBED_ROD.values()) {
                 knobbedRodsTag.add(entry.asItem());
             }
+            for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
+                if (variationHolder.getVariant().parentBlock() instanceof BarrierBlock) {
+                    barrierRenderingTag.add(variationHolder.getBlock().asItem());
+                }
+            }
+            barrierRenderingTag.add(Items.BARRIER);
         }
     }
 
@@ -96,6 +106,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder verticalStairsTag = getOrCreateTagBuilder(NBVTags.Blocks.VERTICAL_STAIRS);
             FabricTagProvider<Block>.FabricTagBuilder rodTag = getOrCreateTagBuilder(NBVTags.Blocks.ROD);
             FabricTagProvider<Block>.FabricTagBuilder knobbedRodTag = getOrCreateTagBuilder(NBVTags.Blocks.KNOBBED_ROD);
+            FabricTagProvider<Block>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Blocks.BARRIER_RENDERING);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry);
@@ -136,7 +147,12 @@ public class NBVTagGenerators {
                 for (TagKey<Block> blockTag : variationHolder.getVariant().blockTags()) {
                     getOrCreateTagBuilder(blockTag).add(variationHolder.getBlock());
                 }
+                if (variationHolder.getVariant().parentBlock() instanceof BarrierBlock) {
+                    barrierRenderingTag.add(variationHolder.getBlock());
+                }
             }
+
+            barrierRenderingTag.add(Blocks.BARRIER);
         }
     }
 }

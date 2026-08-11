@@ -5,12 +5,14 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.data.client.*;
+import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.shirojr.nbv.block.custom.*;
 import net.shirojr.nbv.block.util.VariationHolder;
+import net.shirojr.nbv.init.NBVBlockVariations;
 import net.shirojr.nbv.init.NBVBlocks;
 
 import java.util.Optional;
@@ -27,6 +29,10 @@ public class NBVModelGenerator extends FabricModelProvider {
             Identifier blockId = Registries.BLOCK.getId(block);
             if (blockId.equals(Registries.BLOCK.getDefaultId())) continue;
 
+            if (variationHolder.getVariant().equals(NBVBlockVariations.BARRIER)) {
+                generateBarrierVariation(variationHolder, block, generator);
+                continue;
+            }
             if (block instanceof SmallFenceBlock) {
                 generateSmallFence(variationHolder, block, generator);
                 continue;
@@ -73,7 +79,12 @@ public class NBVModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator generator) {
-
+        for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
+            if (!variationHolder.getVariant().equals(NBVBlockVariations.BARRIER)) continue;
+            Item item = variationHolder.getBlock().asItem();
+            Item parentItem = variationHolder.getVariant().parentBlock().asItem();
+            generator.register(item, parentItem, Models.GENERATED);
+        }
     }
 
     private static Identifier generateModel(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
@@ -111,6 +122,20 @@ public class NBVModelGenerator extends FabricModelProvider {
             topBlockStateModel.upload(block, "_top", textureMap, generator.modelCollector);
         }
         return model.upload(block, textureMap, generator.modelCollector);
+    }
+
+    private void generateBarrierVariation(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
+        /*TextureMap textureMap = new TextureMap();
+        textureMap.put(TextureKey.PARTICLE, TextureMap.getId(variationHolder.getVariant().parentBlock().asItem()));
+        Optional<Identifier> parentId = Optional.empty();
+        Optional<String> variant = Optional.empty();
+        Model model = new Model(parentId, variant, TextureKey.PARTICLE);
+        Identifier modelId = model.upload(block, textureMap, generator.modelCollector);
+        generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)));
+        */
+        generator.registerBuiltinWithParticle(block, variationHolder.getVariant().parentBlock().asItem());
+        /*
+        generator.excludeFromSimpleItemModelGeneration(block);*/
     }
 
     private void generateQuarterSlab(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {

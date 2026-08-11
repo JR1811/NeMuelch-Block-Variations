@@ -140,7 +140,7 @@ public class NBVBlockVariations {
     public static final Variation PACKED_ICE = register(new Variation("packed_ice", Blocks.PACKED_ICE, NBVMain.getVanillaId("packed_ice"), List.of(BlockTags.ICE, BlockTags.PICKAXE_MINEABLE)));
     public static final Variation BLUE_ICE = register(new Variation("blue_ice", Blocks.BLUE_ICE, NBVMain.getVanillaId("blue_ice"), List.of(BlockTags.ICE, BlockTags.PICKAXE_MINEABLE)));
 
-
+    public static final Variation BARRIER = register(new Variation("barrier", Blocks.BARRIER, NBVMain.getId("blank"), List.of()));
 
     static {
         for (Block registryBlock : Registries.BLOCK) {
@@ -171,7 +171,9 @@ public class NBVBlockVariations {
         return variation;
     }
 
-    private static List<Variation> registerLogsAndWood(Block base, @Nullable Block woodVersion, Block stripped, @Nullable Block strippedWoodVersion, String name, TagKey<Block> logTag, Pair<String, String> suffixes) {
+    private static List<Variation> registerLogsAndWood(Block base, @Nullable Block woodVersion, Block stripped,
+                                                       @Nullable Block strippedWoodVersion, String name, TagKey<Block> logTag,
+                                                       Pair<String, String> suffixes) {
         List<Variation> result = new ArrayList<>();
         String baseSuffix = suffixes.getLeft();
         String allSideSuffix = suffixes.getRight();
@@ -184,6 +186,7 @@ public class NBVBlockVariations {
                                 new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                 new Identifier("%s_%s".formatted(name, baseSuffix)),
                                 new Identifier("%s_%s_top".formatted(name, baseSuffix)),
+                                new Identifier("%s_%s".formatted(name, baseSuffix)),
                                 List.of(logTag)
                         )
                 )
@@ -196,6 +199,7 @@ public class NBVBlockVariations {
                                 new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                 new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                 new Identifier("stripped_%s_%s_top".formatted(name, baseSuffix)),
+                                new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                 List.of(logTag)
                         )
                 )
@@ -209,6 +213,7 @@ public class NBVBlockVariations {
                                     new Identifier("%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("%s_%s".formatted(name, baseSuffix)),
+                                    new Identifier("%s_%s".formatted(name, baseSuffix)),
                                     List.of(logTag)
                             )
                     )
@@ -218,6 +223,7 @@ public class NBVBlockVariations {
                             new Variation(
                                     "stripped_" + name + "_" + allSideSuffix,
                                     strippedWoodVersion,
+                                    new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),
                                     new Identifier("stripped_%s_%s".formatted(name, baseSuffix)),

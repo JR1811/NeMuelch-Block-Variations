@@ -1,6 +1,7 @@
 package net.shirojr.nbv.block.custom;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Waterloggable;
 import net.minecraft.block.enums.BlockHalf;
@@ -14,9 +15,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.shirojr.nbv.block.util.Variation;
 import net.shirojr.nbv.block.util.VariationHolder;
+import net.shirojr.nbv.init.NBVTags;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
@@ -63,6 +66,28 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+    }
+
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        if (state.isIn(NBVTags.Blocks.BARRIER_RENDERING)) {
+            return BlockRenderType.INVISIBLE;
+        }
+        return super.getRenderType(state);
+    }
+
+    @Override
+    public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {
+        if (state.isIn(NBVTags.Blocks.BARRIER_RENDERING)) return true;
+        return super.isTransparent(state, world, pos);
+    }
+
+    @Override
+    public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
+        if (state.isIn(NBVTags.Blocks.BARRIER_RENDERING)) {
+            return 1.0f;
+        }
+        return super.getAmbientOcclusionLightLevel(state, world, pos);
     }
 
     protected VoxelShape createCardinalRotatedShape(int[] points, Direction direction, BlockHalf half) {
@@ -153,7 +178,5 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
                     createCuboidShape(points[0], points[1], points[2], points[3], points[4], points[5]); // Y-axis (no swap)
         };
     }
-
-
 }
 

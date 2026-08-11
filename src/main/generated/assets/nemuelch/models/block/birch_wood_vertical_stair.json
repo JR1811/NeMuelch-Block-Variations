@@ -4,6 +4,6 @@
     "1": "minecraft:block/birch_log",
     "2": "minecraft:block/birch_log",
     "3": "minecraft:block/birch_log",
-    "particle": "minecraft:block/birch_wood"
+    "particle": "minecraft:block/birch_log"
   }
 }

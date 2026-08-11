@@ -1,13 +1,19 @@
 {
-	"required": true,
-	"package": "net.shirojr.nbv.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "net.shirojr.nbv.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "client.ClientWorldMixin"
+  ],
+  "mixinextras": {
+    "minVersion": "0.5.4"
+  }
 }

@@ -4,6 +4,6 @@
     "1": "minecraft:block/spruce_log",
     "2": "minecraft:block/spruce_log",
     "3": "minecraft:block/spruce_log",
-    "particle": "minecraft:block/spruce_wood"
+    "particle": "minecraft:block/spruce_log"
   }
 }

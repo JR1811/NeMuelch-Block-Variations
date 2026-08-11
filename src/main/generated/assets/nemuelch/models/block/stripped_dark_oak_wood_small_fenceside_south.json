@@ -4,6 +4,6 @@
     "1": "minecraft:block/stripped_dark_oak_log",
     "2": "minecraft:block/stripped_dark_oak_log",
     "3": "minecraft:block/stripped_dark_oak_log",
-    "particle": "minecraft:block/stripped_dark_oak_wood"
+    "particle": "minecraft:block/stripped_dark_oak_log"
   }
 }
