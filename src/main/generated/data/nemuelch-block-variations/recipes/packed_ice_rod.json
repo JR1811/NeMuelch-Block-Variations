@@ -2,15 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:packed_ice"
-    },
     "s": {
       "item": "nemuelch:packed_ice_small_fence"
     }
   },
   "pattern": [
-    "#",
+    "s",
     "s"
   ],
   "result": {

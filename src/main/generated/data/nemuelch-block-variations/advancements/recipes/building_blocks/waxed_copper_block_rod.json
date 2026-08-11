@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_waxed_copper_block": {
+    "has_waxed_copper_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:waxed_copper_block"
+              "nemuelch:waxed_copper_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_waxed_copper_block",
+      "has_waxed_copper_block_small_fence",
       "has_the_recipe"
     ]
   ],

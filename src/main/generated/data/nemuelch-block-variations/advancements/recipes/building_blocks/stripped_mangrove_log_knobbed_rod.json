@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_mangrove_log_small_fence": {
+    "has_stripped_mangrove_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:stripped_mangrove_log_small_fence"
+              "minecraft:stripped_mangrove_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_mangrove_log_small_fence",
+      "has_stripped_mangrove_log",
       "has_the_recipe"
     ]
   ],

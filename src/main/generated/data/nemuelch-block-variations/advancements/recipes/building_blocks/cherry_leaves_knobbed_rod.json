@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cherry_leaves_small_fence": {
+    "has_cherry_leaves": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:cherry_leaves_small_fence"
+              "minecraft:cherry_leaves"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cherry_leaves_small_fence",
+      "has_cherry_leaves",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:copper_ore_double_plates"
+    },
+    {
+      "item": "nemuelch:copper_ore_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:copper_ore"
+  }
+}

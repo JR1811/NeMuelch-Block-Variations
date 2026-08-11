@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_redstone_ore_small_fence": {
+    "has_deepslate_redstone_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:deepslate_redstone_ore_small_fence"
+              "minecraft:deepslate_redstone_ore"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_deepslate_redstone_ore_small_fence",
+      "has_deepslate_redstone_ore",
       "has_the_recipe"
     ]
   ],

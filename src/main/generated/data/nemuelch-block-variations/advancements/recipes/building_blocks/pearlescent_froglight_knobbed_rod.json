@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pearlescent_froglight_small_fence": {
+    "has_pearlescent_froglight": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:pearlescent_froglight_small_fence"
+              "minecraft:pearlescent_froglight"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pearlescent_froglight_small_fence",
+      "has_pearlescent_froglight",
       "has_the_recipe"
     ]
   ],

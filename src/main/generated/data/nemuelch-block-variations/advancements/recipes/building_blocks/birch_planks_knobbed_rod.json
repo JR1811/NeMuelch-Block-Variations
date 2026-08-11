@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_birch_planks_small_fence": {
+    "has_birch_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:birch_planks_small_fence"
+              "minecraft:birch_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_birch_planks_small_fence",
+      "has_birch_planks",
       "has_the_recipe"
     ]
   ],

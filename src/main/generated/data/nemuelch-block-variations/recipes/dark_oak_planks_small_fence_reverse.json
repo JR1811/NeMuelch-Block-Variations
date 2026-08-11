@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    },
+    {
+      "item": "nemuelch:dark_oak_planks_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:dark_oak_planks"
+  }
+}

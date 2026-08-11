@@ -2,15 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:yellow_terracotta"
-    },
     "s": {
       "item": "nemuelch:yellow_terracotta_small_fence"
     }
   },
   "pattern": [
-    "#",
+    "s",
     "s"
   ],
   "result": {

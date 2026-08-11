@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stripped_birch_wood_double_plates"
+    },
+    {
+      "item": "nemuelch:stripped_birch_wood_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stripped_birch_wood"
+  }
+}

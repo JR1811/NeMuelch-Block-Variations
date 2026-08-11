@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond_ore": {
+    "has_diamond_ore_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond_ore"
+              "nemuelch:diamond_ore_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_diamond_ore",
+      "has_diamond_ore_small_fence",
       "has_the_recipe"
     ]
   ],

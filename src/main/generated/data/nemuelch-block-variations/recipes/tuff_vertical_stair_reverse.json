@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:tuff_vertical_stair"
+    },
+    {
+      "item": "nemuelch:tuff_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:tuff"
+  }
+}

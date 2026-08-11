@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_magenta_wool": {
+    "has_magenta_wool_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:magenta_wool"
+              "nemuelch:magenta_wool_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_magenta_wool",
+      "has_magenta_wool_small_fence",
       "has_the_recipe"
     ]
   ],

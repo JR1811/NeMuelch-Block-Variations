@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:deepslate_gold_ore_chimney"
+    },
+    {
+      "item": "nemuelch:deepslate_gold_ore_chimney"
+    },
+    {
+      "item": "nemuelch:deepslate_gold_ore_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:deepslate_gold_ore"
+  }
+}

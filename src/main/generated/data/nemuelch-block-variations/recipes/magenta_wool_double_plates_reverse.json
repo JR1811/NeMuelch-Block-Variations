@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:magenta_wool_double_plates"
+    },
+    {
+      "item": "nemuelch:magenta_wool_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:magenta_wool"
+  }
+}

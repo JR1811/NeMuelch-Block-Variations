@@ -2,15 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:dripstone_block"
-    },
     "s": {
       "item": "nemuelch:dripstone_block_small_fence"
     }
   },
   "pattern": [
-    "#",
+    "s",
     "s"
   ],
   "result": {

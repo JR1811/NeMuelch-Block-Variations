@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    },
+    {
+      "item": "nemuelch:spruce_wood_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:spruce_wood"
+  }
+}

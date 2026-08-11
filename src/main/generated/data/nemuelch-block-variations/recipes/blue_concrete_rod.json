@@ -2,15 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:blue_concrete"
-    },
     "s": {
       "item": "nemuelch:blue_concrete_small_fence"
     }
   },
   "pattern": [
-    "#",
+    "s",
     "s"
   ],
   "result": {

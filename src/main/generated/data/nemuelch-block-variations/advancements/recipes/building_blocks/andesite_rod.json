@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_andesite": {
+    "has_andesite_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:andesite"
+              "nemuelch:andesite_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_andesite",
+      "has_andesite_small_fence",
       "has_the_recipe"
     ]
   ],

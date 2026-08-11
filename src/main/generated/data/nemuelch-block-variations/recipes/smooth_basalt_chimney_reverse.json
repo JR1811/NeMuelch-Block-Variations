@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:smooth_basalt_chimney"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_chimney"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:smooth_basalt"
+  }
+}

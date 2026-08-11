@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cherry_log_small_fence": {
+    "has_cherry_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:cherry_log_small_fence"
+              "minecraft:cherry_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cherry_log_small_fence",
+      "has_cherry_log",
       "has_the_recipe"
     ]
   ],

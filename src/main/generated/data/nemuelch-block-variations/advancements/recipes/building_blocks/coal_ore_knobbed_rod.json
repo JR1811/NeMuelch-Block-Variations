@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_coal_ore_small_fence": {
+    "has_coal_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:coal_ore_small_fence"
+              "minecraft:coal_ore"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_coal_ore_small_fence",
+      "has_coal_ore",
       "has_the_recipe"
     ]
   ],

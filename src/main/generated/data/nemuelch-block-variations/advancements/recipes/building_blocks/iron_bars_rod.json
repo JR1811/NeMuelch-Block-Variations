@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iron_bars": {
+    "has_iron_bars_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_bars"
+              "nemuelch:iron_bars_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_iron_bars",
+      "has_iron_bars_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_quartz_block_small_fence": {
+    "has_quartz_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:quartz_block_small_fence"
+              "minecraft:quartz_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_quartz_block_small_fence",
+      "has_quartz_block",
       "has_the_recipe"
     ]
   ],

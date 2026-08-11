@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dirt_path_small_fence": {
+    "has_dirt_path": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:dirt_path_small_fence"
+              "minecraft:dirt_path"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dirt_path_small_fence",
+      "has_dirt_path",
       "has_the_recipe"
     ]
   ],

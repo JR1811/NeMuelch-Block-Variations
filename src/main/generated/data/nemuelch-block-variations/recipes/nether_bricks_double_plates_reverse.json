@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:nether_bricks_double_plates"
+    },
+    {
+      "item": "nemuelch:nether_bricks_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:nether_bricks"
+  }
+}

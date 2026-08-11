@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:tuff_chimney"
+    },
+    {
+      "item": "nemuelch:tuff_chimney"
+    },
+    {
+      "item": "nemuelch:tuff_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:tuff"
+  }
+}

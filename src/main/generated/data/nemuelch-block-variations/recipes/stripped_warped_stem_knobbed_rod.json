@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
+    "#": {
+      "item": "minecraft:stripped_warped_stem"
+    },
     "s": {
       "item": "nemuelch:stripped_warped_stem_small_fence"
     }
   },
   "pattern": [
-    "s",
+    "#",
     "s"
   ],
   "result": {

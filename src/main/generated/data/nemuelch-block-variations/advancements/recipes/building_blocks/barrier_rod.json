@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_barrier": {
+    "has_barrier_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:barrier"
+              "nemuelch:barrier_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_barrier",
+      "has_barrier_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "nemuelch:mossy_stone_bricks_centered_vertical_half_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:cracked_stone_bricks"
+  },
+  "show_notification": true
+}

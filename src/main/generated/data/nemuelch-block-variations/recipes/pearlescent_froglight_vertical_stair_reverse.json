@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:pearlescent_froglight_vertical_stair"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:pearlescent_froglight"
+  }
+}

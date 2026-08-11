@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crimson_trapdoor": {
+    "has_crimson_trapdoor_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:crimson_trapdoor"
+              "nemuelch:crimson_trapdoor_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_crimson_trapdoor",
+      "has_crimson_trapdoor_small_fence",
       "has_the_recipe"
     ]
   ],

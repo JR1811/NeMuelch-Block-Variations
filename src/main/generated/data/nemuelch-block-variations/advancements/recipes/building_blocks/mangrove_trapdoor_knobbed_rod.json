@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mangrove_trapdoor_small_fence": {
+    "has_mangrove_trapdoor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:mangrove_trapdoor_small_fence"
+              "minecraft:mangrove_trapdoor"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_mangrove_trapdoor_small_fence",
+      "has_mangrove_trapdoor",
       "has_the_recipe"
     ]
   ],

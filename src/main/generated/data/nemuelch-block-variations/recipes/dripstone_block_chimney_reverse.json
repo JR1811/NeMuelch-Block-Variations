@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dripstone_block_chimney"
+    },
+    {
+      "item": "nemuelch:dripstone_block_chimney"
+    },
+    {
+      "item": "nemuelch:dripstone_block_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:dripstone_block"
+  }
+}

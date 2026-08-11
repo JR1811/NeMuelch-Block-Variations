@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_dark_oak_wood_small_fence": {
+    "has_stripped_dark_oak_wood": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:stripped_dark_oak_wood_small_fence"
+              "minecraft:stripped_dark_oak_wood"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_dark_oak_wood_small_fence",
+      "has_stripped_dark_oak_wood",
       "has_the_recipe"
     ]
   ],

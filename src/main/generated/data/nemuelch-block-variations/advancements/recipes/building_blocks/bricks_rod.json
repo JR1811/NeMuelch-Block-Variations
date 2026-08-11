@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bricks": {
+    "has_bricks_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:bricks"
+              "nemuelch:bricks_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bricks",
+      "has_bricks_small_fence",
       "has_the_recipe"
     ]
   ],

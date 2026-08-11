@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ochre_froglight": {
+    "has_ochre_froglight_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:ochre_froglight"
+              "nemuelch:ochre_froglight_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ochre_froglight",
+      "has_ochre_froglight_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_basalt_small_fence": {
+    "has_basalt": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:basalt_small_fence"
+              "minecraft:basalt"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_basalt_small_fence",
+      "has_basalt",
       "has_the_recipe"
     ]
   ],

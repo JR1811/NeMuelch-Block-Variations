@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copper_ore": {
+    "has_copper_ore_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:copper_ore"
+              "nemuelch:copper_ore_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_copper_ore",
+      "has_copper_ore_small_fence",
       "has_the_recipe"
     ]
   ],

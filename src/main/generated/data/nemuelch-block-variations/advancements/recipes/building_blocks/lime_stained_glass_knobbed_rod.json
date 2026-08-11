@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lime_stained_glass_small_fence": {
+    "has_lime_stained_glass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:lime_stained_glass_small_fence"
+              "minecraft:lime_stained_glass"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_lime_stained_glass_small_fence",
+      "has_lime_stained_glass",
       "has_the_recipe"
     ]
   ],

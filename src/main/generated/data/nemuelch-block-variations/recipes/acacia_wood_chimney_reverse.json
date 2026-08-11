@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:acacia_wood_chimney"
+    },
+    {
+      "item": "nemuelch:acacia_wood_chimney"
+    },
+    {
+      "item": "nemuelch:acacia_wood_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:acacia_wood"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_spruce_log_small_fence": {
+    "has_spruce_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:spruce_log_small_fence"
+              "minecraft:spruce_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_spruce_log_small_fence",
+      "has_spruce_log",
       "has_the_recipe"
     ]
   ],

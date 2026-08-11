@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:purpur_block_chimney"
+    },
+    {
+      "item": "nemuelch:purpur_block_chimney"
+    },
+    {
+      "item": "nemuelch:purpur_block_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:purpur_block"
+  }
+}

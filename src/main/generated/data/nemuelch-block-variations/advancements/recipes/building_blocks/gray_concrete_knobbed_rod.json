@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gray_concrete_small_fence": {
+    "has_gray_concrete": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:gray_concrete_small_fence"
+              "minecraft:gray_concrete"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gray_concrete_small_fence",
+      "has_gray_concrete",
       "has_the_recipe"
     ]
   ],

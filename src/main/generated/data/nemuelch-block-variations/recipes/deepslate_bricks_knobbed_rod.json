@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
+    "#": {
+      "item": "minecraft:deepslate_bricks"
+    },
     "s": {
       "item": "nemuelch:deepslate_bricks_small_fence"
     }
   },
   "pattern": [
-    "s",
+    "#",
     "s"
   ],
   "result": {

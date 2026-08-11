@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:mud_bricks_chimney"
+    },
+    {
+      "item": "nemuelch:mud_bricks_chimney"
+    },
+    {
+      "item": "nemuelch:mud_bricks_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:mud_bricks"
+  }
+}

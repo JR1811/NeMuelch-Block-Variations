@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_white_terracotta_small_fence": {
+    "has_white_terracotta": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:white_terracotta_small_fence"
+              "minecraft:white_terracotta"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_white_terracotta_small_fence",
+      "has_white_terracotta",
       "has_the_recipe"
     ]
   ],

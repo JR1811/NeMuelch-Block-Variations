@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_spruce_trapdoor": {
+    "has_spruce_trapdoor_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:spruce_trapdoor"
+              "nemuelch:spruce_trapdoor_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_spruce_trapdoor",
+      "has_spruce_trapdoor_small_fence",
       "has_the_recipe"
     ]
   ],

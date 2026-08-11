@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo_block_small_fence": {
+    "has_bamboo_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:bamboo_block_small_fence"
+              "minecraft:bamboo_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bamboo_block_small_fence",
+      "has_bamboo_block",
       "has_the_recipe"
     ]
   ],

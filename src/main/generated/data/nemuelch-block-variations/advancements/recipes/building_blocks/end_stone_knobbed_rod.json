@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_stone_small_fence": {
+    "has_end_stone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:end_stone_small_fence"
+              "minecraft:end_stone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_end_stone_small_fence",
+      "has_end_stone",
       "has_the_recipe"
     ]
   ],

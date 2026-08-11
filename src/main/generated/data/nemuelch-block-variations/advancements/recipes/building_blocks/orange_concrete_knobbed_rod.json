@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_orange_concrete_small_fence": {
+    "has_orange_concrete": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:orange_concrete_small_fence"
+              "minecraft:orange_concrete"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_orange_concrete_small_fence",
+      "has_orange_concrete",
       "has_the_recipe"
     ]
   ],

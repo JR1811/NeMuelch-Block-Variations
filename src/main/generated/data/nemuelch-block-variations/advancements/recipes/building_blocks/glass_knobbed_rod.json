@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass_small_fence": {
+    "has_glass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:glass_small_fence"
+              "minecraft:glass"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_glass_small_fence",
+      "has_glass",
       "has_the_recipe"
     ]
   ],

@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_white_concrete": {
+    "has_white_concrete_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:white_concrete"
+              "nemuelch:white_concrete_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_white_concrete",
+      "has_white_concrete_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
+    "#": {
+      "item": "minecraft:mangrove_leaves"
+    },
     "s": {
       "item": "nemuelch:mangrove_leaves_small_fence"
     }
   },
   "pattern": [
-    "s",
+    "#",
     "s"
   ],
   "result": {

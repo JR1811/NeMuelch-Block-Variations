@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:barrel_lid_chimney"
+    },
+    {
+      "item": "nemuelch:barrel_lid_chimney"
+    },
+    {
+      "item": "nemuelch:barrel_lid_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:barrel"
+  }
+}

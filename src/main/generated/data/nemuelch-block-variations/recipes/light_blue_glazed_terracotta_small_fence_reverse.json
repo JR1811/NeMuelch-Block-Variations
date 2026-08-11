@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:light_blue_glazed_terracotta_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:light_blue_glazed_terracotta"
+  }
+}

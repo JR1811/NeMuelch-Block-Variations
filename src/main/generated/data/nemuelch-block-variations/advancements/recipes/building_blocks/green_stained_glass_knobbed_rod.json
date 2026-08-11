@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_green_stained_glass_small_fence": {
+    "has_green_stained_glass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:green_stained_glass_small_fence"
+              "minecraft:green_stained_glass"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_green_stained_glass_small_fence",
+      "has_green_stained_glass",
       "has_the_recipe"
     ]
   ],

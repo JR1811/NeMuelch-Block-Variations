@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crimson_stem": {
+    "has_crimson_stem_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:crimson_stem"
+              "nemuelch:crimson_stem_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_crimson_stem",
+      "has_crimson_stem_small_fence",
       "has_the_recipe"
     ]
   ],

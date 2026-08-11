@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "nemuelch:pink_terracotta_centered_vertical_half_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:pink_terracotta"
+  },
+  "show_notification": true
+}

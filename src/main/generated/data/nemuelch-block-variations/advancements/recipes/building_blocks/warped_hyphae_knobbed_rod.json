@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_warped_hyphae_small_fence": {
+    "has_warped_hyphae": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:warped_hyphae_small_fence"
+              "minecraft:warped_hyphae"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_warped_hyphae_small_fence",
+      "has_warped_hyphae",
       "has_the_recipe"
     ]
   ],

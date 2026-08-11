@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lapis_block": {
+    "has_lapis_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:lapis_block"
+              "nemuelch:lapis_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_lapis_block",
+      "has_lapis_block_small_fence",
       "has_the_recipe"
     ]
   ],

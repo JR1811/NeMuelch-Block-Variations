@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobblestone_small_fence": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:cobblestone_small_fence"
+              "minecraft:cobblestone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cobblestone_small_fence",
+      "has_cobblestone",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_granite_small_fence": {
+    "has_granite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:granite_small_fence"
+              "minecraft:granite"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_granite_small_fence",
+      "has_granite",
       "has_the_recipe"
     ]
   ],

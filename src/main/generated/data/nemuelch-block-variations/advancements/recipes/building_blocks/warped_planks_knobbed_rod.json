@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_warped_planks_small_fence": {
+    "has_warped_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:warped_planks_small_fence"
+              "minecraft:warped_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_warped_planks_small_fence",
+      "has_warped_planks",
       "has_the_recipe"
     ]
   ],

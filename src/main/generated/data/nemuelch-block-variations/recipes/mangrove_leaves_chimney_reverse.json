@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:mangrove_leaves_chimney"
+    },
+    {
+      "item": "nemuelch:mangrove_leaves_chimney"
+    },
+    {
+      "item": "nemuelch:mangrove_leaves_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:mangrove_leaves"
+  }
+}

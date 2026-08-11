@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    },
+    {
+      "item": "nemuelch:cherry_trapdoor_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:cherry_trapdoor"
+  }
+}

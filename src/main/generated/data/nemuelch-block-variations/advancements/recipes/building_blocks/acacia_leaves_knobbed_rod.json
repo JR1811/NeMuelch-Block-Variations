@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_acacia_leaves_small_fence": {
+    "has_acacia_leaves": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:acacia_leaves_small_fence"
+              "minecraft:acacia_leaves"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_acacia_leaves_small_fence",
+      "has_acacia_leaves",
       "has_the_recipe"
     ]
   ],

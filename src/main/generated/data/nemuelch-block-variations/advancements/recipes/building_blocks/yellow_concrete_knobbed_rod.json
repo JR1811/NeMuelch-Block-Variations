@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yellow_concrete_small_fence": {
+    "has_yellow_concrete": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:yellow_concrete_small_fence"
+              "minecraft:yellow_concrete"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_yellow_concrete_small_fence",
+      "has_yellow_concrete",
       "has_the_recipe"
     ]
   ],

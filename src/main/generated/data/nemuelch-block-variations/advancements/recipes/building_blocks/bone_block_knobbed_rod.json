@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bone_block_small_fence": {
+    "has_bone_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:bone_block_small_fence"
+              "minecraft:bone_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bone_block_small_fence",
+      "has_bone_block",
       "has_the_recipe"
     ]
   ],

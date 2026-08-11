@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sand_small_fence": {
+    "has_sand": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:sand_small_fence"
+              "minecraft:sand"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sand_small_fence",
+      "has_sand",
       "has_the_recipe"
     ]
   ],

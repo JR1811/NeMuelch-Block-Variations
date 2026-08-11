@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:jungle_planks_vertical_stair"
+    },
+    {
+      "item": "nemuelch:jungle_planks_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:jungle_planks"
+  }
+}

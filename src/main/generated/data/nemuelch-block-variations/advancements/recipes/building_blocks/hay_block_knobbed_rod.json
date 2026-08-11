@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hay_block_small_fence": {
+    "has_hay_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:hay_block_small_fence"
+              "minecraft:hay_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_hay_block_small_fence",
+      "has_hay_block",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_birch_leaves_small_fence": {
+    "has_birch_leaves": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:birch_leaves_small_fence"
+              "minecraft:birch_leaves"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_birch_leaves_small_fence",
+      "has_birch_leaves",
       "has_the_recipe"
     ]
   ],

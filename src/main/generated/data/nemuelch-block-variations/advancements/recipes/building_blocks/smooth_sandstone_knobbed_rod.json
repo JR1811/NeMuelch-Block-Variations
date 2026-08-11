@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_smooth_sandstone_small_fence": {
+    "has_smooth_sandstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:smooth_sandstone_small_fence"
+              "minecraft:smooth_sandstone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_smooth_sandstone_small_fence",
+      "has_smooth_sandstone",
       "has_the_recipe"
     ]
   ],

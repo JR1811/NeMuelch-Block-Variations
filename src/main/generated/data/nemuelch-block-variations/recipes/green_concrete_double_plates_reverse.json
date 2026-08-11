@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:green_concrete_double_plates"
+    },
+    {
+      "item": "nemuelch:green_concrete_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:green_concrete"
+  }
+}

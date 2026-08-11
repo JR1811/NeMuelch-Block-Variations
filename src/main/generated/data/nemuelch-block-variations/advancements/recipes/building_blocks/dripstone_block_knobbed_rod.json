@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dripstone_block_small_fence": {
+    "has_dripstone_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:dripstone_block_small_fence"
+              "minecraft:dripstone_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dripstone_block_small_fence",
+      "has_dripstone_block",
       "has_the_recipe"
     ]
   ],

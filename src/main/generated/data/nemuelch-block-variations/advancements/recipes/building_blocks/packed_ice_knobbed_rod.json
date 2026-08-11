@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_packed_ice_small_fence": {
+    "has_packed_ice": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:packed_ice_small_fence"
+              "minecraft:packed_ice"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_packed_ice_small_fence",
+      "has_packed_ice",
       "has_the_recipe"
     ]
   ],

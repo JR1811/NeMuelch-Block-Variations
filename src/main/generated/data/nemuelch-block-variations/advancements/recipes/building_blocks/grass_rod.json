@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_grass_block": {
+    "has_grass_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:grass_block"
+              "nemuelch:grass_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_grass_block",
+      "has_grass_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lime_concrete": {
+    "has_lime_concrete_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:lime_concrete"
+              "nemuelch:lime_concrete_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_lime_concrete",
+      "has_lime_concrete_small_fence",
       "has_the_recipe"
     ]
   ],

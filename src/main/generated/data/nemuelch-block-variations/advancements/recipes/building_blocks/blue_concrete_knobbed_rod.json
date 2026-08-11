@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_concrete_small_fence": {
+    "has_blue_concrete": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:blue_concrete_small_fence"
+              "minecraft:blue_concrete"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_blue_concrete_small_fence",
+      "has_blue_concrete",
       "has_the_recipe"
     ]
   ],

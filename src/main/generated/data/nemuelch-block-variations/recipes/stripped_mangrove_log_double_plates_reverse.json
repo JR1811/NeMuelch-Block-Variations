@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stripped_mangrove_log_double_plates"
+    },
+    {
+      "item": "nemuelch:stripped_mangrove_log_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stripped_mangrove_log"
+  }
+}

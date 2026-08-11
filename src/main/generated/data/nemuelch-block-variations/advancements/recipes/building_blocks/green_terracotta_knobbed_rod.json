@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_green_terracotta_small_fence": {
+    "has_green_terracotta": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:green_terracotta_small_fence"
+              "minecraft:green_terracotta"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_green_terracotta_small_fence",
+      "has_green_terracotta",
       "has_the_recipe"
     ]
   ],

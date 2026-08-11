@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:diamond_ore_vertical_stair"
+    },
+    {
+      "item": "nemuelch:diamond_ore_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:diamond_ore"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo_trapdoor_small_fence": {
+    "has_bamboo_trapdoor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:bamboo_trapdoor_small_fence"
+              "minecraft:bamboo_trapdoor"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bamboo_trapdoor_small_fence",
+      "has_bamboo_trapdoor",
       "has_the_recipe"
     ]
   ],

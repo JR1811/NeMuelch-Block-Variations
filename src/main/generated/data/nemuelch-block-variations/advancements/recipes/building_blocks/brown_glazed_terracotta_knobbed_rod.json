@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_brown_glazed_terracotta_small_fence": {
+    "has_brown_glazed_terracotta": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:brown_glazed_terracotta_small_fence"
+              "minecraft:brown_glazed_terracotta"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_brown_glazed_terracotta_small_fence",
+      "has_brown_glazed_terracotta",
       "has_the_recipe"
     ]
   ],

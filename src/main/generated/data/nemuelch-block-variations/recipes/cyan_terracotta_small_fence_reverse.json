@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    },
+    {
+      "item": "nemuelch:cyan_terracotta_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:cyan_terracotta"
+  }
+}

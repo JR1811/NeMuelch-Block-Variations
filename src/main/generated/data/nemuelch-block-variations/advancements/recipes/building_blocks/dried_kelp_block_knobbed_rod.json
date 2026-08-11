@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dried_kelp_block_small_fence": {
+    "has_dried_kelp_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:dried_kelp_block_small_fence"
+              "minecraft:dried_kelp_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dried_kelp_block_small_fence",
+      "has_dried_kelp_block",
       "has_the_recipe"
     ]
   ],

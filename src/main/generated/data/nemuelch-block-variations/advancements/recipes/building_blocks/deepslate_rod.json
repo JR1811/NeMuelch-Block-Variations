@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_deepslate_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:deepslate"
+              "nemuelch:deepslate_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_deepslate",
+      "has_deepslate_small_fence",
       "has_the_recipe"
     ]
   ],

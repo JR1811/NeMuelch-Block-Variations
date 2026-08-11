@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:iron_trapdoor_chimney"
+    },
+    {
+      "item": "nemuelch:iron_trapdoor_chimney"
+    },
+    {
+      "item": "nemuelch:iron_trapdoor_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:iron_trapdoor"
+  }
+}

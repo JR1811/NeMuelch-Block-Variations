@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    },
+    {
+      "item": "nemuelch:yellow_stained_glass_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:yellow_stained_glass"
+  }
+}

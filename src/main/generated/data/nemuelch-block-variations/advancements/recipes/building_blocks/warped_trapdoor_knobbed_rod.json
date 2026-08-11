@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_warped_trapdoor_small_fence": {
+    "has_warped_trapdoor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:warped_trapdoor_small_fence"
+              "minecraft:warped_trapdoor"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_warped_trapdoor_small_fence",
+      "has_warped_trapdoor",
       "has_the_recipe"
     ]
   ],

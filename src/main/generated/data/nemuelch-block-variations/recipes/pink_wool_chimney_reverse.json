@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:pink_wool_chimney"
+    },
+    {
+      "item": "nemuelch:pink_wool_chimney"
+    },
+    {
+      "item": "nemuelch:pink_wool_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:pink_wool"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jungle_planks_small_fence": {
+    "has_jungle_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:jungle_planks_small_fence"
+              "minecraft:jungle_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_jungle_planks_small_fence",
+      "has_jungle_planks",
       "has_the_recipe"
     ]
   ],

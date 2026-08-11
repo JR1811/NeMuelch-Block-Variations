@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cracked_stone_bricks_small_fence": {
+    "has_cracked_stone_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:cracked_stone_bricks_small_fence"
+              "minecraft:cracked_stone_bricks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cracked_stone_bricks_small_fence",
+      "has_cracked_stone_bricks",
       "has_the_recipe"
     ]
   ],

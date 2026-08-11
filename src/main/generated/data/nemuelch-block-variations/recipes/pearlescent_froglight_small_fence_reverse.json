@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:pearlescent_froglight"
+  }
+}

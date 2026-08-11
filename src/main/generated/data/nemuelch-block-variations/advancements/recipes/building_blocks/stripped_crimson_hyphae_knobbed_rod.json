@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_crimson_hyphae_small_fence": {
+    "has_stripped_crimson_hyphae": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:stripped_crimson_hyphae_small_fence"
+              "minecraft:stripped_crimson_hyphae"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_crimson_hyphae_small_fence",
+      "has_stripped_crimson_hyphae",
       "has_the_recipe"
     ]
   ],

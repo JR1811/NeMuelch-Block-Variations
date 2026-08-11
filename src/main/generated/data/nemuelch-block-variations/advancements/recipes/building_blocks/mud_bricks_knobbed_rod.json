@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mud_bricks_small_fence": {
+    "has_mud_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:mud_bricks_small_fence"
+              "minecraft:mud_bricks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_mud_bricks_small_fence",
+      "has_mud_bricks",
       "has_the_recipe"
     ]
   ],

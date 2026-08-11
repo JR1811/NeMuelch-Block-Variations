@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_block": {
+    "has_netherite_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:netherite_block"
+              "nemuelch:netherite_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_netherite_block",
+      "has_netherite_block_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_concrete_small_fence": {
+    "has_pink_concrete": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:pink_concrete_small_fence"
+              "minecraft:pink_concrete"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pink_concrete_small_fence",
+      "has_pink_concrete",
       "has_the_recipe"
     ]
   ],

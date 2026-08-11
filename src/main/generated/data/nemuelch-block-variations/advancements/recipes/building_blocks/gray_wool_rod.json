@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gray_wool": {
+    "has_gray_wool_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gray_wool"
+              "nemuelch:gray_wool_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gray_wool",
+      "has_gray_wool_small_fence",
       "has_the_recipe"
     ]
   ],

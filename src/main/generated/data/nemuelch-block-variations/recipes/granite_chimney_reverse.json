@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:granite_chimney"
+    },
+    {
+      "item": "nemuelch:granite_chimney"
+    },
+    {
+      "item": "nemuelch:granite_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:granite"
+  }
+}

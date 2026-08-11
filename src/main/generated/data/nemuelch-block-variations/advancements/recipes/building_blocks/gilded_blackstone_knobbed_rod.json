@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gilded_blackstone_small_fence": {
+    "has_gilded_blackstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:gilded_blackstone_small_fence"
+              "minecraft:gilded_blackstone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gilded_blackstone_small_fence",
+      "has_gilded_blackstone",
       "has_the_recipe"
     ]
   ],

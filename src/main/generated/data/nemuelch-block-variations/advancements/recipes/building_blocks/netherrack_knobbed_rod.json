@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherrack_small_fence": {
+    "has_netherrack": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:netherrack_small_fence"
+              "minecraft:netherrack"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_netherrack_small_fence",
+      "has_netherrack",
       "has_the_recipe"
     ]
   ],

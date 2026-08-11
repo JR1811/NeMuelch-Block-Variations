@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_spruce_wood": {
+    "has_stripped_spruce_wood_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_spruce_wood"
+              "nemuelch:stripped_spruce_wood_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_spruce_wood",
+      "has_stripped_spruce_wood_small_fence",
       "has_the_recipe"
     ]
   ],

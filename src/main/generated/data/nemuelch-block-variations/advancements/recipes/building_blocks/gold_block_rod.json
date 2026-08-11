@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold_block": {
+    "has_gold_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gold_block"
+              "nemuelch:gold_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gold_block",
+      "has_gold_block_small_fence",
       "has_the_recipe"
     ]
   ],

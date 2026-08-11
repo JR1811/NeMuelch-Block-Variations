@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mangrove_planks": {
+    "has_mangrove_planks_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:mangrove_planks"
+              "nemuelch:mangrove_planks_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_mangrove_planks",
+      "has_mangrove_planks_small_fence",
       "has_the_recipe"
     ]
   ],

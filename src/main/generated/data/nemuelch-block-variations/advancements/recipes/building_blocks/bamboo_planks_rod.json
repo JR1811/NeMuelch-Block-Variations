@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo_planks": {
+    "has_bamboo_planks_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:bamboo_planks"
+              "nemuelch:bamboo_planks_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bamboo_planks",
+      "has_bamboo_planks_small_fence",
       "has_the_recipe"
     ]
   ],

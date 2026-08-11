@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jungle_leaves_small_fence": {
+    "has_jungle_leaves": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:jungle_leaves_small_fence"
+              "minecraft:jungle_leaves"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_jungle_leaves_small_fence",
+      "has_jungle_leaves",
       "has_the_recipe"
     ]
   ],

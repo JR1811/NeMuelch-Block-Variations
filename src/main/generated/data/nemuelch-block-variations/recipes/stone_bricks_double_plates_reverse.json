@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stone_bricks_double_plates"
+    },
+    {
+      "item": "nemuelch:stone_bricks_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stone_bricks"
+  }
+}

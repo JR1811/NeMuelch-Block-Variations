@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:glass_chimney"
+    },
+    {
+      "item": "nemuelch:glass_chimney"
+    },
+    {
+      "item": "nemuelch:glass_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:glass"
+  }
+}

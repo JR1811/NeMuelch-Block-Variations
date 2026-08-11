@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_bamboo_block": {
+    "has_stripped_bamboo_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_bamboo_block"
+              "nemuelch:stripped_bamboo_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_bamboo_block",
+      "has_stripped_bamboo_block_small_fence",
       "has_the_recipe"
     ]
   ],

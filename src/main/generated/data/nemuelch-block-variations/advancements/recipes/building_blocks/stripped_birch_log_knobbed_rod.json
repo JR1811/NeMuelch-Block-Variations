@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_birch_log_small_fence": {
+    "has_stripped_birch_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:stripped_birch_log_small_fence"
+              "minecraft:stripped_birch_log"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_birch_log_small_fence",
+      "has_stripped_birch_log",
       "has_the_recipe"
     ]
   ],

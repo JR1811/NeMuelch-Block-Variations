@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pearlescent_froglight_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:pearlescent_froglight_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:pearlescent_froglight_plate_reverse"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pearlescent_froglight_plate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:pearlescent_froglight_plate_reverse"
+    ]
+  },
+  "sends_telemetry_event": false
+}

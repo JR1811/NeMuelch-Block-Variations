@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:black_terracotta_double_plates"
+    },
+    {
+      "item": "nemuelch:black_terracotta_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:black_terracotta"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_emerald_ore_small_fence": {
+    "has_emerald_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:emerald_ore_small_fence"
+              "minecraft:emerald_ore"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_emerald_ore_small_fence",
+      "has_emerald_ore",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dark_oak_trapdoor_vertical_stair"
+    },
+    {
+      "item": "nemuelch:dark_oak_trapdoor_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:dark_oak_trapdoor"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_warped_stem_small_fence": {
+    "has_stripped_warped_stem": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:stripped_warped_stem_small_fence"
+              "minecraft:stripped_warped_stem"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_warped_stem_small_fence",
+      "has_stripped_warped_stem",
       "has_the_recipe"
     ]
   ],

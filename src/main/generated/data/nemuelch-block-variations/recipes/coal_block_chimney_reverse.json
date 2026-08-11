@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:coal_block_chimney"
+    },
+    {
+      "item": "nemuelch:coal_block_chimney"
+    },
+    {
+      "item": "nemuelch:coal_block_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:coal_block"
+  }
+}

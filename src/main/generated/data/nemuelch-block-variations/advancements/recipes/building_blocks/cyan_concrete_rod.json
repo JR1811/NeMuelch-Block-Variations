@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cyan_concrete": {
+    "has_cyan_concrete_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:cyan_concrete"
+              "nemuelch:cyan_concrete_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cyan_concrete",
+      "has_cyan_concrete_small_fence",
       "has_the_recipe"
     ]
   ],

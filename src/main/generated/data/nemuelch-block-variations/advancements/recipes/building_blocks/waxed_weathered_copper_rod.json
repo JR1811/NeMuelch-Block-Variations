@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_waxed_weathered_copper": {
+    "has_waxed_weathered_copper_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:waxed_weathered_copper"
+              "nemuelch:waxed_weathered_copper_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_waxed_weathered_copper",
+      "has_waxed_weathered_copper_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:verdant_froglight_small_fence_reverse"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_froglight_small_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:verdant_froglight_small_fence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdant_froglight_small_fence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:verdant_froglight_small_fence_reverse"
+    ]
+  },
+  "sends_telemetry_event": false
+}

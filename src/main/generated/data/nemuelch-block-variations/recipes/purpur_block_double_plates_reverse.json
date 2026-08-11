@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:purpur_block_double_plates"
+    },
+    {
+      "item": "nemuelch:purpur_block_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purpur_block"
+  }
+}

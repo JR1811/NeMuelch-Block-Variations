@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:andesite_chimney"
+    },
+    {
+      "item": "nemuelch:andesite_chimney"
+    },
+    {
+      "item": "nemuelch:andesite_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:andesite"
+  }
+}

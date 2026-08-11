@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diorite_small_fence": {
+    "has_diorite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:diorite_small_fence"
+              "minecraft:diorite"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_diorite_small_fence",
+      "has_diorite",
       "has_the_recipe"
     ]
   ],

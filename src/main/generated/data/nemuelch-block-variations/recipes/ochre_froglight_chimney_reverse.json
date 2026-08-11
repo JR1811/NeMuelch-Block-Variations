@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:ochre_froglight_chimney"
+    },
+    {
+      "item": "nemuelch:ochre_froglight_chimney"
+    },
+    {
+      "item": "nemuelch:ochre_froglight_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:ochre_froglight"
+  }
+}

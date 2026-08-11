@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quartz_block_double_plates": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:quartz_block_double_plates"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:quartz_block_double_plates_reverse"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_quartz_block_double_plates",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:quartz_block_double_plates_reverse"
+    ]
+  },
+  "sends_telemetry_event": false
+}

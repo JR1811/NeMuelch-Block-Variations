@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_purpur_block": {
+    "has_purpur_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:purpur_block"
+              "nemuelch:purpur_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_purpur_block",
+      "has_purpur_block_small_fence",
       "has_the_recipe"
     ]
   ],

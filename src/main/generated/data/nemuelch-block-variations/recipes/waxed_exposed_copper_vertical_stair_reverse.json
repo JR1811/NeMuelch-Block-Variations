@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:waxed_exposed_copper_vertical_stair"
+    },
+    {
+      "item": "nemuelch:waxed_exposed_copper_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:waxed_exposed_copper"
+  }
+}

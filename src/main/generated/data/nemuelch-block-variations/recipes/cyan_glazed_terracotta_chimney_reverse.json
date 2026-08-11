@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:cyan_glazed_terracotta_chimney"
+    },
+    {
+      "item": "nemuelch:cyan_glazed_terracotta_chimney"
+    },
+    {
+      "item": "nemuelch:cyan_glazed_terracotta_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:cyan_glazed_terracotta"
+  }
+}

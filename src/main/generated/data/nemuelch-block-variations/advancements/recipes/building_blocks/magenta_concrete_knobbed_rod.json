@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_magenta_concrete_small_fence": {
+    "has_magenta_concrete": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:magenta_concrete_small_fence"
+              "minecraft:magenta_concrete"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_magenta_concrete_small_fence",
+      "has_magenta_concrete",
       "has_the_recipe"
     ]
   ],

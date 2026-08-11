@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond_block": {
+    "has_diamond_block_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond_block"
+              "nemuelch:diamond_block_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_diamond_block",
+      "has_diamond_block_small_fence",
       "has_the_recipe"
     ]
   ],

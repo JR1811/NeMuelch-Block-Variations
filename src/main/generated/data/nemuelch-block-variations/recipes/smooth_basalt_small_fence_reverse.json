@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    },
+    {
+      "item": "nemuelch:smooth_basalt_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:smooth_basalt"
+  }
+}

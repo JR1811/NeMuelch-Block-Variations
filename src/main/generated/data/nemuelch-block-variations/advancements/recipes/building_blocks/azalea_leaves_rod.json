@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_azalea_leaves": {
+    "has_azalea_leaves_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:azalea_leaves"
+              "nemuelch:azalea_leaves_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_azalea_leaves",
+      "has_azalea_leaves_small_fence",
       "has_the_recipe"
     ]
   ],

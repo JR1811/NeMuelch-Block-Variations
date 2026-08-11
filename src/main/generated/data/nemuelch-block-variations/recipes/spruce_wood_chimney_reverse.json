@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:spruce_wood_chimney"
+    },
+    {
+      "item": "nemuelch:spruce_wood_chimney"
+    },
+    {
+      "item": "nemuelch:spruce_wood_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:spruce_wood"
+  }
+}

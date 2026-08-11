@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gold_block_chimney": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:gold_block_chimney"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:gold_block_chimney_reverse"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_block_chimney",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:gold_block_chimney_reverse"
+    ]
+  },
+  "sends_telemetry_event": false
+}

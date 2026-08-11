@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:diorite_chimney"
+    },
+    {
+      "item": "nemuelch:diorite_chimney"
+    },
+    {
+      "item": "nemuelch:diorite_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:diorite"
+  }
+}

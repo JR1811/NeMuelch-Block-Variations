@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_barrel": {
+    "has_barrel_lid_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:barrel"
+              "nemuelch:barrel_lid_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_barrel",
+      "has_barrel_lid_small_fence",
       "has_the_recipe"
     ]
   ],

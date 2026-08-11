@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:cobbled_deepslate_chimney"
+    },
+    {
+      "item": "nemuelch:cobbled_deepslate_chimney"
+    },
+    {
+      "item": "nemuelch:cobbled_deepslate_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:cobbled_deepslate"
+  }
+}

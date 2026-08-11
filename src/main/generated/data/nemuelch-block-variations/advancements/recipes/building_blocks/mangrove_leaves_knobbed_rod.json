@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mangrove_leaves_small_fence": {
+    "has_mangrove_leaves": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:mangrove_leaves_small_fence"
+              "minecraft:mangrove_leaves"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_mangrove_leaves_small_fence",
+      "has_mangrove_leaves",
       "has_the_recipe"
     ]
   ],

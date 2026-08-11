@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:pink_stained_glass_vertical_stair"
+    },
+    {
+      "item": "nemuelch:pink_stained_glass_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:pink_stained_glass"
+  }
+}

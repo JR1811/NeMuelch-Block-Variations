@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:white_glazed_terracotta_double_plates_reverse"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_glazed_terracotta_double_plates": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:white_glazed_terracotta_double_plates"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_glazed_terracotta_double_plates",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:white_glazed_terracotta_double_plates_reverse"
+    ]
+  },
+  "sends_telemetry_event": false
+}

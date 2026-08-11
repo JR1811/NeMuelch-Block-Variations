@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:emerald_ore_chimney"
+    },
+    {
+      "item": "nemuelch:emerald_ore_chimney"
+    },
+    {
+      "item": "nemuelch:emerald_ore_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:emerald_ore"
+  }
+}

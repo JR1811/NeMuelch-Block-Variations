@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tuff_small_fence": {
+    "has_tuff": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:tuff_small_fence"
+              "minecraft:tuff"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_tuff_small_fence",
+      "has_tuff",
       "has_the_recipe"
     ]
   ],

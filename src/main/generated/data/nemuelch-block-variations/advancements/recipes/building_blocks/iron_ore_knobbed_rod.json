@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iron_ore_small_fence": {
+    "has_iron_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:iron_ore_small_fence"
+              "minecraft:iron_ore"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_iron_ore_small_fence",
+      "has_iron_ore",
       "has_the_recipe"
     ]
   ],

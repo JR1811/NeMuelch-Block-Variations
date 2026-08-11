@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stripped_birch_wood_chimney"
+    },
+    {
+      "item": "nemuelch:stripped_birch_wood_chimney"
+    },
+    {
+      "item": "nemuelch:stripped_birch_wood_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:stripped_birch_wood"
+  }
+}

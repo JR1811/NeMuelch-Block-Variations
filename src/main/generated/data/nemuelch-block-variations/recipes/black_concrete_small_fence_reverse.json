@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    },
+    {
+      "item": "nemuelch:black_concrete_small_fence"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:black_concrete"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:birch_leaves_chimney"
+    },
+    {
+      "item": "nemuelch:birch_leaves_chimney"
+    },
+    {
+      "item": "nemuelch:birch_leaves_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:birch_leaves"
+  }
+}

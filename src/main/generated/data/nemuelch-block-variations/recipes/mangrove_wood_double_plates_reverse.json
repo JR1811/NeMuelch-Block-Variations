@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:mangrove_wood_double_plates"
+    },
+    {
+      "item": "nemuelch:mangrove_wood_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:mangrove_wood"
+  }
+}

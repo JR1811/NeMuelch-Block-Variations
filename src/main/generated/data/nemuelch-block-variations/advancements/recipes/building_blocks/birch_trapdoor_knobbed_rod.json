@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_birch_trapdoor_small_fence": {
+    "has_birch_trapdoor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:birch_trapdoor_small_fence"
+              "minecraft:birch_trapdoor"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_birch_trapdoor_small_fence",
+      "has_birch_trapdoor",
       "has_the_recipe"
     ]
   ],

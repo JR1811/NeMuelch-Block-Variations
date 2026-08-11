@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_prismarine_bricks_small_fence": {
+    "has_prismarine_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:prismarine_bricks_small_fence"
+              "minecraft:prismarine_bricks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_prismarine_bricks_small_fence",
+      "has_prismarine_bricks",
       "has_the_recipe"
     ]
   ],

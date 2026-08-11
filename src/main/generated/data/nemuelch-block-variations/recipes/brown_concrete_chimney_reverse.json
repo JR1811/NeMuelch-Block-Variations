@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:brown_concrete_chimney"
+    },
+    {
+      "item": "nemuelch:brown_concrete_chimney"
+    },
+    {
+      "item": "nemuelch:brown_concrete_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:brown_concrete"
+  }
+}

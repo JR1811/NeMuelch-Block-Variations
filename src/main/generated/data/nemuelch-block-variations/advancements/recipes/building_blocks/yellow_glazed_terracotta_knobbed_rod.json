@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yellow_glazed_terracotta_small_fence": {
+    "has_yellow_glazed_terracotta": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:yellow_glazed_terracotta_small_fence"
+              "minecraft:yellow_glazed_terracotta"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_yellow_glazed_terracotta_small_fence",
+      "has_yellow_glazed_terracotta",
       "has_the_recipe"
     ]
   ],

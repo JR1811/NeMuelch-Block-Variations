@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:packed_ice_chimney"
+    },
+    {
+      "item": "nemuelch:packed_ice_chimney"
+    },
+    {
+      "item": "nemuelch:packed_ice_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:packed_ice"
+  }
+}

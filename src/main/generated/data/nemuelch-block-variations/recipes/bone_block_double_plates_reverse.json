@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:bone_block_double_plates"
+    },
+    {
+      "item": "nemuelch:bone_block_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bone_block"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dried_kelp_block_chimney"
+    },
+    {
+      "item": "nemuelch:dried_kelp_block_chimney"
+    },
+    {
+      "item": "nemuelch:dried_kelp_block_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:dried_kelp_block"
+  }
+}

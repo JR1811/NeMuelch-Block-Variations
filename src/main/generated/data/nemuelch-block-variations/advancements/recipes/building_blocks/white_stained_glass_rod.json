@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_white_stained_glass": {
+    "has_white_stained_glass_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:white_stained_glass"
+              "nemuelch:white_stained_glass_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_white_stained_glass",
+      "has_white_stained_glass_small_fence",
       "has_the_recipe"
     ]
   ],

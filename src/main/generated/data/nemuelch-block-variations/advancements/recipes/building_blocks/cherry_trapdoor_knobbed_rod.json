@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cherry_trapdoor_small_fence": {
+    "has_cherry_trapdoor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "nemuelch:cherry_trapdoor_small_fence"
+              "minecraft:cherry_trapdoor"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cherry_trapdoor_small_fence",
+      "has_cherry_trapdoor",
       "has_the_recipe"
     ]
   ],

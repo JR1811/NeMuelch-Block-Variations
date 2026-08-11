@@ -42,7 +42,12 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .pattern("# #")
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
-                    .offerTo(consumer);
+                    .offerTo(consumer, getItemId(chimneyBlock));
+
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 2)
+                    .input(chimneyBlock, 3)
+                    .criterion(hasItem(chimneyBlock), conditionsFromItem(chimneyBlock))
+                    .offerTo(consumer, getItemId(chimneyBlock).withSuffixedPath("_reverse"));
         }
     }
 
@@ -62,7 +67,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .pattern("#")
                     .input('#', plateBlock)
                     .criterion(hasItem(plateBlock), conditionsFromItem(plateBlock))
-                    .offerTo(consumer, getItemId(parentBlock) + "_from_" + getItemId(plateBlock).getPath());
+                    .offerTo(consumer, getItemId(plateBlock).withSuffixedPath("_reverse"));
         }
         for (DoublePlatesBlock doublePlatesBlock : NBVBlocks.DOUBLE_PLATES.values()) {
             Block parentBlock = doublePlatesBlock.getVariant().parentBlock();
@@ -72,6 +77,11 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
+
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock)
+                    .input(doublePlatesBlock, 2)
+                    .criterion(hasItem(doublePlatesBlock), conditionsFromItem(doublePlatesBlock))
+                    .offerTo(consumer, getItemId(doublePlatesBlock).withSuffixedPath("_reverse"));
         }
     }
 
@@ -83,7 +93,13 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .pattern("##")
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
-                    .offerTo(consumer);
+                    .offerTo(consumer, getItemId(halfSlabBlock));
+
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 1)
+                    .pattern("##")
+                    .input('#', halfSlabBlock)
+                    .criterion(hasItem(halfSlabBlock), conditionsFromItem(halfSlabBlock))
+                    .offerTo(consumer, getItemId(halfSlabBlock).withSuffixedPath("_reverse"));
         }
 
         for (VerticalHalfSlabBlock verticalHalfSlab : NBVBlocks.VERTICAL_HALF_SLABS.values()) {
@@ -93,7 +109,14 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .pattern("# ")
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
-                    .offerTo(consumer);
+                    .offerTo(consumer, getItemId(verticalHalfSlab));
+
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 1)
+                    .pattern("#")
+                    .pattern("#")
+                    .input('#', verticalHalfSlab)
+                    .criterion(hasItem(verticalHalfSlab), conditionsFromItem(verticalHalfSlab))
+                    .offerTo(consumer, getItemId(verticalHalfSlab).withSuffixedPath("_reverse"));
         }
     }
 
@@ -106,6 +129,12 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 4)
+                    .pattern("###")
+                    .pattern("###")
+                    .input('#', centeredVerticalHalfSlabBlock)
+                    .criterion(hasItem(centeredVerticalHalfSlabBlock), conditionsFromItem(centeredVerticalHalfSlabBlock))
+                    .offerTo(consumer, getItemId(centeredVerticalHalfSlabBlock).withSuffixedPath("_reverse"));
         }
         for (CenteredHalfSlabBlock centeredHalfSlab : NBVBlocks.CENTERED_HALF_SLABS.values()) {
             Block parentBlock = centeredHalfSlab.getVariant().parentBlock();
@@ -115,6 +144,12 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 4)
+                    .pattern("###")
+                    .pattern("###")
+                    .input('#', centeredHalfSlab)
+                    .criterion(hasItem(centeredHalfSlab), conditionsFromItem(centeredHalfSlab))
+                    .offerTo(consumer, getItemId(centeredHalfSlab).withSuffixedPath("_reverse"));
         }
     }
 
@@ -127,6 +162,10 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input('s', Items.STICK)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
                     .offerTo(consumer);
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 3)
+                    .input(smallFenceBlock, 9)
+                    .criterion(hasItem(smallFenceBlock), conditionsFromItem(smallFenceBlock))
+                    .offerTo(consumer, getItemId(smallFenceBlock).withSuffixedPath("_reverse"));
         }
     }
 
@@ -139,12 +178,16 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .pattern("#  ")
                     .input('#', parentBlock)
                     .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
-                    .offerTo(consumer);
+                    .offerTo(consumer, getItemId(verticalStairBlock));
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 2)
+                    .input(verticalStairBlock, 2)
+                    .criterion(hasItem(verticalStairBlock), conditionsFromItem(verticalStairBlock))
+                    .offerTo(consumer, getItemId(verticalStairBlock).withSuffixedPath("_reverse"));
         }
     }
 
     private static void generateRods(Consumer<RecipeJsonProvider> consumer) {
-        for (var entry : NBVBlocks.ROD.entrySet()) {
+        for (var entry : NBVBlocks.KNOBBED_ROD.entrySet()) {
             RodVariationBlock rodBlock = entry.getValue();
             Block parentBlock = rodBlock.getVariant().parentBlock();
             SmallFenceBlock smallFenceBlock = NBVBlocks.SMALL_FENCES.get(entry.getKey());
@@ -157,7 +200,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .offerTo(consumer);
         }
 
-        for (var entry : NBVBlocks.KNOBBED_ROD.entrySet()) {
+        for (var entry : NBVBlocks.ROD.entrySet()) {
             RodVariationBlock rodBlock = entry.getValue();
             SmallFenceBlock smallFenceBlock = NBVBlocks.SMALL_FENCES.get(entry.getKey());
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, rodBlock, 2)
@@ -171,15 +214,16 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
 
     private static void generateQuarterSlabs(Consumer<RecipeJsonProvider> consumer) {
         for (var entry : NBVBlocks.QUARTER_SLAB.entrySet()) {
+            QuarterSlabBlock quarterSlabBlock = entry.getValue();
             HalfSlabBlock halfSlabBlock = NBVBlocks.HALF_SLABS.get(entry.getKey());
-            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, entry.getValue(), 2)
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, quarterSlabBlock, 2)
                     .input(halfSlabBlock)
                     .criterion(hasItem(halfSlabBlock), conditionsFromItem(halfSlabBlock))
-                    .offerTo(consumer);
+                    .offerTo(consumer, getItemId(quarterSlabBlock));
             ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, halfSlabBlock, 1)
-                    .input(entry.getValue(), 2)
-                    .criterion(hasItem(entry.getValue()), conditionsFromItem(entry.getValue()))
-                    .offerTo(consumer, getItemId(entry.getValue()) + "_reverse");
+                    .input(quarterSlabBlock, 2)
+                    .criterion(hasItem(quarterSlabBlock), conditionsFromItem(quarterSlabBlock))
+                    .offerTo(consumer, getItemId(quarterSlabBlock) + "_reverse");
         }
     }
 

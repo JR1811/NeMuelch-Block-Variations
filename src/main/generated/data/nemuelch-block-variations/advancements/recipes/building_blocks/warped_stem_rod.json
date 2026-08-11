@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_warped_stem": {
+    "has_warped_stem_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:warped_stem"
+              "nemuelch:warped_stem_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_warped_stem",
+      "has_warped_stem_small_fence",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:bamboo_planks_double_plates"
+    },
+    {
+      "item": "nemuelch:bamboo_planks_double_plates"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bamboo_planks"
+  }
+}

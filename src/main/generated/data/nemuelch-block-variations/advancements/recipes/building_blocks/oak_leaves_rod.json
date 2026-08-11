@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_oak_leaves": {
+    "has_oak_leaves_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:oak_leaves"
+              "nemuelch:oak_leaves_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_oak_leaves",
+      "has_oak_leaves_small_fence",
       "has_the_recipe"
     ]
   ],

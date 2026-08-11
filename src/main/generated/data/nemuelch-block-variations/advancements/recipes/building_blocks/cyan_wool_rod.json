@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cyan_wool": {
+    "has_cyan_wool_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:cyan_wool"
+              "nemuelch:cyan_wool_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cyan_wool",
+      "has_cyan_wool_small_fence",
       "has_the_recipe"
     ]
   ],

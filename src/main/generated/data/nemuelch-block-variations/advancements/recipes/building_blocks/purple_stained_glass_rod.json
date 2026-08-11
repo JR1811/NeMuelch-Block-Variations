@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_purple_stained_glass": {
+    "has_purple_stained_glass_small_fence": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:purple_stained_glass"
+              "nemuelch:purple_stained_glass_small_fence"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_purple_stained_glass",
+      "has_purple_stained_glass_small_fence",
       "has_the_recipe"
     ]
   ],
