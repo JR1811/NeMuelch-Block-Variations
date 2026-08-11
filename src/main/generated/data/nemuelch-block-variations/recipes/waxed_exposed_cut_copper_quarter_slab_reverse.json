@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:waxed_exposed_cut_copper_quarter_slab"
+    },
+    {
+      "item": "nemuelch:waxed_exposed_cut_copper_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:waxed_exposed_cut_copper_half_slab"
+  }
+}

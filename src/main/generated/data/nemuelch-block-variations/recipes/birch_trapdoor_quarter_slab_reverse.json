@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:birch_trapdoor_quarter_slab"
+    },
+    {
+      "item": "nemuelch:birch_trapdoor_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:birch_trapdoor_half_slab"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stripped_crimson_stem_half_slab"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:stripped_crimson_stem_quarter_slab"
+  }
+}

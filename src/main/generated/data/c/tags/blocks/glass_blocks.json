@@ -187,6 +187,23 @@
     "nemuelch:brown_stained_glass_knobbed_rod",
     "nemuelch:green_stained_glass_knobbed_rod",
     "nemuelch:red_stained_glass_knobbed_rod",
-    "nemuelch:black_stained_glass_knobbed_rod"
+    "nemuelch:black_stained_glass_knobbed_rod",
+    "nemuelch:glass_quarter_slab",
+    "nemuelch:white_stained_glass_quarter_slab",
+    "nemuelch:orange_stained_glass_quarter_slab",
+    "nemuelch:magenta_stained_glass_quarter_slab",
+    "nemuelch:light_blue_stained_glass_quarter_slab",
+    "nemuelch:yellow_stained_glass_quarter_slab",
+    "nemuelch:lime_stained_glass_quarter_slab",
+    "nemuelch:pink_stained_glass_quarter_slab",
+    "nemuelch:gray_stained_glass_quarter_slab",
+    "nemuelch:light_gray_stained_glass_quarter_slab",
+    "nemuelch:cyan_stained_glass_quarter_slab",
+    "nemuelch:purple_stained_glass_quarter_slab",
+    "nemuelch:blue_stained_glass_quarter_slab",
+    "nemuelch:brown_stained_glass_quarter_slab",
+    "nemuelch:green_stained_glass_quarter_slab",
+    "nemuelch:red_stained_glass_quarter_slab",
+    "nemuelch:black_stained_glass_quarter_slab"
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:gold_ore_quarter_slab"
+    },
+    {
+      "item": "nemuelch:gold_ore_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:gold_ore_half_slab"
+  }
+}

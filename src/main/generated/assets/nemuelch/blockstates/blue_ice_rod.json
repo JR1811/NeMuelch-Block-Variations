@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "nemuelch:block/blue_ice_rod",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "nemuelch:block/blue_ice_rod",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nemuelch:block/blue_ice_rod",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "nemuelch:block/blue_ice_rod",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "nemuelch:block/blue_ice_rod"
+    },
+    "facing=west": {
+      "model": "nemuelch:block/blue_ice_rod",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

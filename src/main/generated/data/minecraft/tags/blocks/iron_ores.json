@@ -22,6 +22,8 @@
     "nemuelch:iron_ore_rod",
     "nemuelch:deepslate_iron_ore_rod",
     "nemuelch:iron_ore_knobbed_rod",
-    "nemuelch:deepslate_iron_ore_knobbed_rod"
+    "nemuelch:deepslate_iron_ore_knobbed_rod",
+    "nemuelch:iron_ore_quarter_slab",
+    "nemuelch:deepslate_iron_ore_quarter_slab"
   ]
 }

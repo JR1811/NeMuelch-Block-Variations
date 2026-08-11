@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:copper_ore_half_slab"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:copper_ore_quarter_slab"
+  }
+}

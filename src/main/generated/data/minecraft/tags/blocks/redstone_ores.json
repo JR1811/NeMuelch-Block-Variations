@@ -22,6 +22,8 @@
     "nemuelch:redstone_ore_rod",
     "nemuelch:deepslate_redstone_ore_rod",
     "nemuelch:redstone_ore_knobbed_rod",
-    "nemuelch:deepslate_redstone_ore_knobbed_rod"
+    "nemuelch:deepslate_redstone_ore_knobbed_rod",
+    "nemuelch:redstone_ore_quarter_slab",
+    "nemuelch:deepslate_redstone_ore_quarter_slab"
   ]
 }

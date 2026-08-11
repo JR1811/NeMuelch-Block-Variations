@@ -66,6 +66,12 @@
     "nemuelch:copper_ore_knobbed_rod",
     "nemuelch:deepslate_copper_ore_knobbed_rod",
     "nemuelch:iron_ore_knobbed_rod",
-    "nemuelch:deepslate_iron_ore_knobbed_rod"
+    "nemuelch:deepslate_iron_ore_knobbed_rod",
+    "nemuelch:iron_block_quarter_slab",
+    "nemuelch:deepslate_coal_ore_quarter_slab",
+    "nemuelch:copper_ore_quarter_slab",
+    "nemuelch:deepslate_copper_ore_quarter_slab",
+    "nemuelch:iron_ore_quarter_slab",
+    "nemuelch:deepslate_iron_ore_quarter_slab"
   ]
 }

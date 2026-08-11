@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:gilded_blackstone_quarter_slab"
+    },
+    {
+      "item": "nemuelch:gilded_blackstone_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:gilded_blackstone_half_slab"
+  }
+}

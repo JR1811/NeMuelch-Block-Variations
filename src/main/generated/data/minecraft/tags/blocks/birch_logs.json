@@ -44,6 +44,10 @@
     "nemuelch:birch_log_knobbed_rod",
     "nemuelch:stripped_birch_log_knobbed_rod",
     "nemuelch:birch_wood_knobbed_rod",
-    "nemuelch:stripped_birch_wood_knobbed_rod"
+    "nemuelch:stripped_birch_wood_knobbed_rod",
+    "nemuelch:birch_log_quarter_slab",
+    "nemuelch:stripped_birch_log_quarter_slab",
+    "nemuelch:birch_wood_quarter_slab",
+    "nemuelch:stripped_birch_wood_quarter_slab"
   ]
 }

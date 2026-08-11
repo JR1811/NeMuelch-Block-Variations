@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:cherry_log_quarter_slab"
+    },
+    {
+      "item": "nemuelch:cherry_log_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:cherry_log_half_slab"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flowering_azalea_leaves_half_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:flowering_azalea_leaves_half_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:flowering_azalea_leaves_quarter_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_flowering_azalea_leaves_half_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:flowering_azalea_leaves_quarter_slab"
+    ]
+  },
+  "sends_telemetry_event": false
+}

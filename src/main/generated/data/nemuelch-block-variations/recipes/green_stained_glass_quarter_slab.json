@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:green_stained_glass_half_slab"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:green_stained_glass_quarter_slab"
+  }
+}

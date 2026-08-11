@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:pearlescent_froglight_quarter_slab"
+    },
+    {
+      "item": "nemuelch:pearlescent_froglight_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:pearlescent_froglight_half_slab"
+  }
+}

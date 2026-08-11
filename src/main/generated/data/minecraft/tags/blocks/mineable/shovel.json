@@ -66,6 +66,12 @@
     "nemuelch:dirt_path_knobbed_rod",
     "nemuelch:mud_knobbed_rod",
     "nemuelch:gravel_knobbed_rod",
-    "nemuelch:sand_knobbed_rod"
+    "nemuelch:sand_knobbed_rod",
+    "nemuelch:grass_quarter_slab",
+    "nemuelch:dirt_quarter_slab",
+    "nemuelch:dirt_path_quarter_slab",
+    "nemuelch:mud_quarter_slab",
+    "nemuelch:gravel_quarter_slab",
+    "nemuelch:sand_quarter_slab"
   ]
 }

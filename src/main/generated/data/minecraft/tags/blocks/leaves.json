@@ -110,6 +110,16 @@
     "nemuelch:dark_oak_leaves_knobbed_rod",
     "nemuelch:mangrove_leaves_knobbed_rod",
     "nemuelch:azalea_leaves_knobbed_rod",
-    "nemuelch:flowering_azalea_leaves_knobbed_rod"
+    "nemuelch:flowering_azalea_leaves_knobbed_rod",
+    "nemuelch:oak_leaves_quarter_slab",
+    "nemuelch:spruce_leaves_quarter_slab",
+    "nemuelch:birch_leaves_quarter_slab",
+    "nemuelch:jungle_leaves_quarter_slab",
+    "nemuelch:acacia_leaves_quarter_slab",
+    "nemuelch:cherry_leaves_quarter_slab",
+    "nemuelch:dark_oak_leaves_quarter_slab",
+    "nemuelch:mangrove_leaves_quarter_slab",
+    "nemuelch:azalea_leaves_quarter_slab",
+    "nemuelch:flowering_azalea_leaves_quarter_slab"
   ]
 }

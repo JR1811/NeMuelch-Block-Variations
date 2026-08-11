@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:lime_terracotta_quarter_slab"
+    },
+    {
+      "item": "nemuelch:lime_terracotta_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:lime_terracotta_half_slab"
+  }
+}

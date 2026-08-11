@@ -33,6 +33,9 @@
     "nemuelch:barrel_side_rod",
     "nemuelch:barrel_bottom_knobbed_rod",
     "nemuelch:barrel_lid_knobbed_rod",
-    "nemuelch:barrel_side_knobbed_rod"
+    "nemuelch:barrel_side_knobbed_rod",
+    "nemuelch:barrel_bottom_quarter_slab",
+    "nemuelch:barrel_lid_quarter_slab",
+    "nemuelch:barrel_side_quarter_slab"
   ]
 }

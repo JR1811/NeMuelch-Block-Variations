@@ -44,6 +44,10 @@
     "nemuelch:acacia_log_knobbed_rod",
     "nemuelch:stripped_acacia_log_knobbed_rod",
     "nemuelch:acacia_wood_knobbed_rod",
-    "nemuelch:stripped_acacia_wood_knobbed_rod"
+    "nemuelch:stripped_acacia_wood_knobbed_rod",
+    "nemuelch:acacia_log_quarter_slab",
+    "nemuelch:stripped_acacia_log_quarter_slab",
+    "nemuelch:acacia_wood_quarter_slab",
+    "nemuelch:stripped_acacia_wood_quarter_slab"
   ]
 }

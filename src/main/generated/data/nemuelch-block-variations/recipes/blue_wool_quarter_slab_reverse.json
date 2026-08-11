@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:blue_wool_quarter_slab"
+    },
+    {
+      "item": "nemuelch:blue_wool_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:blue_wool_half_slab"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:ice_half_slab"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:ice_quarter_slab"
+  }
+}

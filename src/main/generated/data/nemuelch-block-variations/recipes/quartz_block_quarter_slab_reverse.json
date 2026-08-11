@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:quartz_block_quarter_slab"
+    },
+    {
+      "item": "nemuelch:quartz_block_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:quartz_block_half_slab"
+  }
+}

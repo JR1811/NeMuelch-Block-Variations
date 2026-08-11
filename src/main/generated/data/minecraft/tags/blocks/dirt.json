@@ -55,6 +55,11 @@
     "nemuelch:dirt_knobbed_rod",
     "nemuelch:dirt_path_knobbed_rod",
     "nemuelch:mud_knobbed_rod",
-    "nemuelch:moss_block_knobbed_rod"
+    "nemuelch:moss_block_knobbed_rod",
+    "nemuelch:grass_quarter_slab",
+    "nemuelch:dirt_quarter_slab",
+    "nemuelch:dirt_path_quarter_slab",
+    "nemuelch:mud_quarter_slab",
+    "nemuelch:moss_block_quarter_slab"
   ]
 }

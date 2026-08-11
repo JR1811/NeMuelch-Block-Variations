@@ -22,6 +22,8 @@
     "nemuelch:coal_ore_rod",
     "nemuelch:deepslate_coal_ore_rod",
     "nemuelch:coal_ore_knobbed_rod",
-    "nemuelch:deepslate_coal_ore_knobbed_rod"
+    "nemuelch:deepslate_coal_ore_knobbed_rod",
+    "nemuelch:coal_ore_quarter_slab",
+    "nemuelch:deepslate_coal_ore_quarter_slab"
   ]
 }

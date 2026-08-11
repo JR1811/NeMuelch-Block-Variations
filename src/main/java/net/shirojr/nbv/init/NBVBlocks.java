@@ -94,6 +94,12 @@ public interface NBVBlocks {
             (settings, variation) -> new RodVariationBlock(settings, variation, true)
     );
 
+    HashMap<Variation, QuarterSlabBlock> QUARTER_SLAB = registerVariationBlocks(
+            "quarter_slab",
+            variation -> FabricBlockSettings.copy(variation.parentBlock()),
+            QuarterSlabBlock::new
+    );
+
     @SuppressWarnings("SameParameterValue")
     static <T extends Block> T register(Identifier identifier, T entry, boolean registerDefaultItem, List<List<Item>> itemLists) {
         T registeredEntry = Registry.register(Registries.BLOCK, identifier, entry);

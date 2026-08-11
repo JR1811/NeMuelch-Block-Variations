@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:deepslate_bricks_quarter_slab"
+    },
+    {
+      "item": "nemuelch:deepslate_bricks_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:deepslate_bricks_half_slab"
+  }
+}

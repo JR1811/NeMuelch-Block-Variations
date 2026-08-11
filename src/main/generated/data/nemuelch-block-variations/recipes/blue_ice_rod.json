@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:blue_ice"
+    },
+    "s": {
+      "item": "nemuelch:blue_ice_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:blue_ice_rod"
+  },
+  "show_notification": true
+}

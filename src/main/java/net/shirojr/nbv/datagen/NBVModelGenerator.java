@@ -35,6 +35,10 @@ public class NBVModelGenerator extends FabricModelProvider {
                 generateVerticalStair(variationHolder, block, generator);
                 continue;
             }
+            if (block instanceof QuarterSlabBlock) {
+                generateQuarterSlab(variationHolder, block, generator);
+                continue;
+            }
 
             Identifier modelId = generateModel(variationHolder, block, generator);
 
@@ -107,6 +111,52 @@ public class NBVModelGenerator extends FabricModelProvider {
             topBlockStateModel.upload(block, "_top", textureMap, generator.modelCollector);
         }
         return model.upload(block, textureMap, generator.modelCollector);
+    }
+
+    private void generateQuarterSlab(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
+        TextureKey outerTextureKey = TextureKey.of("1");
+        TextureKey innerTextureKey = TextureKey.of("2");
+        TextureKey rimTextureKey = TextureKey.of("3");
+        TextureMap textureMap = new TextureMap();
+        if (variationHolder.getVariant().customParticleTexture() == null) {
+            textureMap.put(TextureKey.PARTICLE, TextureMap.getId(variationHolder.getVariant().parentBlock()));
+        } else {
+            textureMap.put(TextureKey.PARTICLE, variationHolder.getVariant().customParticleTexture());
+        }
+        textureMap.put(outerTextureKey, variationHolder.getVariant().outerTexture());
+        textureMap.put(innerTextureKey, variationHolder.getVariant().innerTexture());
+        textureMap.put(rimTextureKey, variationHolder.getVariant().rimTexture());
+
+
+        Model bottomModel = new Model(
+                Optional.of(variationHolder.getBaseModel()),
+                Optional.empty(),
+                outerTextureKey, innerTextureKey, rimTextureKey, TextureKey.PARTICLE
+        );
+
+        Model topModel = new Model(
+                Optional.of(variationHolder.getBaseModel().withSuffixedPath("_top")),
+                Optional.empty(),
+                outerTextureKey, innerTextureKey, rimTextureKey, TextureKey.PARTICLE
+        );
+
+        Identifier bottomModelId = bottomModel.upload(ModelIds.getBlockModelId(block), textureMap, generator.modelCollector);
+        Identifier topModelId = topModel.upload(ModelIds.getBlockSubModelId(block, "_top"), textureMap, generator.modelCollector);
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(block)
+                        .coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
+                        .coordinate(BlockStateVariantMap.create(QuarterSlabBlock.HALF)
+                                .register(half -> switch (half) {
+                                    case BOTTOM -> BlockStateVariant.create()
+                                            .put(VariantSettings.MODEL, bottomModelId);
+                                    case TOP -> BlockStateVariant.create()
+                                            .put(VariantSettings.MODEL, topModelId);
+                                })
+                        )
+        );
+
+        generator.registerParentedItemModel(block, bottomModelId);
     }
 
     private void generateSmallFence(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {
@@ -203,18 +253,15 @@ public class NBVModelGenerator extends FabricModelProvider {
                                 .register(corner -> switch (corner) {
                                     case NORTH_WEST -> BlockStateVariant.create()
                                             .put(VariantSettings.MODEL, baseModelId);
-                                    case NORTH_EAST ->
-                                            BlockStateVariant.create()
-                                                    .put(VariantSettings.Y, VariantSettings.Rotation.R90)
-                                                    .put(VariantSettings.MODEL, baseModelId);
-                                    case SOUTH_EAST ->
-                                            BlockStateVariant.create()
-                                                    .put(VariantSettings.Y, VariantSettings.Rotation.R180)
-                                                    .put(VariantSettings.MODEL, baseModelId);
-                                    case SOUTH_WEST ->
-                                            BlockStateVariant.create()
-                                                    .put(VariantSettings.Y, VariantSettings.Rotation.R270)
-                                                    .put(VariantSettings.MODEL, baseModelId);
+                                    case NORTH_EAST -> BlockStateVariant.create()
+                                            .put(VariantSettings.Y, VariantSettings.Rotation.R90)
+                                            .put(VariantSettings.MODEL, baseModelId);
+                                    case SOUTH_EAST -> BlockStateVariant.create()
+                                            .put(VariantSettings.Y, VariantSettings.Rotation.R180)
+                                            .put(VariantSettings.MODEL, baseModelId);
+                                    case SOUTH_WEST -> BlockStateVariant.create()
+                                            .put(VariantSettings.Y, VariantSettings.Rotation.R270)
+                                            .put(VariantSettings.MODEL, baseModelId);
                                 })
                         )
         );

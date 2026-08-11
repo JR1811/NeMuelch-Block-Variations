@@ -1,0 +1,9 @@
+{
+  "parent": "nemuelch:block/base_quarter_slab",
+  "textures": {
+    "1": "minecraft:block/flowering_azalea_leaves",
+    "2": "minecraft:block/flowering_azalea_leaves",
+    "3": "minecraft:block/flowering_azalea_leaves",
+    "particle": "minecraft:block/flowering_azalea_leaves"
+  }
+}

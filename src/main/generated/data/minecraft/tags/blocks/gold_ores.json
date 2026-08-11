@@ -22,6 +22,8 @@
     "nemuelch:gold_ore_rod",
     "nemuelch:deepslate_gold_ore_rod",
     "nemuelch:gold_ore_knobbed_rod",
-    "nemuelch:deepslate_gold_ore_knobbed_rod"
+    "nemuelch:deepslate_gold_ore_knobbed_rod",
+    "nemuelch:gold_ore_quarter_slab",
+    "nemuelch:deepslate_gold_ore_quarter_slab"
   ]
 }

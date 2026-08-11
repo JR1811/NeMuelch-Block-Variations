@@ -44,6 +44,10 @@
     "nemuelch:mangrove_log_knobbed_rod",
     "nemuelch:stripped_mangrove_log_knobbed_rod",
     "nemuelch:mangrove_wood_knobbed_rod",
-    "nemuelch:stripped_mangrove_wood_knobbed_rod"
+    "nemuelch:stripped_mangrove_wood_knobbed_rod",
+    "nemuelch:mangrove_log_quarter_slab",
+    "nemuelch:stripped_mangrove_log_quarter_slab",
+    "nemuelch:mangrove_wood_quarter_slab",
+    "nemuelch:stripped_mangrove_wood_quarter_slab"
   ]
 }

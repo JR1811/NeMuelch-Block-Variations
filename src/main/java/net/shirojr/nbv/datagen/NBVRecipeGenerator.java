@@ -5,16 +5,15 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.shirojr.nbv.block.custom.*;
-import net.shirojr.nbv.block.util.Variation;
 import net.shirojr.nbv.init.NBVBlocks;
 
-import java.util.Map;
 import java.util.function.Consumer;
 
 public class NBVRecipeGenerator extends FabricRecipeProvider {
@@ -31,6 +30,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
         generateSmallFences(consumer);
         generateVerticalStairs(consumer);
         generateRods(consumer);
+        generateQuarterSlabs(consumer);
     }
 
     private static void generateChimneys(Consumer<RecipeJsonProvider> consumer) {
@@ -166,6 +166,20 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input('s', smallFenceBlock)
                     .criterion(hasItem(smallFenceBlock), conditionsFromItem(smallFenceBlock))
                     .offerTo(consumer);
+        }
+    }
+
+    private static void generateQuarterSlabs(Consumer<RecipeJsonProvider> consumer) {
+        for (var entry : NBVBlocks.QUARTER_SLAB.entrySet()) {
+            HalfSlabBlock halfSlabBlock = NBVBlocks.HALF_SLABS.get(entry.getKey());
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, entry.getValue(), 2)
+                    .input(halfSlabBlock)
+                    .criterion(hasItem(halfSlabBlock), conditionsFromItem(halfSlabBlock))
+                    .offerTo(consumer);
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, halfSlabBlock, 1)
+                    .input(entry.getValue(), 2)
+                    .criterion(hasItem(entry.getValue()), conditionsFromItem(entry.getValue()))
+                    .offerTo(consumer, getItemId(entry.getValue()) + "_reverse");
         }
     }
 

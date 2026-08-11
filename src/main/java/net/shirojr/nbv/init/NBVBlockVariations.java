@@ -136,6 +136,11 @@ public class NBVBlockVariations {
 
     public static final Variation GLASS = register(new Variation("glass", Blocks.GLASS, new Identifier("glass"), List.of(ConventionalBlockTags.GLASS_BLOCKS)));
 
+    public static final Variation ICE = register(new Variation("ice", Blocks.ICE, NBVMain.getVanillaId("ice"), List.of(BlockTags.ICE, BlockTags.PICKAXE_MINEABLE)));
+    public static final Variation PACKED_ICE = register(new Variation("packed_ice", Blocks.PACKED_ICE, NBVMain.getVanillaId("packed_ice"), List.of(BlockTags.ICE, BlockTags.PICKAXE_MINEABLE)));
+    public static final Variation BLUE_ICE = register(new Variation("blue_ice", Blocks.BLUE_ICE, NBVMain.getVanillaId("blue_ice"), List.of(BlockTags.ICE, BlockTags.PICKAXE_MINEABLE)));
+
+
 
     static {
         for (Block registryBlock : Registries.BLOCK) {

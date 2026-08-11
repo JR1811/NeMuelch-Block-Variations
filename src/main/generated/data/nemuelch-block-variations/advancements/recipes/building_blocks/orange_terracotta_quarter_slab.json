@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orange_terracotta_half_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:orange_terracotta_half_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:orange_terracotta_quarter_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_orange_terracotta_half_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:orange_terracotta_quarter_slab"
+    ]
+  },
+  "sends_telemetry_event": false
+}

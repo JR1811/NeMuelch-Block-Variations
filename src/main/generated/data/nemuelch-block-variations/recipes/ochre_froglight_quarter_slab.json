@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:ochre_froglight_half_slab"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:ochre_froglight_quarter_slab"
+  }
+}

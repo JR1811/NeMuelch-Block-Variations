@@ -44,6 +44,10 @@
     "nemuelch:warped_stem_knobbed_rod",
     "nemuelch:stripped_warped_stem_knobbed_rod",
     "nemuelch:warped_hyphae_knobbed_rod",
-    "nemuelch:stripped_warped_hyphae_knobbed_rod"
+    "nemuelch:stripped_warped_hyphae_knobbed_rod",
+    "nemuelch:warped_stem_quarter_slab",
+    "nemuelch:stripped_warped_stem_quarter_slab",
+    "nemuelch:warped_hyphae_quarter_slab",
+    "nemuelch:stripped_warped_hyphae_quarter_slab"
   ]
 }

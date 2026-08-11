@@ -132,6 +132,18 @@
     "nemuelch:bamboo_trapdoor_knobbed_rod",
     "nemuelch:iron_trapdoor_knobbed_rod",
     "nemuelch:crimson_trapdoor_knobbed_rod",
-    "nemuelch:warped_trapdoor_knobbed_rod"
+    "nemuelch:warped_trapdoor_knobbed_rod",
+    "nemuelch:oak_trapdoor_quarter_slab",
+    "nemuelch:spruce_trapdoor_quarter_slab",
+    "nemuelch:birch_trapdoor_quarter_slab",
+    "nemuelch:jungle_trapdoor_quarter_slab",
+    "nemuelch:acacia_trapdoor_quarter_slab",
+    "nemuelch:cherry_trapdoor_quarter_slab",
+    "nemuelch:dark_oak_trapdoor_quarter_slab",
+    "nemuelch:mangrove_trapdoor_quarter_slab",
+    "nemuelch:bamboo_trapdoor_quarter_slab",
+    "nemuelch:iron_trapdoor_quarter_slab",
+    "nemuelch:crimson_trapdoor_quarter_slab",
+    "nemuelch:warped_trapdoor_quarter_slab"
   ]
 }

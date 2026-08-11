@@ -44,6 +44,10 @@
     "nemuelch:cherry_log_knobbed_rod",
     "nemuelch:stripped_cherry_log_knobbed_rod",
     "nemuelch:cherry_wood_knobbed_rod",
-    "nemuelch:stripped_cherry_wood_knobbed_rod"
+    "nemuelch:stripped_cherry_wood_knobbed_rod",
+    "nemuelch:cherry_log_quarter_slab",
+    "nemuelch:stripped_cherry_log_quarter_slab",
+    "nemuelch:cherry_wood_quarter_slab",
+    "nemuelch:stripped_cherry_wood_quarter_slab"
   ]
 }

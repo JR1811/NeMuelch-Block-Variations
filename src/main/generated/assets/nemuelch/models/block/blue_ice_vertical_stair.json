@@ -1,0 +1,9 @@
+{
+  "parent": "nemuelch:block/base_vertical_stair",
+  "textures": {
+    "1": "minecraft:block/blue_ice",
+    "2": "minecraft:block/blue_ice",
+    "3": "minecraft:block/blue_ice",
+    "particle": "minecraft:block/blue_ice"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stripped_spruce_wood_quarter_slab"
+    },
+    {
+      "item": "nemuelch:stripped_spruce_wood_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:stripped_spruce_wood_half_slab"
+  }
+}

@@ -22,6 +22,8 @@
     "nemuelch:bamboo_block_rod",
     "nemuelch:stripped_bamboo_block_rod",
     "nemuelch:bamboo_block_knobbed_rod",
-    "nemuelch:stripped_bamboo_block_knobbed_rod"
+    "nemuelch:stripped_bamboo_block_knobbed_rod",
+    "nemuelch:bamboo_block_quarter_slab",
+    "nemuelch:stripped_bamboo_block_quarter_slab"
   ]
 }

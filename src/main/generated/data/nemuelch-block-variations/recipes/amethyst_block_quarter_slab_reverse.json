@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:amethyst_block_quarter_slab"
+    },
+    {
+      "item": "nemuelch:amethyst_block_quarter_slab"
+    }
+  ],
+  "result": {
+    "item": "nemuelch:amethyst_block_half_slab"
+  }
+}

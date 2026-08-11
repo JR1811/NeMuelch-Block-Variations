@@ -44,6 +44,10 @@
     "nemuelch:oak_log_knobbed_rod",
     "nemuelch:stripped_oak_log_knobbed_rod",
     "nemuelch:oak_wood_knobbed_rod",
-    "nemuelch:stripped_oak_wood_knobbed_rod"
+    "nemuelch:stripped_oak_wood_knobbed_rod",
+    "nemuelch:oak_log_quarter_slab",
+    "nemuelch:stripped_oak_log_quarter_slab",
+    "nemuelch:oak_wood_quarter_slab",
+    "nemuelch:stripped_oak_wood_quarter_slab"
   ]
 }
