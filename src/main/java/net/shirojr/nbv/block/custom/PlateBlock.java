@@ -12,6 +12,7 @@ import net.minecraft.util.BlockRotation;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -52,7 +53,51 @@ public class PlateBlock extends AbstractVariationBlock {
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockState placementState = super.getPlacementState(ctx);
         if (placementState == null) return null;
-        return placementState.with(FACING, ctx.getPlayerLookDirection());
+        Direction hitDirection = ctx.getSide();
+        Vec3d hitPos = ctx.getHitPos();
+        BlockPos hitBlockPos = ctx.getBlockPos();
+        double rimSize = 0.25;
+
+        double localX;
+        double localZ;
+        Direction localXDirection;
+        Direction localZDirection;
+
+        switch (hitDirection.getAxis()) {
+            case X -> {
+                localX = hitPos.getZ() - hitBlockPos.getZ();
+                localZ = hitPos.getY() - hitBlockPos.getY();
+                localXDirection = Direction.SOUTH;
+                localZDirection = Direction.UP;
+            }
+            case Y -> {
+                localX = hitPos.getX() - hitBlockPos.getX();
+                localZ = hitPos.getZ() - hitBlockPos.getZ();
+                localXDirection = Direction.EAST;
+                localZDirection = Direction.SOUTH;
+            }
+            case Z -> {
+                localX = hitPos.getX() - hitBlockPos.getX();
+                localZ = hitPos.getY() - hitBlockPos.getY();
+                localXDirection = Direction.EAST;
+                localZDirection = Direction.UP;
+            }
+            default -> throw new IllegalStateException(
+                    "Plate placement hit unexpected Axis: " + hitDirection.getAxis()
+            );
+        }
+        localX -= 0.5;
+        localZ -= 0.5;
+
+        Direction facing;
+        if (Math.abs(localX) <= rimSize && Math.abs(localZ) <= rimSize) {
+            facing = hitDirection.getOpposite();
+        } else if (Math.abs(localX) > Math.abs(localZ)) {
+            facing = localX > 0 ? localXDirection : localXDirection.getOpposite();
+        } else {
+            facing = localZ > 0 ? localZDirection : localZDirection.getOpposite();
+        }
+        return placementState.with(FACING, facing);
     }
 
     @Override
