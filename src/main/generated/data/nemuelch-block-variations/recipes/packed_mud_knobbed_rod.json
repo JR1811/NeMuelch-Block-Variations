@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:packed_mud"
+    },
+    "s": {
+      "item": "nemuelch:packed_mud_small_fence"
+    }
+  },
+  "pattern": [
+    "#",
+    "s"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemuelch:packed_mud_knobbed_rod"
+  },
+  "show_notification": true
+}

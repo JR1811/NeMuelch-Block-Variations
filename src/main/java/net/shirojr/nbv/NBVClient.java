@@ -14,7 +14,7 @@ import net.shirojr.nbv.init.NBVBlockBiomeTinter;
 import net.shirojr.nbv.init.NBVBlockVariations;
 import net.shirojr.nbv.init.NBVBlocks;
 
-import java.util.List;
+import java.util.Collection;
 
 public class NBVClient implements ClientModInitializer {
     @Override
@@ -25,7 +25,7 @@ public class NBVClient implements ClientModInitializer {
     private static void registerBlockRendering() {
         for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
             Variation variant = variationHolder.getVariant();
-            List<TagKey<Block>> tags = variant.blockTags();
+            Collection<TagKey<Block>> tags = variant.blockTags();
             if (tags.contains(ConventionalBlockTags.GLASS_BLOCKS) || tags.contains(ConventionalBlockTags.GLASS_PANES)) {
                 BlockRenderLayerMap.INSTANCE.putBlock(variationHolder.getBlock(), RenderLayer.getTranslucent());
             }

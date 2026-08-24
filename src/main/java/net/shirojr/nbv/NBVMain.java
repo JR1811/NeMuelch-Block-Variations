@@ -21,7 +21,7 @@ public class NBVMain implements ModInitializer {
         NBVItemGroups.initialize();
         NBVTags.initialize();
 
-        LOGGER.info("Successfully Loaded NeMuelch Mod addition: \"NeMuelch Block Variations (NBV)\"");
+        LOGGER.info("NeMuelch Block Variations (NBV) loaded {} new blocks!", NBVBlocks.ALL_BLOCKS.size());
     }
 
     public static Identifier getId(String path) {

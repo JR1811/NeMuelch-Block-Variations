@@ -2,6 +2,7 @@ package net.shirojr.nbv.block.util;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.shirojr.nbv.util.TintType;
@@ -33,6 +34,12 @@ public class VariationBuilder {
         return new VariationBuilder(name, parentBlock);
     }
 
+    public VariationBuilder singleTexture(Identifier texture) {
+        this.outerTexture = null;
+        this.rimTexture = null;
+        return this.innerTexture(texture);
+    }
+
     public VariationBuilder innerTexture(Identifier texture) {
         this.innerTexture = texture;
         return this;
@@ -60,6 +67,41 @@ public class VariationBuilder {
 
     public VariationBuilder tint(TintType tint) {
         this.tint = tint;
+        return this;
+    }
+
+    public VariationBuilder pickaxeMinable() {
+        this.blockTags.add(BlockTags.PICKAXE_MINEABLE);
+        return this;
+    }
+
+    public VariationBuilder shovelMinable() {
+        this.blockTags.add(BlockTags.SHOVEL_MINEABLE);
+        return this;
+    }
+
+    public VariationBuilder axeMinable() {
+        this.blockTags.add(BlockTags.AXE_MINEABLE);
+        return this;
+    }
+
+    public VariationBuilder hoeMinable() {
+        this.blockTags.add(BlockTags.HOE_MINEABLE);
+        return this;
+    }
+
+    public VariationBuilder needsStoneTool() {
+        this.blockTags.add(BlockTags.NEEDS_STONE_TOOL);
+        return this;
+    }
+
+    public VariationBuilder needsIronTool() {
+        this.blockTags.add(BlockTags.NEEDS_IRON_TOOL);
+        return this;
+    }
+
+    public VariationBuilder needsDiamondTool() {
+        this.blockTags.add(BlockTags.NEEDS_DIAMOND_TOOL);
         return this;
     }
 

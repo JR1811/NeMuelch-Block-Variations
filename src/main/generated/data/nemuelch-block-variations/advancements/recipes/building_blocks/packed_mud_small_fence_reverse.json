@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_packed_mud_small_fence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nemuelch:packed_mud_small_fence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemuelch:packed_mud_small_fence_reverse"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_packed_mud_small_fence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemuelch:packed_mud_small_fence_reverse"
+    ]
+  },
+  "sends_telemetry_event": false
+}
