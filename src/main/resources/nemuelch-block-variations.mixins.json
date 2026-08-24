@@ -3,6 +3,8 @@
   "package": "net.shirojr.nbv.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "FallLocationMixin",
+    "LivingEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

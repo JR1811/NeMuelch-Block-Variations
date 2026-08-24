@@ -1,0 +1,9 @@
+{
+  "parent": "nemuelch:block/base_centered_half_slab_top",
+  "textures": {
+    "1": "minecraft:block/scaffolding_top",
+    "2": "minecraft:block/scaffolding_top",
+    "3": "minecraft:block/scaffolding_top",
+    "particle": "minecraft:block/scaffolding_top"
+  }
+}

@@ -22,7 +22,24 @@ public class NBVBlockVariations {
     public static final List<Variation> BIOME_TINTED = new ArrayList<>();
 
 
-    public static final Variation GRASS = register(new Variation("grass", Blocks.GRASS_BLOCK, NBVMain.getVanillaId("grass_block_top"), NBVMain.getVanillaId("grass_block_top"), NBVMain.getVanillaId("grass_block_top"), NBVMain.getVanillaId("grass_block_top"), List.of(BlockTags.SHOVEL_MINEABLE, BlockTags.DIRT), TintType.GRASS));
+    /*public static final Variation GRASS = register(
+            VariationBuilder.create("grass", Blocks.GRASS_BLOCK)
+                    .innerTexture(NBVMain.getVanillaId("grass_block_top"))
+                    .particleTexture(NBVMain.getVanillaId("grass_block_top"))
+                    .blockTags(tagKeys -> tagKeys.addAll(List.of(BlockTags.SHOVEL_MINEABLE, BlockTags.DIRT)))
+                    .tint(TintType.GRASS)
+                    .build()
+    );*/
+
+    public static final Variation GRASS = register(
+            new Variation(
+                    "grass",
+                    Blocks.GRASS_BLOCK,
+                    NBVMain.getVanillaId("grass_block_top"),
+                    List.of(BlockTags.SHOVEL_MINEABLE, BlockTags.DIRT),
+                    TintType.GRASS
+            )
+    );
     public static final Variation DIRT = register(new Variation("dirt", Blocks.DIRT, NBVMain.getVanillaId("dirt"), List.of(BlockTags.SHOVEL_MINEABLE, BlockTags.DIRT)));
     public static final Variation DIRT_PATH = register(new Variation("dirt_path", Blocks.DIRT_PATH, NBVMain.getVanillaId("dirt_path_top"), NBVMain.getVanillaId("dirt_path_top"), List.of(BlockTags.SHOVEL_MINEABLE, BlockTags.DIRT)));
     public static final Variation MUD = register(new Variation("mud", Blocks.MUD, NBVMain.getVanillaId("mud"), List.of(BlockTags.SHOVEL_MINEABLE, BlockTags.DIRT)));
@@ -141,6 +158,8 @@ public class NBVBlockVariations {
     public static final Variation BLUE_ICE = register(new Variation("blue_ice", Blocks.BLUE_ICE, NBVMain.getVanillaId("blue_ice"), List.of(BlockTags.ICE, BlockTags.PICKAXE_MINEABLE)));
 
     public static final Variation BARRIER = register(new Variation("barrier", Blocks.BARRIER, NBVMain.getId("blank"), List.of()));
+
+    public static final Variation SCAFFOLDING = register(new Variation("scaffolding", Blocks.SCAFFOLDING, new Identifier("scaffolding_top"), new Identifier("scaffolding_top"), List.of(BlockTags.AXE_MINEABLE), settings -> settings.noCollision().dynamicBounds()));
 
     static {
         for (Block registryBlock : Registries.BLOCK) {

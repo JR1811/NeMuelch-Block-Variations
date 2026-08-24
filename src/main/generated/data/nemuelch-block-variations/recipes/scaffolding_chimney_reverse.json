@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:scaffolding_chimney"
+    },
+    {
+      "item": "nemuelch:scaffolding_chimney"
+    },
+    {
+      "item": "nemuelch:scaffolding_chimney"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:scaffolding"
+  }
+}

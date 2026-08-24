@@ -1,9 +1,6 @@
 package net.shirojr.nbv.block.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockRenderType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Waterloggable;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.block.enums.WallMountLocation;
 import net.minecraft.fluid.FluidState;
@@ -20,6 +17,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.shirojr.nbv.block.util.Variation;
 import net.shirojr.nbv.block.util.VariationHolder;
+import net.shirojr.nbv.init.NBVBlockVariations;
 import net.shirojr.nbv.init.NBVTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -89,6 +87,19 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
             return 1.0f;
         }
         return super.getAmbientOcclusionLightLevel(state, world, pos);
+    }
+
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        if (getVariant().equals(NBVBlockVariations.SCAFFOLDING)) {
+            boolean isAbove = context.isAbove(this.getOutlineShape(state, world, pos, context), pos, true);
+            if (!isAbove || context.isDescending()) {
+                return VoxelShapes.empty();
+            } else {
+                return this.getOutlineShape(state, world, pos, context);
+            }
+        }
+        return super.getCollisionShape(state, world, pos, context);
     }
 
     protected VoxelShape createCardinalRotatedShape(int[] points, Direction direction, BlockHalf half) {

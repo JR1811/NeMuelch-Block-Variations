@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:scaffolding_vertical_stair"
+    },
+    {
+      "item": "nemuelch:scaffolding_vertical_stair"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:scaffolding"
+  }
+}

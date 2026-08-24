@@ -13,6 +13,7 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.shirojr.nbv.block.custom.*;
 import net.shirojr.nbv.block.util.VariationHolder;
+import net.shirojr.nbv.init.NBVBlockVariations;
 import net.shirojr.nbv.init.NBVBlocks;
 import net.shirojr.nbv.init.NBVTags;
 
@@ -161,6 +162,9 @@ public class NBVTagGenerators {
                 }
                 if (variationHolder.getVariant().parentBlock() instanceof BarrierBlock) {
                     barrierRenderingTag.add(variationHolder.getBlock());
+                }
+                if (variationHolder.getVariant().equals(NBVBlockVariations.SCAFFOLDING)) {
+                    climbableTag.add(variationHolder.getBlock());
                 }
             }
 

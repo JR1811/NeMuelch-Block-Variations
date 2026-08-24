@@ -38,6 +38,9 @@ public class NBVClient implements ClientModInitializer {
             if (tags.contains(BlockTags.LEAVES)) {
                 BlockRenderLayerMap.INSTANCE.putBlock(variationHolder.getBlock(), RenderLayer.getCutout());
             }
+            if (variant.equals(NBVBlockVariations.SCAFFOLDING)) {
+                BlockRenderLayerMap.INSTANCE.putBlock(variationHolder.getBlock(), RenderLayer.getCutout());
+            }
 
             if (variant.tint() != null) {
                 NBVBlockBiomeTinter colorProvider = new NBVBlockBiomeTinter(variant);

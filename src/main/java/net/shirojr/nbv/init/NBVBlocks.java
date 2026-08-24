@@ -124,7 +124,9 @@ public interface NBVBlocks {
             String nameSuffix, Function<Variation, AbstractBlock.Settings> settings, BiFunction<AbstractBlock.Settings, Variation, T> blockFactory) {
         HashMap<Variation, T> result = new HashMap<>();
         for (Variation variant : NBVBlockVariations.ALL_VARIATIONS) {
-            AbstractBlock.Settings blockSettings = settings.apply(variant);
+            AbstractBlock.Settings blockSettings = variant.additionalBlockSettings() == null ?
+                    settings.apply(variant) :
+                    variant.additionalBlockSettings().apply(settings.apply(variant));
 
             //FIXME: this is a hacky fix ngl...
             //  Settings which use Properties, which the variation block doesn't have need to get changed
@@ -146,10 +148,11 @@ public interface NBVBlocks {
             VARIATION_HOLDERS.add(registeredBlock);
             ALL_BLOCKS.add(registeredBlock);
         }
+
         return result;
     }
 
     static void initialize() {
-        // static initialisation
+        // static initialization
     }
 }
