@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:deepslate_iron_ore_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:deepslate_iron_ore"
+  }
+}

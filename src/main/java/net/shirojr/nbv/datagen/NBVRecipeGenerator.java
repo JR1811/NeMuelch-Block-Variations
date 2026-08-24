@@ -12,8 +12,10 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.shirojr.nbv.block.custom.*;
+import net.shirojr.nbv.block.util.Variation;
 import net.shirojr.nbv.init.NBVBlocks;
 
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class NBVRecipeGenerator extends FabricRecipeProvider {
@@ -31,6 +33,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
         generateVerticalStairs(consumer);
         generateRods(consumer);
         generateQuarterSlabs(consumer);
+        generateWallPlates(consumer);
     }
 
     private static void generateChimneys(Consumer<RecipeJsonProvider> consumer) {
@@ -224,6 +227,23 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input(quarterSlabBlock, 2)
                     .criterion(hasItem(quarterSlabBlock), conditionsFromItem(quarterSlabBlock))
                     .offerTo(consumer, getItemId(quarterSlabBlock) + "_reverse");
+        }
+    }
+
+    private void generateWallPlates(Consumer<RecipeJsonProvider> consumer) {
+        for (Map.Entry<Variation, WallPlateBlock> entry : NBVBlocks.WALL_PLATES.entrySet()) {
+            WallPlateBlock wallPlateBlock = entry.getValue();
+            Block parentBlock = wallPlateBlock.getVariant().parentBlock();
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, wallPlateBlock, 3)
+                    .pattern("###")
+                    .pattern("###")
+                    .input('#', parentBlock)
+                    .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
+                    .offerTo(consumer, getItemId(wallPlateBlock));
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, parentBlock, 1)
+                    .input(wallPlateBlock)
+                    .criterion(hasItem(wallPlateBlock), conditionsFromItem(wallPlateBlock))
+                    .offerTo(consumer, getItemId(wallPlateBlock) + "_reverse");
         }
     }
 

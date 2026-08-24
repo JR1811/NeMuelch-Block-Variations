@@ -113,6 +113,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder knobbedRodTag = getOrCreateTagBuilder(NBVTags.Blocks.KNOBBED_ROD);
             FabricTagProvider<Block>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Blocks.BARRIER_RENDERING);
             FabricTagProvider<Block>.FabricTagBuilder wallPlatesTag = getOrCreateTagBuilder(NBVTags.Blocks.WALL_PLATES);
+            FabricTagProvider<Block>.FabricTagBuilder connectToFencesTag = getOrCreateTagBuilder(NBVTags.Blocks.CONNECT_TO_FENCES);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry);
@@ -142,6 +143,7 @@ public class NBVTagGenerators {
             }
             for (VerticalStairBlock entry : NBVBlocks.VERTICAL_STAIRS.values()) {
                 verticalStairsTag.add(entry);
+                connectToFencesTag.add(entry);
             }
             for (RodVariationBlock entry : NBVBlocks.ROD.values()) {
                 climbableTag.add(entry);

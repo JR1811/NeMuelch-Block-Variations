@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dark_oak_leaves_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dark_oak_leaves"
+  }
+}

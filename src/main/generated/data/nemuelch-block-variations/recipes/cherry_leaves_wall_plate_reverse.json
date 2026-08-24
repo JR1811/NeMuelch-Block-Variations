@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:cherry_leaves_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cherry_leaves"
+  }
+}

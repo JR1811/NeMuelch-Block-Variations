@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dripstone_block_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dripstone_block"
+  }
+}

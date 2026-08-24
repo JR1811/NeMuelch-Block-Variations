@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:black_concrete_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:black_concrete"
+  }
+}

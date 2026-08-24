@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:waxed_weathered_copper_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:waxed_weathered_copper"
+  }
+}

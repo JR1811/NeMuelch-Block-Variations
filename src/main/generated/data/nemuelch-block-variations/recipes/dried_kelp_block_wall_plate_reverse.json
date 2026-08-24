@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:dried_kelp_block_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dried_kelp_block"
+  }
+}

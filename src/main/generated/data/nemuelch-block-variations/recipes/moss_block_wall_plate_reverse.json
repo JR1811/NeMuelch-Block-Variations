@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:moss_block_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:moss_block"
+  }
+}

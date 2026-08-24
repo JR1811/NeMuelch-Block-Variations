@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:mud_bricks_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:mud_bricks"
+  }
+}

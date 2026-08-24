@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:gilded_blackstone_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gilded_blackstone"
+  }
+}

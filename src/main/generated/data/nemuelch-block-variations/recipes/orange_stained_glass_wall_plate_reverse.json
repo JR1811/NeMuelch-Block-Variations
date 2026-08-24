@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:orange_stained_glass_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:orange_stained_glass"
+  }
+}

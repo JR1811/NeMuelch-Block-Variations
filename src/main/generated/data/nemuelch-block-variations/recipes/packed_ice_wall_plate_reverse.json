@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:packed_ice_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:packed_ice"
+  }
+}

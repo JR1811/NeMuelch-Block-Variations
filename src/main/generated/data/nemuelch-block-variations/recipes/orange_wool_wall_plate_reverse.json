@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:orange_wool_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:orange_wool"
+  }
+}

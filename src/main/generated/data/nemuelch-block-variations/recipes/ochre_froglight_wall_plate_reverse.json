@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:ochre_froglight_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:ochre_froglight"
+  }
+}

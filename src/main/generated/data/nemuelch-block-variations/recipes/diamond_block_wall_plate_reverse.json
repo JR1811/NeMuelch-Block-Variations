@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:diamond_block_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:stripped_oak_log_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stripped_oak_log"
+  }
+}

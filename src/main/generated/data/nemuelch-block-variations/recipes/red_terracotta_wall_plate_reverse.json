@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:red_terracotta_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_terracotta"
+  }
+}

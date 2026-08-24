@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:copper_ore_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:copper_ore"
+  }
+}

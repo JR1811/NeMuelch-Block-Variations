@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nemuelch:acacia_planks_wall_plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:acacia_planks"
+  }
+}
