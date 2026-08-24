@@ -13,6 +13,6 @@ public abstract class FenceBlockMixin {
     @Inject(method = "canConnectToFence", at = @At("RETURN"), cancellable = true)
     private void addFenceConnectingBlockTag(BlockState state, CallbackInfoReturnable<Boolean> cir) {
         boolean original = cir.getReturnValue();
-        cir.setReturnValue(original || state.isIn(NBVTags.Blocks.CONNECT_TO_FENCES));
+        cir.setReturnValue(original || state.isIn(NBVTags.Blocks.CONNECTABLES));
     }
 }

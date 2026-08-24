@@ -113,7 +113,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder knobbedRodTag = getOrCreateTagBuilder(NBVTags.Blocks.KNOBBED_ROD);
             FabricTagProvider<Block>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Blocks.BARRIER_RENDERING);
             FabricTagProvider<Block>.FabricTagBuilder wallPlatesTag = getOrCreateTagBuilder(NBVTags.Blocks.WALL_PLATES);
-            FabricTagProvider<Block>.FabricTagBuilder connectToFencesTag = getOrCreateTagBuilder(NBVTags.Blocks.CONNECT_TO_FENCES);
+            FabricTagProvider<Block>.FabricTagBuilder connectToFencesTag = getOrCreateTagBuilder(NBVTags.Blocks.CONNECTABLES);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry);

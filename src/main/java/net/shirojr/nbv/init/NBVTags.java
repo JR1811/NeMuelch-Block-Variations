@@ -35,7 +35,7 @@ public class NBVTags {
         public static final TagKey<Block> KNOBBED_ROD = createTag("knobbed_rod");
         public static final TagKey<Block> BARRIER_RENDERING = createTag("barrier_rendering");
         public static final TagKey<Block> WALL_PLATES = createTag("wall_plates");
-        public static final TagKey<Block> CONNECT_TO_FENCES = createTag("connect_to_fences");
+        public static final TagKey<Block> CONNECTABLES = createTag("connectables");
 
 
         private static TagKey<Block> createTag(String name) {

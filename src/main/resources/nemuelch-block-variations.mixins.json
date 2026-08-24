@@ -5,7 +5,8 @@
   "mixins": [
     "FallLocationMixin",
     "FenceBlockMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "PaneBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
