@@ -48,6 +48,10 @@
     "nemuelch:cherry_log_quarter_slab",
     "nemuelch:stripped_cherry_log_quarter_slab",
     "nemuelch:cherry_wood_quarter_slab",
-    "nemuelch:stripped_cherry_wood_quarter_slab"
+    "nemuelch:stripped_cherry_wood_quarter_slab",
+    "nemuelch:cherry_log_wall_plate",
+    "nemuelch:stripped_cherry_log_wall_plate",
+    "nemuelch:cherry_wood_wall_plate",
+    "nemuelch:stripped_cherry_wood_wall_plate"
   ]
 }

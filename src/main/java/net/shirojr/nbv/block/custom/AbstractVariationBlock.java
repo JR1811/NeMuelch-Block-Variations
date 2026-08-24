@@ -5,6 +5,7 @@ import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Waterloggable;
 import net.minecraft.block.enums.BlockHalf;
+import net.minecraft.block.enums.WallMountLocation;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -139,6 +140,41 @@ public abstract class AbstractVariationBlock extends Block implements VariationH
                     points[3], 16 - points[2], 16 - points[1]
             ); // Y<->Z swap + flip Y&Z
         };
+    }
+
+    protected VoxelShape createRotatedAxisShape(int[] points, Direction direction, WallMountLocation wallMountLocation) {
+        int[] mountingRotatedPoints = switch (wallMountLocation) {
+            case WALL -> points;
+            case FLOOR -> toFloorOrCeilingPoints(points, false);
+            case CEILING -> toFloorOrCeilingPoints(points, true);
+        };
+
+        return switch (direction) {
+            case NORTH -> createCuboidShape(
+                    mountingRotatedPoints[0], mountingRotatedPoints[1], mountingRotatedPoints[2],
+                    mountingRotatedPoints[3], mountingRotatedPoints[4], mountingRotatedPoints[5]
+            );
+            case SOUTH -> createCuboidShape(
+                    16 - mountingRotatedPoints[3], mountingRotatedPoints[1], 16 - mountingRotatedPoints[5],
+                    16 - mountingRotatedPoints[0], mountingRotatedPoints[4], 16 - mountingRotatedPoints[2]
+            );
+            case WEST -> createCuboidShape(
+                    mountingRotatedPoints[2], mountingRotatedPoints[1], 16 - mountingRotatedPoints[3],
+                    mountingRotatedPoints[5], mountingRotatedPoints[4], 16 - mountingRotatedPoints[0]
+            );
+            case EAST -> createCuboidShape(
+                    16 - mountingRotatedPoints[5], mountingRotatedPoints[1], mountingRotatedPoints[0],
+                    16 - mountingRotatedPoints[2], mountingRotatedPoints[4], mountingRotatedPoints[3]
+            );
+            default -> throw new IllegalStateException("WallPlateBlock FACING must be horizontal, got " + direction);
+        };
+    }
+
+    private int[] toFloorOrCeilingPoints(int[] points, boolean ceiling) {
+        int thickness = points[5] - points[2];
+        int yMin = ceiling ? 16 - thickness : 0;
+        int yMax = ceiling ? 16 : thickness;
+        return new int[]{points[0], yMin, points[1], points[3], yMax, points[4]};
     }
 
     protected VoxelShape createRotatedShape(int[] points, Direction direction) {

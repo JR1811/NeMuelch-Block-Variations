@@ -48,6 +48,10 @@
     "nemuelch:acacia_log_quarter_slab",
     "nemuelch:stripped_acacia_log_quarter_slab",
     "nemuelch:acacia_wood_quarter_slab",
-    "nemuelch:stripped_acacia_wood_quarter_slab"
+    "nemuelch:stripped_acacia_wood_quarter_slab",
+    "nemuelch:acacia_log_wall_plate",
+    "nemuelch:stripped_acacia_log_wall_plate",
+    "nemuelch:acacia_wood_wall_plate",
+    "nemuelch:stripped_acacia_wood_wall_plate"
   ]
 }

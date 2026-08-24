@@ -192,6 +192,22 @@
     "nemuelch:brown_wool_quarter_slab",
     "nemuelch:green_wool_quarter_slab",
     "nemuelch:red_wool_quarter_slab",
-    "nemuelch:black_wool_quarter_slab"
+    "nemuelch:black_wool_quarter_slab",
+    "nemuelch:white_wool_wall_plate",
+    "nemuelch:orange_wool_wall_plate",
+    "nemuelch:magenta_wool_wall_plate",
+    "nemuelch:light_blue_wool_wall_plate",
+    "nemuelch:yellow_wool_wall_plate",
+    "nemuelch:lime_wool_wall_plate",
+    "nemuelch:pink_wool_wall_plate",
+    "nemuelch:gray_wool_wall_plate",
+    "nemuelch:light_gray_wool_wall_plate",
+    "nemuelch:cyan_wool_wall_plate",
+    "nemuelch:purple_wool_wall_plate",
+    "nemuelch:blue_wool_wall_plate",
+    "nemuelch:brown_wool_wall_plate",
+    "nemuelch:green_wool_wall_plate",
+    "nemuelch:red_wool_wall_plate",
+    "nemuelch:black_wool_wall_plate"
   ]
 }

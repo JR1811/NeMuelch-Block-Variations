@@ -48,6 +48,10 @@
     "nemuelch:dark_oak_log_quarter_slab",
     "nemuelch:stripped_dark_oak_log_quarter_slab",
     "nemuelch:dark_oak_wood_quarter_slab",
-    "nemuelch:stripped_dark_oak_wood_quarter_slab"
+    "nemuelch:stripped_dark_oak_wood_quarter_slab",
+    "nemuelch:dark_oak_log_wall_plate",
+    "nemuelch:stripped_dark_oak_log_wall_plate",
+    "nemuelch:dark_oak_wood_wall_plate",
+    "nemuelch:stripped_dark_oak_wood_wall_plate"
   ]
 }

@@ -228,6 +228,25 @@
     "nemuelch:waxed_weathered_copper_quarter_slab",
     "nemuelch:waxed_weathered_cut_copper_quarter_slab",
     "nemuelch:waxed_oxidized_copper_quarter_slab",
-    "nemuelch:waxed_oxidized_cut_copper_quarter_slab"
+    "nemuelch:waxed_oxidized_cut_copper_quarter_slab",
+    "nemuelch:gold_block_wall_plate",
+    "nemuelch:diamond_block_wall_plate",
+    "nemuelch:emerald_block_wall_plate",
+    "nemuelch:gold_ore_wall_plate",
+    "nemuelch:deepslate_gold_ore_wall_plate",
+    "nemuelch:diamond_ore_wall_plate",
+    "nemuelch:deepslate_diamond_ore_wall_plate",
+    "nemuelch:emerald_ore_wall_plate",
+    "nemuelch:deepslate_emerald_ore_wall_plate",
+    "nemuelch:redstone_ore_wall_plate",
+    "nemuelch:deepslate_redstone_ore_wall_plate",
+    "nemuelch:waxed_copper_block_wall_plate",
+    "nemuelch:waxed_cut_copper_wall_plate",
+    "nemuelch:waxed_exposed_copper_wall_plate",
+    "nemuelch:waxed_exposed_cut_copper_wall_plate",
+    "nemuelch:waxed_weathered_copper_wall_plate",
+    "nemuelch:waxed_weathered_cut_copper_wall_plate",
+    "nemuelch:waxed_oxidized_copper_wall_plate",
+    "nemuelch:waxed_oxidized_cut_copper_wall_plate"
   ]
 }

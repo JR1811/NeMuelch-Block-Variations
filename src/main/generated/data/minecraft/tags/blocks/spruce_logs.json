@@ -48,6 +48,10 @@
     "nemuelch:spruce_log_quarter_slab",
     "nemuelch:stripped_spruce_log_quarter_slab",
     "nemuelch:spruce_wood_quarter_slab",
-    "nemuelch:stripped_spruce_wood_quarter_slab"
+    "nemuelch:stripped_spruce_wood_quarter_slab",
+    "nemuelch:spruce_log_wall_plate",
+    "nemuelch:stripped_spruce_log_wall_plate",
+    "nemuelch:spruce_wood_wall_plate",
+    "nemuelch:stripped_spruce_wood_wall_plate"
   ]
 }

@@ -36,6 +36,9 @@
     "nemuelch:blue_ice_knobbed_rod",
     "nemuelch:ice_quarter_slab",
     "nemuelch:packed_ice_quarter_slab",
-    "nemuelch:blue_ice_quarter_slab"
+    "nemuelch:blue_ice_quarter_slab",
+    "nemuelch:ice_wall_plate",
+    "nemuelch:packed_ice_wall_plate",
+    "nemuelch:blue_ice_wall_plate"
   ]
 }

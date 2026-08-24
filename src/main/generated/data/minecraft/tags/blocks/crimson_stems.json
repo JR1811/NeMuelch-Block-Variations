@@ -48,6 +48,10 @@
     "nemuelch:crimson_stem_quarter_slab",
     "nemuelch:stripped_crimson_stem_quarter_slab",
     "nemuelch:crimson_hyphae_quarter_slab",
-    "nemuelch:stripped_crimson_hyphae_quarter_slab"
+    "nemuelch:stripped_crimson_hyphae_quarter_slab",
+    "nemuelch:crimson_stem_wall_plate",
+    "nemuelch:stripped_crimson_stem_wall_plate",
+    "nemuelch:crimson_hyphae_wall_plate",
+    "nemuelch:stripped_crimson_hyphae_wall_plate"
   ]
 }

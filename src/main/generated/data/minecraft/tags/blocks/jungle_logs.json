@@ -48,6 +48,10 @@
     "nemuelch:jungle_log_quarter_slab",
     "nemuelch:stripped_jungle_log_quarter_slab",
     "nemuelch:jungle_wood_quarter_slab",
-    "nemuelch:stripped_jungle_wood_quarter_slab"
+    "nemuelch:stripped_jungle_wood_quarter_slab",
+    "nemuelch:jungle_log_wall_plate",
+    "nemuelch:stripped_jungle_log_wall_plate",
+    "nemuelch:jungle_wood_wall_plate",
+    "nemuelch:stripped_jungle_wood_wall_plate"
   ]
 }

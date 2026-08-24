@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.enums.BlockHalf;
+import net.minecraft.block.enums.WallMountLocation;
 import net.minecraft.data.client.*;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -55,6 +56,8 @@ public class NBVModelGenerator extends FabricModelProvider {
                 blockStateVariantMap = BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates();
             } else if (block instanceof RodVariationBlock) {
                 blockStateVariantMap = createUpDefaultRotationStates();
+            } else if (block instanceof WallPlateBlock) {
+                blockStateVariantMap = getMultiAxisRotatingStates();
             } else {
                 blockStateVariantMap = BlockStateModelGenerator.createNorthDefaultRotationStates();
             }
@@ -122,6 +125,24 @@ public class NBVModelGenerator extends FabricModelProvider {
             topBlockStateModel.upload(block, "_top", textureMap, generator.modelCollector);
         }
         return model.upload(block, textureMap, generator.modelCollector);
+    }
+
+    private BlockStateVariantMap getMultiAxisRotatingStates() {
+        return BlockStateVariantMap.create(WallPlateBlock.FACE, WallPlateBlock.FACING)
+                .register(WallMountLocation.WALL, Direction.NORTH, BlockStateVariant.create().put(VariantSettings.UVLOCK, true))
+                .register(WallMountLocation.WALL, Direction.EAST, BlockStateVariant.create().put(VariantSettings.Y, VariantSettings.Rotation.R90).put(VariantSettings.UVLOCK, true))
+                .register(WallMountLocation.WALL, Direction.SOUTH, BlockStateVariant.create().put(VariantSettings.Y, VariantSettings.Rotation.R180).put(VariantSettings.UVLOCK, true))
+                .register(WallMountLocation.WALL, Direction.WEST, BlockStateVariant.create().put(VariantSettings.Y, VariantSettings.Rotation.R270).put(VariantSettings.UVLOCK, true))
+
+                .register(WallMountLocation.FLOOR, Direction.NORTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90))
+                .register(WallMountLocation.FLOOR, Direction.EAST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .register(WallMountLocation.FLOOR, Direction.SOUTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R180))
+                .register(WallMountLocation.FLOOR, Direction.WEST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R270))
+
+                .register(WallMountLocation.CEILING, Direction.NORTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R270))
+                .register(WallMountLocation.CEILING, Direction.EAST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R270).put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .register(WallMountLocation.CEILING, Direction.SOUTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R270).put(VariantSettings.Y, VariantSettings.Rotation.R180))
+                .register(WallMountLocation.CEILING, Direction.WEST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R270).put(VariantSettings.Y, VariantSettings.Rotation.R270));
     }
 
     private void generateBarrierVariation(VariationHolder variationHolder, Block block, BlockStateModelGenerator generator) {

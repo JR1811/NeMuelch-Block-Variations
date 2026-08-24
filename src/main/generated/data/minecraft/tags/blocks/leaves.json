@@ -120,6 +120,16 @@
     "nemuelch:dark_oak_leaves_quarter_slab",
     "nemuelch:mangrove_leaves_quarter_slab",
     "nemuelch:azalea_leaves_quarter_slab",
-    "nemuelch:flowering_azalea_leaves_quarter_slab"
+    "nemuelch:flowering_azalea_leaves_quarter_slab",
+    "nemuelch:oak_leaves_wall_plate",
+    "nemuelch:spruce_leaves_wall_plate",
+    "nemuelch:birch_leaves_wall_plate",
+    "nemuelch:jungle_leaves_wall_plate",
+    "nemuelch:acacia_leaves_wall_plate",
+    "nemuelch:cherry_leaves_wall_plate",
+    "nemuelch:dark_oak_leaves_wall_plate",
+    "nemuelch:mangrove_leaves_wall_plate",
+    "nemuelch:azalea_leaves_wall_plate",
+    "nemuelch:flowering_azalea_leaves_wall_plate"
   ]
 }

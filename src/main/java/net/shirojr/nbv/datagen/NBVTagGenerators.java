@@ -43,6 +43,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Item>.FabricTagBuilder rodsTag = getOrCreateTagBuilder(NBVTags.Items.RODS);
             FabricTagProvider<Item>.FabricTagBuilder knobbedRodsTag = getOrCreateTagBuilder(NBVTags.Items.KNOBBED_RODS);
             FabricTagProvider<Item>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Items.BARRIER_RENDERING);
+            FabricTagProvider<Item>.FabricTagBuilder wallPlatesTag = getOrCreateTagBuilder(NBVTags.Items.WALL_PLATES);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry.asItem());
@@ -77,6 +78,9 @@ public class NBVTagGenerators {
             for (RodVariationBlock entry : NBVBlocks.KNOBBED_ROD.values()) {
                 knobbedRodsTag.add(entry.asItem());
             }
+            for (WallPlateBlock entry : NBVBlocks.WALL_PLATES.values()) {
+                wallPlatesTag.add(entry.asItem());
+            }
             for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
                 if (variationHolder.getVariant().parentBlock() instanceof BarrierBlock) {
                     barrierRenderingTag.add(variationHolder.getBlock().asItem());
@@ -107,6 +111,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder rodTag = getOrCreateTagBuilder(NBVTags.Blocks.ROD);
             FabricTagProvider<Block>.FabricTagBuilder knobbedRodTag = getOrCreateTagBuilder(NBVTags.Blocks.KNOBBED_ROD);
             FabricTagProvider<Block>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Blocks.BARRIER_RENDERING);
+            FabricTagProvider<Block>.FabricTagBuilder wallPlatesTag = getOrCreateTagBuilder(NBVTags.Blocks.WALL_PLATES);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry);
@@ -138,11 +143,18 @@ public class NBVTagGenerators {
                 verticalStairsTag.add(entry);
             }
             for (RodVariationBlock entry : NBVBlocks.ROD.values()) {
+                climbableTag.add(entry);
                 rodTag.add(entry);
             }
             for (RodVariationBlock entry : NBVBlocks.KNOBBED_ROD.values()) {
+                climbableTag.add(entry);
                 knobbedRodTag.add(entry);
             }
+            for (WallPlateBlock entry : NBVBlocks.WALL_PLATES.values()) {
+                climbableTag.add(entry);
+                wallPlatesTag.add(entry);
+            }
+
             for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
                 for (TagKey<Block> blockTag : variationHolder.getVariant().blockTags()) {
                     getOrCreateTagBuilder(blockTag).add(variationHolder.getBlock());

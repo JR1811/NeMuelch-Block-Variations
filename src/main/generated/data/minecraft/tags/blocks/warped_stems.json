@@ -48,6 +48,10 @@
     "nemuelch:warped_stem_quarter_slab",
     "nemuelch:stripped_warped_stem_quarter_slab",
     "nemuelch:warped_hyphae_quarter_slab",
-    "nemuelch:stripped_warped_hyphae_quarter_slab"
+    "nemuelch:stripped_warped_hyphae_quarter_slab",
+    "nemuelch:warped_stem_wall_plate",
+    "nemuelch:stripped_warped_stem_wall_plate",
+    "nemuelch:warped_hyphae_wall_plate",
+    "nemuelch:stripped_warped_hyphae_wall_plate"
   ]
 }

@@ -13,6 +13,7 @@
     "nemuelch:barrier_rod",
     "nemuelch:barrier_knobbed_rod",
     "nemuelch:barrier_quarter_slab",
+    "nemuelch:barrier_wall_plate",
     "minecraft:barrier"
   ]
 }

@@ -34,6 +34,7 @@ public class NBVTags {
         public static final TagKey<Block> ROD = createTag("rod");
         public static final TagKey<Block> KNOBBED_ROD = createTag("knobbed_rod");
         public static final TagKey<Block> BARRIER_RENDERING = createTag("barrier_rendering");
+        public static final TagKey<Block> WALL_PLATES = createTag("wall_plates");
 
 
         private static TagKey<Block> createTag(String name) {
@@ -70,6 +71,7 @@ public class NBVTags {
         public static final TagKey<Item> RODS = createTag("rods");
         public static final TagKey<Item> KNOBBED_RODS = createTag("knobbed_rods");
         public static final TagKey<Item> BARRIER_RENDERING = createTag("barrier_rendering");
+        public static final TagKey<Item> WALL_PLATES = createTag("wall_plates");
 
         private static TagKey<Item> createTag(String name) {
             TagKey<Item> tagKey = TagKey.of(RegistryKeys.ITEM, new Identifier(NBVMain.MOD_ID_NEMUELCH, name));

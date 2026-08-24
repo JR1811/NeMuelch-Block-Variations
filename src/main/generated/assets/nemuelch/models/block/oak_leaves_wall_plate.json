@@ -1,0 +1,9 @@
+{
+  "parent": "nemuelch:block/base_wall_plate",
+  "textures": {
+    "1": "minecraft:block/oak_leaves",
+    "2": "minecraft:block/oak_leaves",
+    "3": "minecraft:block/oak_leaves",
+    "particle": "minecraft:block/oak_leaves"
+  }
+}

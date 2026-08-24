@@ -60,6 +60,11 @@
     "nemuelch:dirt_quarter_slab",
     "nemuelch:dirt_path_quarter_slab",
     "nemuelch:mud_quarter_slab",
-    "nemuelch:moss_block_quarter_slab"
+    "nemuelch:moss_block_quarter_slab",
+    "nemuelch:grass_wall_plate",
+    "nemuelch:dirt_wall_plate",
+    "nemuelch:dirt_path_wall_plate",
+    "nemuelch:mud_wall_plate",
+    "nemuelch:moss_block_wall_plate"
   ]
 }
