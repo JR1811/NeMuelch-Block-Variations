@@ -78,6 +78,12 @@
     "nemuelch:dirt_path_wall_plate",
     "nemuelch:mud_wall_plate",
     "nemuelch:gravel_wall_plate",
-    "nemuelch:sand_wall_plate"
+    "nemuelch:sand_wall_plate",
+    "nemuelch:grass_vertical_slab",
+    "nemuelch:dirt_vertical_slab",
+    "nemuelch:dirt_path_vertical_slab",
+    "nemuelch:mud_vertical_slab",
+    "nemuelch:gravel_vertical_slab",
+    "nemuelch:sand_vertical_slab"
   ]
 }

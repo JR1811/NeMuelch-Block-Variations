@@ -260,6 +260,26 @@
     "nemuelch:waxed_weathered_copper_wall_plate",
     "nemuelch:waxed_weathered_cut_copper_wall_plate",
     "nemuelch:waxed_oxidized_copper_wall_plate",
-    "nemuelch:waxed_oxidized_cut_copper_wall_plate"
+    "nemuelch:waxed_oxidized_cut_copper_wall_plate",
+    "nemuelch:gold_block_vertical_slab",
+    "nemuelch:diamond_block_vertical_slab",
+    "nemuelch:emerald_block_vertical_slab",
+    "nemuelch:deepslate_iron_ore_vertical_slab",
+    "nemuelch:gold_ore_vertical_slab",
+    "nemuelch:deepslate_gold_ore_vertical_slab",
+    "nemuelch:diamond_ore_vertical_slab",
+    "nemuelch:deepslate_diamond_ore_vertical_slab",
+    "nemuelch:emerald_ore_vertical_slab",
+    "nemuelch:deepslate_emerald_ore_vertical_slab",
+    "nemuelch:redstone_ore_vertical_slab",
+    "nemuelch:deepslate_redstone_ore_vertical_slab",
+    "nemuelch:waxed_copper_block_vertical_slab",
+    "nemuelch:waxed_cut_copper_vertical_slab",
+    "nemuelch:waxed_exposed_copper_vertical_slab",
+    "nemuelch:waxed_exposed_cut_copper_vertical_slab",
+    "nemuelch:waxed_weathered_copper_vertical_slab",
+    "nemuelch:waxed_weathered_cut_copper_vertical_slab",
+    "nemuelch:waxed_oxidized_copper_vertical_slab",
+    "nemuelch:waxed_oxidized_cut_copper_vertical_slab"
   ]
 }

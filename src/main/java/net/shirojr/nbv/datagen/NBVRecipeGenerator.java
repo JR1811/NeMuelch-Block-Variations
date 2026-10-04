@@ -34,6 +34,7 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
         generateRods(consumer);
         generateQuarterSlabs(consumer);
         generateWallPlates(consumer);
+        generateVerticalSlabs(consumer);
     }
 
     private static void generateChimneys(Consumer<RecipeJsonProvider> consumer) {
@@ -244,6 +245,25 @@ public class NBVRecipeGenerator extends FabricRecipeProvider {
                     .input(wallPlateBlock)
                     .criterion(hasItem(wallPlateBlock), conditionsFromItem(wallPlateBlock))
                     .offerTo(consumer, getItemId(wallPlateBlock) + "_reverse");
+        }
+    }
+
+    private void generateVerticalSlabs(Consumer<RecipeJsonProvider> consumer) {
+        for (Map.Entry<Variation, VerticalSlabBlock> entry : NBVBlocks.VERTICAL_SLABS.entrySet()) {
+            VerticalSlabBlock verticalSlabBlock = entry.getValue();
+            Block parentBlock = verticalSlabBlock.getVariant().parentBlock();
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, verticalSlabBlock, 6)
+                    .pattern("#")
+                    .pattern("#")
+                    .pattern("#")
+                    .input('#', parentBlock)
+                    .criterion(hasItem(parentBlock), conditionsFromItem(parentBlock))
+                    .offerTo(consumer, getItemId(verticalSlabBlock));
+            ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, verticalSlabBlock)
+                    .pattern("##")
+                    .input('#', verticalSlabBlock)
+                    .criterion(hasItem(verticalSlabBlock), conditionsFromItem(verticalSlabBlock))
+                    .offerTo(consumer, getItemId(verticalSlabBlock) + "_reverse");
         }
     }
 

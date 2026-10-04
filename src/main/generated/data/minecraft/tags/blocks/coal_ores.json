@@ -26,6 +26,8 @@
     "nemuelch:coal_ore_quarter_slab",
     "nemuelch:deepslate_coal_ore_quarter_slab",
     "nemuelch:coal_ore_wall_plate",
-    "nemuelch:deepslate_coal_ore_wall_plate"
+    "nemuelch:deepslate_coal_ore_wall_plate",
+    "nemuelch:coal_ore_vertical_slab",
+    "nemuelch:deepslate_coal_ore_vertical_slab"
   ]
 }

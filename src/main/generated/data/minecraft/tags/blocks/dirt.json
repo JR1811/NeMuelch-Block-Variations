@@ -65,6 +65,11 @@
     "nemuelch:dirt_wall_plate",
     "nemuelch:dirt_path_wall_plate",
     "nemuelch:mud_wall_plate",
-    "nemuelch:moss_block_wall_plate"
+    "nemuelch:moss_block_wall_plate",
+    "nemuelch:grass_vertical_slab",
+    "nemuelch:dirt_vertical_slab",
+    "nemuelch:dirt_path_vertical_slab",
+    "nemuelch:mud_vertical_slab",
+    "nemuelch:moss_block_vertical_slab"
   ]
 }

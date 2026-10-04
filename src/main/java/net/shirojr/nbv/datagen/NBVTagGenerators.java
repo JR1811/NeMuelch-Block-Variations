@@ -45,6 +45,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Item>.FabricTagBuilder knobbedRodsTag = getOrCreateTagBuilder(NBVTags.Items.KNOBBED_RODS);
             FabricTagProvider<Item>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Items.BARRIER_RENDERING);
             FabricTagProvider<Item>.FabricTagBuilder wallPlatesTag = getOrCreateTagBuilder(NBVTags.Items.WALL_PLATES);
+            FabricTagProvider<Item>.FabricTagBuilder verticalSlabsTag = getOrCreateTagBuilder(NBVTags.Items.VERTICAL_SLABS);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry.asItem());
@@ -82,6 +83,9 @@ public class NBVTagGenerators {
             for (WallPlateBlock entry : NBVBlocks.WALL_PLATES.values()) {
                 wallPlatesTag.add(entry.asItem());
             }
+            for (VerticalSlabBlock entry : NBVBlocks.VERTICAL_SLABS.values()) {
+                verticalSlabsTag.add(entry.asItem());
+            }
             for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
                 if (variationHolder.getVariant().parentBlock() instanceof BarrierBlock) {
                     barrierRenderingTag.add(variationHolder.getBlock().asItem());
@@ -114,6 +118,7 @@ public class NBVTagGenerators {
             FabricTagProvider<Block>.FabricTagBuilder barrierRenderingTag = getOrCreateTagBuilder(NBVTags.Blocks.BARRIER_RENDERING);
             FabricTagProvider<Block>.FabricTagBuilder wallPlatesTag = getOrCreateTagBuilder(NBVTags.Blocks.WALL_PLATES);
             FabricTagProvider<Block>.FabricTagBuilder connectToFencesTag = getOrCreateTagBuilder(NBVTags.Blocks.CONNECTABLES);
+            FabricTagProvider<Block>.FabricTagBuilder verticalSlabsTag = getOrCreateTagBuilder(NBVTags.Blocks.VERTICAL_SLABS);
 
             for (CenteredHalfSlabBlock entry : NBVBlocks.CENTERED_HALF_SLABS.values()) {
                 centeredHalfSlabsTag.add(entry);
@@ -157,6 +162,9 @@ public class NBVTagGenerators {
                 climbableTag.add(entry);
                 wallPlatesTag.add(entry);
             }
+            for (VerticalSlabBlock entry : NBVBlocks.VERTICAL_SLABS.values()) {
+                verticalSlabsTag.add(entry);
+            }
 
             for (VariationHolder variationHolder : NBVBlocks.VARIATION_HOLDERS) {
                 for (TagKey<Block> blockTag : variationHolder.getVariant().blockTags()) {
@@ -169,6 +177,7 @@ public class NBVTagGenerators {
                     climbableTag.add(variationHolder.getBlock());
                 }
             }
+
 
             barrierRenderingTag.add(Blocks.BARRIER);
         }

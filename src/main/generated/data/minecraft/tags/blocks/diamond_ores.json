@@ -26,6 +26,8 @@
     "nemuelch:diamond_ore_quarter_slab",
     "nemuelch:deepslate_diamond_ore_quarter_slab",
     "nemuelch:diamond_ore_wall_plate",
-    "nemuelch:deepslate_diamond_ore_wall_plate"
+    "nemuelch:deepslate_diamond_ore_wall_plate",
+    "nemuelch:diamond_ore_vertical_slab",
+    "nemuelch:deepslate_diamond_ore_vertical_slab"
   ]
 }

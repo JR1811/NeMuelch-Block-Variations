@@ -54,6 +54,8 @@ public class NBVModelGenerator extends FabricModelProvider {
                 blockStateVariantMap = BlockStateModelGenerator.createAxisRotatedVariantMap();
             } else if (block instanceof HalfSlabBlock || block instanceof CenteredHalfSlabBlock || block instanceof VerticalHalfSlabBlock) {
                 blockStateVariantMap = BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates();
+            } else if (block instanceof VerticalSlabBlock) {
+                blockStateVariantMap = BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates();
             } else if (block instanceof RodVariationBlock) {
                 blockStateVariantMap = createUpDefaultRotationStates();
             } else if (block instanceof WallPlateBlock) {

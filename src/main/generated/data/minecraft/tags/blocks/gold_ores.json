@@ -26,6 +26,8 @@
     "nemuelch:gold_ore_quarter_slab",
     "nemuelch:deepslate_gold_ore_quarter_slab",
     "nemuelch:gold_ore_wall_plate",
-    "nemuelch:deepslate_gold_ore_wall_plate"
+    "nemuelch:deepslate_gold_ore_wall_plate",
+    "nemuelch:gold_ore_vertical_slab",
+    "nemuelch:deepslate_gold_ore_vertical_slab"
   ]
 }

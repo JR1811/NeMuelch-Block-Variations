@@ -26,6 +26,8 @@
     "nemuelch:bamboo_block_quarter_slab",
     "nemuelch:stripped_bamboo_block_quarter_slab",
     "nemuelch:bamboo_block_wall_plate",
-    "nemuelch:stripped_bamboo_block_wall_plate"
+    "nemuelch:stripped_bamboo_block_wall_plate",
+    "nemuelch:bamboo_block_vertical_slab",
+    "nemuelch:stripped_bamboo_block_vertical_slab"
   ]
 }

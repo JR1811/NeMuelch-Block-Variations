@@ -106,6 +106,12 @@ public interface NBVBlocks {
             WallPlateBlock::new
     );
 
+    HashMap<Variation, VerticalSlabBlock> VERTICAL_SLABS = registerVariationBlocks(
+            "vertical_slab",
+            variation -> FabricBlockSettings.copy(variation.parentBlock()),
+            VerticalSlabBlock::new
+    );
+
     @SuppressWarnings("SameParameterValue")
     static <T extends Block> T register(Identifier identifier, T entry, boolean registerDefaultItem, List<List<Item>> itemLists) {
         T registeredEntry = Registry.register(Registries.BLOCK, identifier, entry);

@@ -26,6 +26,8 @@
     "nemuelch:redstone_ore_quarter_slab",
     "nemuelch:deepslate_redstone_ore_quarter_slab",
     "nemuelch:redstone_ore_wall_plate",
-    "nemuelch:deepslate_redstone_ore_wall_plate"
+    "nemuelch:deepslate_redstone_ore_wall_plate",
+    "nemuelch:redstone_ore_vertical_slab",
+    "nemuelch:deepslate_redstone_ore_vertical_slab"
   ]
 }

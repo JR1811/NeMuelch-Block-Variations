@@ -208,6 +208,22 @@
     "nemuelch:brown_wool_wall_plate",
     "nemuelch:green_wool_wall_plate",
     "nemuelch:red_wool_wall_plate",
-    "nemuelch:black_wool_wall_plate"
+    "nemuelch:black_wool_wall_plate",
+    "nemuelch:white_wool_vertical_slab",
+    "nemuelch:orange_wool_vertical_slab",
+    "nemuelch:magenta_wool_vertical_slab",
+    "nemuelch:light_blue_wool_vertical_slab",
+    "nemuelch:yellow_wool_vertical_slab",
+    "nemuelch:lime_wool_vertical_slab",
+    "nemuelch:pink_wool_vertical_slab",
+    "nemuelch:gray_wool_vertical_slab",
+    "nemuelch:light_gray_wool_vertical_slab",
+    "nemuelch:cyan_wool_vertical_slab",
+    "nemuelch:purple_wool_vertical_slab",
+    "nemuelch:blue_wool_vertical_slab",
+    "nemuelch:brown_wool_vertical_slab",
+    "nemuelch:green_wool_vertical_slab",
+    "nemuelch:red_wool_vertical_slab",
+    "nemuelch:black_wool_vertical_slab"
   ]
 }

@@ -65,6 +65,11 @@
     "nemuelch:deepslate_coal_ore_wall_plate",
     "nemuelch:copper_ore_wall_plate",
     "nemuelch:deepslate_copper_ore_wall_plate",
-    "nemuelch:iron_ore_wall_plate"
+    "nemuelch:iron_ore_wall_plate",
+    "nemuelch:iron_block_vertical_slab",
+    "nemuelch:deepslate_coal_ore_vertical_slab",
+    "nemuelch:copper_ore_vertical_slab",
+    "nemuelch:deepslate_copper_ore_vertical_slab",
+    "nemuelch:iron_ore_vertical_slab"
   ]
 }
